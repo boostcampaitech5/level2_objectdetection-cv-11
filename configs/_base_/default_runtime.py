@@ -9,13 +9,13 @@ log_config = dict(
         # dict(type='TensorboardLoggerHook')
         dict(type='MMDetWandbHook',
              init_kwargs={'project':'trash_detection V1 (model selection)',
-                          'entity': '',
+                          'entity': 'aivengers',
                           'name' : '',
                          },
              interval=50,
              log_checkpoint=True,
              log_checkpoint_metadata=True,
-             num_eval_images=30,
+             num_eval_images=0,
              bbox_score_thr=0.3),
     ])
 # yapf:enable
