@@ -22,15 +22,26 @@ from mmcv.parallel import MMDataParallel
 from pandas import DataFrame
 from pycocotools.coco import COCO
 
-    
+parser = argparse.ArgumentParser(description='parser')
+parser.add_argument('--epoch', default=20, help='input your max_epoch')
+parser.add_argument('--model', default="retinanet_pvtv2-b0_fpn_1x_coco", help='input your model_name')
+parser.add_argument('--folder', default="pvt", help='input your folder_name')
+parser.add_argument('--augmentation', default=False, help='input your augmentation')
+parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
+parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
+parser.add_argument('--resize', default=1024, help='input your resize')
+
+args = parser.parse_args()
+
 # ------------------ 변경할 부분-------------------
-model_name = "retinanet_pvtv2-b0_fpn_1x_coco"
-folder_name="pvt"
+model_name = args.model
+folder_name= args.folder
 augmentation = False
 # ------------------ 변경할 부분-------------------
-cfg = Config.fromfile(f'./configs/{folder_name}/{model_name}.py')
-cfg.runner.max_epochs = 1 # 에포크 횟수 조정
-root='../../dataset/'
+cfg = Config.fromfile(f'../configs/{folder_name}/{model_name}.py')
+cfg.runner.max_epochs = int(args.epoch) # 에포크 횟수 조정
+resize = int(args.resize)
+root='/opt/ml/dataset/'
 classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass", 
            "Plastic", "Styrofoam", "Plastic bag", "Battery", "Clothing")
 
@@ -38,18 +49,18 @@ classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass",
 def data_config(cfg: Config) -> None:
     cfg.data.train.classes = classes
     cfg.data.train.img_prefix = root
-    cfg.data.train.ann_file = root + 'train.json' # train json 정보
-    cfg.data.train.pipeline[2]['img_scale'] = (512,512) # Resize
+    cfg.data.train.ann_file = root + args.trainset # train json 정보
+    cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
 
     cfg.data.val.classes = classes
     cfg.data.val.img_prefix = root
-    cfg.data.val.ann_file = root + 'val.json' # valid json 정보
-    cfg.data.val.pipeline[1]['img_scale'] = (1024,1024) # Resize
+    cfg.data.val.ann_file = root + args.validset # valid json 정보
+    cfg.data.val.pipeline[1]['img_scale'] = (resize,resize) # Resize
 
     cfg.data.test.classes = classes
     cfg.data.test.img_prefix = root
     cfg.data.test.ann_file = root + 'test.json' # test json 정보
-    cfg.data.test.pipeline[1]['img_scale'] = (512,512) # Resize
+    cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
     cfg.data.samples_per_gpu = 4
 
