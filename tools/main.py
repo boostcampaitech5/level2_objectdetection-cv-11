@@ -24,13 +24,13 @@ from pycocotools.coco import COCO
 
 parser = argparse.ArgumentParser(description='parser')
 parser.add_argument('--max_epoch', default=20, help='input your max_epoch')
-parser.add_argument('--model', default="retinanet_pvtv2-b0_fpn_1x_coco", help='input your model_name')
-parser.add_argument('--folder', default="pvt", help='input your folder_name')
+parser.add_argument('--model', default="cascade_rcnn_x101_64x4d_fpn_1x_coco", help='input your model_name')
+parser.add_argument('--folder', default="cascade_rcnn", help='input your folder_name')
 parser.add_argument('--augmentation', default=False, help='input your augmentation')
 parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
 parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
 parser.add_argument('--resize', default=1024, help='input your resize')
-parser.add_argument('--inference_epoch', default="latest", help='input your inference epoch')
+parser.add_argument('--inference_epoch', default="best", help='input your inference epoch')
 
 args = parser.parse_args()
 
@@ -86,13 +86,13 @@ def train_config(cfg:Config) -> None:
     cfg.seed = 2022
     cfg.gpu_ids = [0]
     cfg.optimizer_config.grad_clip = dict(max_norm=35, norm_type=2)
-    cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     cfg.device = get_device()
     # 모델 weight 저장 경로
     cfg.work_dir = f'../work_dirs/{model_name}_trash'
+    cfg.evaluation = dict(save_best='bbox_mAP_50',metric='bbox')
+    cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     # wandb 프로젝트 이름
     cfg.log_config.hooks[1].init_kwargs.name=f"{model_name}+aug={augmentation}"
-
 
 def train(cfg,kfold=False):
     data_config(cfg)
