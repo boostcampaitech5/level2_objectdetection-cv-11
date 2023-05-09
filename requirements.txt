@@ -10,3 +10,4 @@ pandas==1.1.5
 map-boxes==1.0.5
 jupyter==1.0.0
 iterative-stratification
+wandb
