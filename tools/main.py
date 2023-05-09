@@ -23,13 +23,14 @@ from pandas import DataFrame
 from pycocotools.coco import COCO
 
 parser = argparse.ArgumentParser(description='parser')
-parser.add_argument('--epoch', default=20, help='input your max_epoch')
+parser.add_argument('--max_epoch', default=20, help='input your max_epoch')
 parser.add_argument('--model', default="retinanet_pvtv2-b0_fpn_1x_coco", help='input your model_name')
 parser.add_argument('--folder', default="pvt", help='input your folder_name')
 parser.add_argument('--augmentation', default=False, help='input your augmentation')
 parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
 parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
 parser.add_argument('--resize', default=1024, help='input your resize')
+parser.add_argument('--inference_epoch', default="latest", help='input your inference epoch')
 
 args = parser.parse_args()
 
@@ -39,7 +40,7 @@ folder_name= args.folder
 augmentation = False
 # ------------------ 변경할 부분-------------------
 cfg = Config.fromfile(f'../configs/{folder_name}/{model_name}.py')
-cfg.runner.max_epochs = int(args.epoch) # 에포크 횟수 조정
+cfg.runner.max_epochs = int(args.max_epoch) # 에포크 횟수 조정
 resize = int(args.resize)
 root='/opt/ml/dataset/'
 classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass", 
@@ -107,8 +108,7 @@ def train(cfg,kfold=False):
 
 
 def inference(cfg):
-    # 몇번째 epoch로 inference할 것인지(숫자 or latest,best)
-    epoch = 'latest'
+    epoch = args.inference_epoch
     cfg.model.train_cfg = None
     # build dataset & dataloader
     dataset = build_dataset(cfg.data.test)
