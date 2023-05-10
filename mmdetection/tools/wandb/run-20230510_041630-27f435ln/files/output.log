@@ -1,0 +1,7 @@
+
+2023-05-10 04:16:33,515 - mmdet - WARNING - No meta information found in the runner.
+/opt/ml/baseline/mmdetection/mmdet/models/dense_heads/tood_head.py:354: UserWarning: This overload of nonzero is deprecated:
+	nonzero()
+Consider using one of the following signatures instead:
+	nonzero(*, bool as_tuple) (Triggered internally at  /opt/conda/conda-bld/pytorch_1607370156314/work/torch/csrc/utils/python_arg_parser.cpp:882.)
+  & (labels < bg_class_ind)).nonzero().squeeze(1)
