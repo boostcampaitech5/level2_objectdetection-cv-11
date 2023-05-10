@@ -31,7 +31,7 @@ parser.add_argument('--augmentation', default=False, help='input your augmentati
 parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
 parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
 parser.add_argument('--resize', default=1024, help='input your resize')
-parser.add_argument('--inference_epoch', default="latest", help='input your inference epoch')
+parser.add_argument('--inference_epoch', default="best_bbox_mAP_50_epoch_20", help='input your inference epoch')
 
 args = parser.parse_args()
 

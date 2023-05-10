@@ -92,7 +92,7 @@ def train_config(cfg:Config) -> None:
     cfg.device = get_device()
     # 모델 weight 저장 경로
     cfg.work_dir = f'../work_dirs/{model_name}_trash'
-    cfg.evaluation = dict(save_best='bbox_mAP_50',metric='bbox',checkpoint_name='best_model.pth')
+    cfg.evaluation = dict(save_best='bbox_mAP_50',metric='bbox')
     cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     # wandb 프로젝트 이름
     cfg.log_config.hooks[1].init_kwargs.name=f"{model_name}+aug={augmentation}"
@@ -122,7 +122,8 @@ def inference(cfg):
             shuffle=False)
 
     # checkpoint path
-    checkpoint_path = os.path.join(cfg.work_dir, f'{epoch}.pth')
+    checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
+    checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
 
     model = build_detector(cfg.model, test_cfg=cfg.get('test_cfg')) # build detector
     checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu') # ckpt load
