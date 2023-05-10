@@ -43,3 +43,11 @@ nohup sh level2_objectdetection-cv-11/tools/train.sh
 ```bash
 python3 main.py --model cascade_rcnn_r50_fpn_1x_coco --folder cascade_rcnn --resize 512 --max_epoch 20 --inference_epoch best
 ```
+
+## UniverseNet 오류 해결방법
+
+KeyError: "GFL: 'SEPC is not in the models registry'”
+```bash
+pip install -v -e .
+```
+모델 backbone SyncBN에서 BN으로 수정함. (SyncBN은 특정 상황에서만 작동)
