@@ -46,12 +46,14 @@ root='/opt/ml/dataset/'
 classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass", 
            "Plastic", "Styrofoam", "Plastic bag", "Battery", "Clothing")
 
-
 def data_config(cfg: Config) -> None:
     cfg.data.train.classes = classes
     cfg.data.train.img_prefix = root
     cfg.data.train.ann_file = root + args.trainset # train json 정보
-    cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
+    if "dataset" in cfg.data.train.keys():
+        cfg.data.train.dataset.pipeline[2]['img_scale'] = (resize,resize)
+    else:
+        cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
 
     cfg.data.val.classes = classes
     cfg.data.val.img_prefix = root
@@ -65,11 +67,11 @@ def data_config(cfg: Config) -> None:
     cfg.data.test.test_mode = True
     cfg.data.samples_per_gpu = 4
 
-
 def model_config(cfg: Config) -> None:
     if "roi_head" in cfg.model.keys():
         if type(cfg.model.roi_head.bbox_head) == dict:
             cfg.model.roi_head.bbox_head.num_classes = 10
+
 
         #In case of cascade RCNN : List[Dict]
         elif type(cfg.model.roi_head.bbox_head) == list:
@@ -80,7 +82,6 @@ def model_config(cfg: Config) -> None:
                     raise Exception("Num_classes가 없습니다")
     else:
         cfg.model.bbox_head.num_classes = 10
-
 
 def train_config(cfg:Config) -> None:
     cfg.seed = 2022
@@ -120,7 +121,19 @@ def inference(cfg):
             shuffle=False)
 
     # checkpoint path
-    checkpoint_path = os.path.join(cfg.work_dir, f'{epoch}.pth')
+    # 만약 'best' 일 경우 best가 들어간 pth를 찾아서 load
+    if args.inference_epoch == 'best':
+        checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
+        checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
+    # 만약 'latest' 일 경우 latest.pth를 찾아서 load
+    elif args.inference_epoch == 'latest':
+        checkpoint_path = os.path.join(cfg.work_dir, 'latest.pth')
+    # 그 외 숫자를 넣을 경우 해당 숫자에 해당하는 f'{epoch}.pth'를 찾아서 load
+    else:
+        checkpoint_path = os.path.join(cfg.work_dir, f'{epoch}.pth')
+    print('===================================')
+    print("checkpoint_path:", checkpoint_path)
+    print('===================================')
 
     model = build_detector(cfg.model, test_cfg=cfg.get('test_cfg')) # build detector
     checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu') # ckpt load
