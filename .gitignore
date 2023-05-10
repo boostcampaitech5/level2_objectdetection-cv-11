@@ -3,3 +3,4 @@
 tools/wandb/
 work_dirs
 *.out
+*.csv
