@@ -30,7 +30,7 @@ parser.add_argument('--augmentation', default=False, help='input your augmentati
 parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
 parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
 parser.add_argument('--resize', default=1024, help='input your resize')
-parser.add_argument('--inference_epoch', default="best_model", help='input your inference epoch')
+parser.add_argument('--inference_epoch', default="best", help='input your inference epoch')
 
 args = parser.parse_args()
 
@@ -51,10 +51,7 @@ def data_config(cfg: Config) -> None:
     cfg.data.train.classes = classes
     cfg.data.train.img_prefix = root
     cfg.data.train.ann_file = root + args.trainset # train json 정보
-    if "dataset" in cfg.data.train.keys():
-        cfg.data.train.dataset.pipeline[2]['img_scale'] = (resize,resize)
-    else:
-        cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
+    cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
 
     cfg.data.val.classes = classes
     cfg.data.val.img_prefix = root
@@ -106,6 +103,7 @@ def train(cfg,kfold=False):
     # 모델 build 및 pretrained network 불러오기
     model = build_detector(cfg.model)
     model.init_weights()
+    # 모델 학습
     train_detector(model, datasets[0], cfg, distributed=False, validate=True)
 
 
@@ -122,11 +120,19 @@ def inference(cfg):
             shuffle=False)
 
     # checkpoint path
-    if epoch == 'best_model':
+    # 만약 'best' 일 경우 best가 들어간 pth를 찾아서 load
+    if args.inference_epoch == 'best':
         checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
         checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
-    else:
+    # 만약 'latest' 일 경우 latest.pth를 찾아서 load
+    elif args.inference_epoch == 'latest':
         checkpoint_path = os.path.join(cfg.work_dir, 'latest.pth')
+    # 그 외 숫자를 넣을 경우 해당 숫자에 해당하는 f'{epoch}.pth'를 찾아서 load
+    else:
+        checkpoint_path = os.path.join(cfg.work_dir, f'epoch_{epoch}.pth')
+    print('===================================')
+    print("checkpoint_path:", checkpoint_path)
+    print('===================================')
 
     model = build_detector(cfg.model, test_cfg=cfg.get('test_cfg')) # build detector
     checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu') # ckpt load
@@ -165,5 +171,3 @@ def inference(cfg):
 if __name__ == '__main__':
     train(cfg)
     inference(cfg)
-
-
