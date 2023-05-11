@@ -8,6 +8,8 @@ import os.path as osp
 import time
 import warnings
 import wandb
+import multiprocessing
+
 
 from mmcv import Config
 from mmdet.datasets import build_dataset
@@ -20,6 +22,7 @@ from mmdet.utils import get_device
 from mmcv.runner import load_checkpoint
 from mmcv.parallel import MMDataParallel
 from pandas import DataFrame
+from mmdet.apis import set_random_seed
 from pycocotools.coco import COCO
 
 parser = argparse.ArgumentParser(description='parser')
@@ -30,7 +33,7 @@ parser.add_argument('--augmentation', default=False, help='input your augmentati
 parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
 parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
 parser.add_argument('--resize', default=1024, help='input your resize')
-parser.add_argument('--inference_epoch', default="best_model", help='input your inference epoch')
+parser.add_argument('--inference_epoch', default="best", help='input your inference epoch')
 
 args = parser.parse_args()
 
@@ -67,6 +70,7 @@ def data_config(cfg: Config) -> None:
     cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
     cfg.data.samples_per_gpu = 4
+    cfg.data.workers_per_gpu = multiprocessing.cpu_count() // 2 # num_workers
 
 
 def model_config(cfg: Config) -> None:
@@ -87,6 +91,8 @@ def model_config(cfg: Config) -> None:
 
 def train_config(cfg:Config) -> None:
     cfg.seed = 2022
+    cfg.deterministic = True
+    set_random_seed(2022, True)
     cfg.gpu_ids = [0]
     cfg.optimizer_config.grad_clip = dict(max_norm=35, norm_type=2)
     cfg.device = get_device()
@@ -96,6 +102,7 @@ def train_config(cfg:Config) -> None:
     cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     # wandb 프로젝트 이름
     cfg.log_config.hooks[1].init_kwargs.name=f"{model_name}+aug={augmentation}"
+    
 
 def train(cfg,kfold=False):
     data_config(cfg)
@@ -106,7 +113,11 @@ def train(cfg,kfold=False):
     # 모델 build 및 pretrained network 불러오기
     model = build_detector(cfg.model)
     model.init_weights()
-    train_detector(model, datasets[0], cfg, distributed=False, validate=True)
+    meta = dict()
+    meta['seed'] = cfg.seed
+    meta['exp_name'] = os.path.basename(f'../configs/{folder_name}/{model_name}.py')
+    
+    train_detector(model, datasets[0], cfg, distributed=False, validate=True,meta=meta)
 
 
 def inference(cfg):
@@ -122,8 +133,19 @@ def inference(cfg):
             shuffle=False)
 
     # checkpoint path
-    checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
-    checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
+    # 만약 'best' 일 경우 best가 들어간 pth를 찾아서 load
+    if args.inference_epoch == 'best':
+        checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
+        checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
+    # 만약 'latest' 일 경우 latest.pth를 찾아서 load
+    elif args.inference_epoch == 'latest':
+        checkpoint_path = os.path.join(cfg.work_dir, 'latest.pth')
+    # 그 외 숫자를 넣을 경우 해당 숫자에 해당하는 f'{epoch}.pth'를 찾아서 load
+    else:
+        checkpoint_path = os.path.join(cfg.work_dir, f'epoch_{epoch}.pth')
+    print('===================================')
+    print("checkpoint_path:", checkpoint_path)
+    print('===================================')
 
     model = build_detector(cfg.model, test_cfg=cfg.get('test_cfg')) # build detector
     checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu') # ckpt load
