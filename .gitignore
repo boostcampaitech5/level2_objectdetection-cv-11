@@ -1,5 +1,5 @@
 .git/
 .ipynb_checkpoints/
-tools/wandb/
+mmdetection/tools/wandb/
 work_dirs
 *.out
