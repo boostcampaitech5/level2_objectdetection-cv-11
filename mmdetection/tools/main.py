@@ -122,8 +122,11 @@ def inference(cfg):
             shuffle=False)
 
     # checkpoint path
-    checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
-    checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
+    if epoch == 'best_model':
+        checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
+        checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
+    else:
+        checkpoint_path = os.path.join(cfg.work_dir, 'latest.pth')
 
     model = build_detector(cfg.model, test_cfg=cfg.get('test_cfg')) # build detector
     checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu') # ckpt load
