@@ -3,3 +3,5 @@
 mmdetection/tools/wandb/
 work_dirs
 *.out
+UniverseNet/tools/uvs_train.sh
+mmdetection/tools/train.sh
