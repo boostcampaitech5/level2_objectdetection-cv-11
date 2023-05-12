@@ -45,8 +45,6 @@ python3 main.py --model cascade_rcnn_r50_fpn_1x_coco --folder cascade_rcnn --res
 ```
 
 ## UniverseNet 오류 해결방법
-
-KeyError: "GFL: 'SEPC is not in the models registry'”
 ```bash
 pip install -v -e .
 ```
