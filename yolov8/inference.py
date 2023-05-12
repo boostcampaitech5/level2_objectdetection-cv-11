@@ -86,8 +86,8 @@ def inference():
     # inference에 사용할 model 로드
     
     # annotation 경로
-    annotation = '../dataset/test.json'
-    data_dir = '../dataset/images' # dataset 경로
+    annotation = '/opt/ml/dataset/test.json'
+    data_dir = '/opt/ml/dataset/images' # dataset 경로
     
     # 데이터셋 로드
     test_dataset = CustomDataset(annotation, data_dir)
