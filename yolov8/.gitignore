@@ -132,7 +132,7 @@ dmypy.json
 .pyre/
 
 # datasets and projects
-datasets/
+datasets/.ipynb_checkpoints
 runs/
 wandb/
 
