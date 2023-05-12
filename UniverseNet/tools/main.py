@@ -115,7 +115,7 @@ def train(cfg,kfold=False):
     meta['seed'] = cfg.seed
     meta['exp_name'] = os.path.basename(f'../configs/{folder_name}/{model_name}.py')
     
-    # train_detector(model, datasets[0], cfg, distributed=False, validate=True,meta=meta)
+    train_detector(model, datasets[0], cfg, distributed=False, validate=True,meta=meta)
 
 
 def inference(cfg):
