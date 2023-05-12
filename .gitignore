@@ -4,3 +4,4 @@ tools/wandb/
 work_dirs
 *.out
 runs/
+yolov8/*submission.csv
