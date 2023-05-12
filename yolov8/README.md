@@ -4,7 +4,7 @@ pip install ultralytics
 ```
 ## 2. 폴더 구성하기
 
-![image](https://github.com/boostcampaitech5/level2_objectdetection-cv-11/assets/69185594/6449d48e-b1c4-44d1-8a97-3d6645bc9406)
+![image](https://github.com/boostcampaitech5/level2_objectdetection-cv-11/assets/69185594/00eea4e4-d7df-4fa7-bb88-48d2b12407b6)
 
 ## 3. coco2yolo.py 명령어
 - valid 없이 학습할때
