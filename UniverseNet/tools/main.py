@@ -95,7 +95,7 @@ def train_config(cfg:Config) -> None:
     cfg.optimizer_config.grad_clip = dict(max_norm=35, norm_type=2)
     cfg.device = get_device()
     # 모델 weight 저장 경로
-    cfg.work_dir = f'../work_dirs/{model_name}_trash'
+    cfg.work_dir = f'../work_dirs/{model_name}_{resize}_trash'
     cfg.evaluation = dict(save_best='bbox_mAP_50',metric='bbox')
     cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     # wandb 프로젝트 이름
