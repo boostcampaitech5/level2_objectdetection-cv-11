@@ -4,5 +4,11 @@ mmdetection/tools/wandb/
 UniverseNet/tools/wandb/
 work_dirs
 *.out
+
+# train.sh
 UniverseNet/tools/uvs_train.sh
 mmdetection/tools/train.sh
+
+
+# weight
+UniverseNet/configs/swinv2/weight/*.pth
