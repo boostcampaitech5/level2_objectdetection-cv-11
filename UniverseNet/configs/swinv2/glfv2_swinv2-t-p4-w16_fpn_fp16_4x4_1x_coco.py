@@ -42,19 +42,32 @@ model = dict(
             octave_base_scale=8,
             scales_per_octave=1,
             strides=[8, 16, 32, 64, 128]),
-        bbox_coder=dict(
-            type='DeltaXYWHBBoxCoder',
-            target_means=[.0, .0, .0, .0],
-            target_stds=[0.1, 0.1, 0.2, 0.2]),
+        # bbox_coder=dict(
+        #     type='DeltaXYWHBBoxCoder',
+        #     target_means=[.0, .0, .0, .0],
+        #     target_stds=[0.1, 0.1, 0.2, 0.2]),
+        # loss_cls=dict(
+        #     type='FocalLoss',
+        #     use_sigmoid=True,
+        #     gamma=2.0,
+        #     alpha=0.25,
+        #     loss_weight=1.0),
         loss_cls=dict(
-            type='FocalLoss',
+            type='QualityFocalLoss',
             use_sigmoid=True,
-            gamma=2.0,
-            alpha=0.25,
-            loss_weight=1.0),
-        loss_bbox=dict(type='GIoULoss', loss_weight=2.0),
-        loss_centerness=dict(
-            type='CrossEntropyLoss', use_sigmoid=True, loss_weight=1.0)),
+            activated=True,  # use probability instead of logit as input
+            beta=2.0,
+            loss_weight=1.0), # glfv2일때 사용
+        loss_dfl=dict(type='DistributionFocalLoss', loss_weight=0.25),
+        reg_max=16,
+        use_dgqp=True,
+        reg_topk=4,
+        reg_channels=64,
+        add_mean=True,
+        one_more_cls_out_channels=False,  # True to load official weights
+        loss_bbox=dict(type='GIoULoss', loss_weight=2.0)),
+        # loss_centerness=dict(
+        #     type='CrossEntropyLoss', use_sigmoid=True, loss_weight=1.0)), # gflv2에서는 사용하지 않음
     # training and testing settings
     train_cfg=dict(
         assigner=dict(type='ATSSAssigner', topk=9),
@@ -69,7 +82,7 @@ model = dict(
         max_per_img=100))
 
 
-data = dict(samples_per_gpu=4)
+# data = dict(samples_per_gpu=4)
 
 optimizer = dict(
     _delete_=True,
