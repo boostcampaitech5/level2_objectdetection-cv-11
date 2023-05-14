@@ -31,7 +31,7 @@ parser.add_argument('--augmentation', default=False, help='input your augmentati
 parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
 parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
 parser.add_argument('--resize', default=1024, help='input your resize')
-parser.add_argument('--inference_epoch', default="best_bbox_mAP_50_epoch_20", help='input your inference epoch')
+parser.add_argument('--inference_epoch', default="best", help='input your inference epoch')
 
 args = parser.parse_args()
 
@@ -96,6 +96,7 @@ def train_config(cfg:Config) -> None:
     cfg.device = get_device()
     # 모델 weight 저장 경로
     cfg.work_dir = f'../work_dirs/{model_name}_trash'
+    # 아니 이것도 수정하면 안됨?
     cfg.evaluation = dict(save_best='bbox_mAP_50',metric='bbox')
     cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     # wandb 프로젝트 이름
@@ -131,7 +132,19 @@ def inference(cfg):
             shuffle=False)
 
     # checkpoint path
-    checkpoint_path = os.path.join(cfg.work_dir, f'{epoch}.pth')
+    # 만약 'best' 일 경우 best가 들어간 pth를 찾아서 load
+    if args.inference_epoch == 'best':
+        checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
+        checkpoint_path = os.path.join(cfg.work_dir, checkpoint_name)
+    # 만약 'latest' 일 경우 latest.pth를 찾아서 load
+    elif args.inference_epoch == 'latest':
+        checkpoint_path = os.path.join(cfg.work_dir, 'latest.pth')
+    # 그 외 숫자를 넣을 경우 해당 숫자에 해당하는 f'{epoch}.pth'를 찾아서 load
+    else:
+        checkpoint_path = os.path.join(cfg.work_dir, f'epoch_{epoch}.pth')
+    print('===================================')
+    print("checkpoint_path:", checkpoint_path)
+    print('===================================')
 
     model = build_detector(cfg.model, test_cfg=cfg.get('test_cfg')) # build detector
     checkpoint = load_checkpoint(model, checkpoint_path, map_location='cpu') # ckpt load
@@ -163,7 +176,7 @@ def inference(cfg):
     submission = pd.DataFrame()
     submission['PredictionString'] = prediction_strings
     submission['image_id'] = file_names
-    submission.to_csv(os.path.join(cfg.work_dir, f'submission_{epoch}.csv'), index=None)
+    submission.to_csv(os.path.join(cfg.work_dir, f'{model_name}_{epoch}.csv'), index=None)
     submission.head()
     
 
