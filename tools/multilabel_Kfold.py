@@ -2,9 +2,7 @@ import json
 import numpy as np
 import pandas as pd
 import argparse
-from sklearn.model_selection import StratifiedGroupKFold
 from iterstrat.ml_stratifiers import MultilabelStratifiedKFold
-from collections import Counter
 
 parser = argparse.ArgumentParser(description='K')
 parser.add_argument('--K', default=5, help='input your fold num')
