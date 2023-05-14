@@ -8,7 +8,7 @@ log_config = dict(
         dict(type='TextLoggerHook'),
         dict(type='MMDetWandbHook',
              init_kwargs={'project':'trash_detection V1 (model selection)',
-                          'entity': 'aivengers',
+                          'entity': 'aivengers_v2',
                           'name' : '',
                          },
              interval=50,
