@@ -1,5 +1,6 @@
 # model settings
 pretrained_ckpt = 'https://github.com/shinya7y/weights/releases/download/v1.0.2/res2net50_v1b_26w_4s-3cf99910_mmdetv2-92ed3313.pth'  # noqa
+pretrained_ckpt = '/opt/ml/level2_objectdetection-cv-11/UniverseNet/configs/universenet/models/universenet50_pth/res2net50_v1b_26w_4s-3cf99910_mmdetv2-92ed3313.pth'
 model = dict(
     type='GFL',
     backbone=dict(
@@ -10,7 +11,7 @@ model = dict(
         num_stages=4,
         out_indices=(0, 1, 2, 3),
         frozen_stages=1,
-        norm_cfg=dict(type='SyncBN', requires_grad=True),
+        norm_cfg=dict(type='BN', requires_grad=True),
         norm_eval=False,
         style='pytorch',
         dcn=dict(type='DCN', deform_groups=1, fallback_on_stride=False),
@@ -30,7 +31,7 @@ model = dict(
             stacked_convs=4,
             pconv_deform=True,
             lcconv_deform=True,
-            ibn=True,  # please set imgs/gpu >= 4
+            ibn=False,  # please set imgs/gpu >= 4
             pnorm_eval=False,
             lcnorm_eval=False,
             lcconv_padding=1)
