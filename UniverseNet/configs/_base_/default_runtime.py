@@ -8,7 +8,7 @@ log_config = dict(
         dict(type='TextLoggerHook'),
         dict(type='MMDetWandbHook',
              init_kwargs={'project':'trash_detection V1 (model selection)',
-                          'entity': 'aivengers',
+                          'entity': 'aivengers_v2',
                           'name' : '',
                          },
              interval=50,
@@ -37,5 +37,5 @@ mp_start_method = 'fork'
 #   - `enable` means enable scaling LR automatically
 #       or not by default.
 #   - `base_batch_size` = (8 GPUs) x (2 samples per GPU).
-auto_scale_lr = dict(enable=False, base_batch_size=16)
+auto_scale_lr = dict(enable=False, base_batch_size=32)
 

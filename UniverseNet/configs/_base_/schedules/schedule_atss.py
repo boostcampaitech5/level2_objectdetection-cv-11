@@ -1,7 +1,7 @@
 optimizer_config = dict(grad_clip=None)
 optimizer = dict(
     type='AdamW',
-    lr=0.0001,
+    lr=2e-5,
     betas=(0.9, 0.999),
     weight_decay=0.05,
     paramwise_cfg=dict(
@@ -20,5 +20,4 @@ lr_config = dict(
     min_lr_ratio=1e-3
 )
 runner = dict(type='EpochBasedRunner', max_epochs=20)
-
 

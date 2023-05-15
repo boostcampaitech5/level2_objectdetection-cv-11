@@ -1,9 +1,9 @@
 optimizer_config = dict(grad_clip=None)
 optimizer = dict(
     type='AdamW',
-    lr=0.0001,
+    lr=2e-5,
     betas=(0.9, 0.999),
-    weight_decay=0.05,
+    weight_decay=1e-8,
     paramwise_cfg=dict(
         custom_keys={
             'absolute_pos_embed': dict(decay_mult=0.),
@@ -15,10 +15,9 @@ optimizer = dict(
 lr_config = dict(
     policy='CosineAnnealing',
     warmup='linear',
-    warmup_iters=1000,
+    warmup_iters=500,
     warmup_ratio=0.001,
     min_lr_ratio=1e-3
 )
-runner = dict(type='EpochBasedRunner', max_epochs=20)
-
+runner = dict(type='EpochBasedRunner', max_epochs=30)
 
