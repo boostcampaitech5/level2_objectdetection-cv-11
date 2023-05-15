@@ -1,7 +1,4 @@
 # import wandb
-import datetime
-now = (datetime.datetime.now().replace(microsecond=0) + datetime.timedelta(hours=9)).strftime("%m-%d %H:%M")
-
 checkpoint_config = dict(max_keep_ckpts=1, interval=1)
 
 # yapf:disable
@@ -10,13 +7,17 @@ log_config = dict(
     hooks=[
         dict(type='TextLoggerHook'),
         # dict(type='TensorboardLoggerHook')
-        dict(type='WandbLoggerHook',
+        dict(type='MMDetWandbHook',
              init_kwargs={'project':'augmentation',
                           'entity': 'aivengers_v2',
-                          'name' : 'testing',
+                          'name' : '',
                          },
-         interval=10)]
-        )
+             interval=50,
+             log_checkpoint=True,
+             log_checkpoint_metadata=True,
+             num_eval_images=0,
+             bbox_score_thr=0.3),
+    ])
 # yapf:enable
 custom_hooks = [dict(type='NumClassCheckHook')]
 

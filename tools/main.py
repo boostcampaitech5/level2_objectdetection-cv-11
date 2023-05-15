@@ -21,6 +21,9 @@ from mmcv.runner import load_checkpoint
 from mmcv.parallel import MMDataParallel
 from pandas import DataFrame
 from pycocotools.coco import COCO
+import sys
+
+
 
 parser = argparse.ArgumentParser(description='parser')
 parser.add_argument('--max_epoch', default=20, help='input your max_epoch')
@@ -48,9 +51,9 @@ classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass",
 
 
 def data_config(cfg: Config) -> None:
-    cfg.data.train.classes = classes
-    cfg.data.train.img_prefix = root
-    cfg.data.train.ann_file = root + args.trainset # train json 정보
+    cfg.data.train.dataset.classes = classes
+    cfg.data.train.dataset.img_prefix = root
+    cfg.data.train.dataset.ann_file = root + args.trainset # train json 정보
     cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
 
     cfg.data.val.classes = classes
@@ -99,7 +102,7 @@ def train(cfg,kfold=False):
     model_config(cfg)
     train_config(cfg)
     # build_dataset
-    datasets = [build_dataset(cfg.data.train)]
+    datasets = [build_dataset(cfg.data.train.dataset)]
     # 모델 build 및 pretrained network 불러오기
     model = build_detector(cfg.model)
     model.init_weights()
