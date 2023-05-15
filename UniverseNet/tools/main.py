@@ -67,10 +67,12 @@ def data_config(cfg: Config) -> None:
     cfg.data.test.ann_file = root + 'test.json' # test json 정보
     cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
-    cfg.data.samples_per_gpu = 8
+    # 이거 변경========================================================
+    cfg.data.samples_per_gpu = 16 # 원래 8
+    # =================================================================
     cfg.data.workers_per_gpu = multiprocessing.cpu_count() // 2 # num_workers
     
-
+# 여기 부분 그냥 하드 코딩함
 def model_config(cfg: Config) -> None:
     if "roi_head" in cfg.model.keys():
         if type(cfg.model.roi_head.bbox_head) == dict:
@@ -84,6 +86,7 @@ def model_config(cfg: Config) -> None:
                 else: 
                     raise Exception("Num_classes가 없습니다")
     else:
+        # 이걸로 바꿈
         cfg.model.bbox_head.num_classes = 10
 
 
@@ -126,7 +129,7 @@ def inference(cfg):
     dataset = build_dataset(cfg.data.test)
     data_loader = build_dataloader(
             dataset,
-            samples_per_gpu=1,
+            samples_per_gpu=32,
             workers_per_gpu=cfg.data.workers_per_gpu,
             dist=False,
             shuffle=False)
