@@ -1,23 +1,22 @@
-import wandb
+# import wandb
+import datetime
+now = (datetime.datetime.now().replace(microsecond=0) + datetime.timedelta(hours=9)).strftime("%m-%d %H:%M")
 
-checkpoint_config = dict(interval=1)
+checkpoint_config = dict(max_keep_ckpts=1, interval=1)
+
 # yapf:disable
 log_config = dict(
     interval=50,
     hooks=[
         dict(type='TextLoggerHook'),
         # dict(type='TensorboardLoggerHook')
-        dict(type='MMDetWandbHook',
-             init_kwargs={'project':'trash_detection V1 (model selection)',
-                          'entity': 'aivengers',
-                          'name' : '',
+        dict(type='WandbLoggerHook',
+             init_kwargs={'project':'augmentation',
+                          'entity': 'aivengers_v2',
+                          'name' : 'testing',
                          },
-             interval=50,
-             log_checkpoint=True,
-             log_checkpoint_metadata=True,
-             num_eval_images=0,
-             bbox_score_thr=0.3),
-    ])
+         interval=10)]
+        )
 # yapf:enable
 custom_hooks = [dict(type='NumClassCheckHook')]
 
@@ -37,4 +36,3 @@ mp_start_method = 'fork'
 #       or not by default.
 #   - `base_batch_size` = (8 GPUs) x (2 samples per GPU).
 auto_scale_lr = dict(enable=False, base_batch_size=16)
-
