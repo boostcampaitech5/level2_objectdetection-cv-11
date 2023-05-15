@@ -8,13 +8,13 @@ log_config = dict(
         dict(type='TextLoggerHook'),
         dict(type='MMDetWandbHook',
              init_kwargs={'project':'trash_detection V1 (model selection)',
-                          'entity': 'aivengers',
+                          'entity': 'aivengers_v2',
                           'name' : '',
                          },
              interval=50,
              log_checkpoint=True,
              log_checkpoint_metadata=True,
-             num_eval_images=0,
+             num_eval_images=10, # 원래 0임
              bbox_score_thr=0.3),
 
 ])
