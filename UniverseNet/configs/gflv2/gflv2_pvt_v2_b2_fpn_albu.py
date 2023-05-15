@@ -1,5 +1,5 @@
 _base_ = [
-    '../_base_/datasets/coco_detection_mstrain_480_960.py',
+    '../_base_/datasets/albu_coco_detection.py',
     '../_base_/schedules/schedule_2x.py', '../_base_/default_runtime.py'
 ]
 pretrained_ckpt = 'https://github.com/whai362/PVT/releases/download/v2/pvt_v2_b2.pth'  # noqa
@@ -14,7 +14,6 @@ model = dict(
         start_level=1,
         add_extra_convs='on_output',
         num_outs=5),
-
     bbox_head=dict(
         type='GFLHead',
         num_classes=80,

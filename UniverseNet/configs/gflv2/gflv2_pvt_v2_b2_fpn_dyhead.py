@@ -7,13 +7,29 @@ model = dict(
     type='GFL',
     pretrained=pretrained_ckpt,
     backbone=dict(type='pvt_v2_b2'),
-    neck=dict(
-        type='FPN',
-        in_channels=[64, 128, 320, 512],
-        out_channels=256,
-        start_level=1,
-        add_extra_convs='on_output',
-        num_outs=5),
+    # neck=dict(
+    #     type='FPN',
+    #     in_channels=[64, 128, 320, 512],
+    #     out_channels=256,
+    #     start_level=1,
+    #     add_extra_convs='on_output',
+    #     num_outs=5),
+    neck=[
+        dict(
+            type='FPN',
+            in_channels=[64, 128, 320, 512],
+            out_channels=256,
+            start_level=1,
+            add_extra_convs='on_output',
+            num_outs=5),
+        dict(
+            type='DyHead',
+            in_channels=256,
+            out_channels=256,
+            num_blocks=6,
+            # disable zero_init_offset to follow official implementation
+            zero_init_offset=False)
+    ],
 
     bbox_head=dict(
         type='GFLHead',

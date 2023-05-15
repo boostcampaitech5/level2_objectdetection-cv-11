@@ -2,33 +2,38 @@ _base_ = [
     '../_base_/datasets/coco_detection_mstrain_480_960.py',
     '../_base_/schedules/schedule_2x.py', '../_base_/default_runtime.py'
 ]
-imagenet_pretrained_model = 'https://github.com/SwinTransformer/storage/releases/download/v1.0.0/swin_tiny_patch4_window7_224.pth'  # noqa
+pretrained_ckpt = 'https://github.com/whai362/PVT/releases/download/v2/pvt_v2_b2.pth'  # noqa
 model = dict(
     type='GFL',
-    pretrained=imagenet_pretrained_model,
-    backbone=dict(
-        type='SwinTransformerOriginal',
-        embed_dim=96,
-        depths=[2, 2, 6, 2],
-        num_heads=[3, 6, 12, 24],
-        window_size=7,
-        mlp_ratio=4.,
-        qkv_bias=True,
-        qk_scale=None,
-        drop_rate=0.,
-        attn_drop_rate=0.,
-        drop_path_rate=0.2,
-        ape=False,
-        patch_norm=True,
-        out_indices=(1, 2, 3),
-        use_checkpoint=False),
-    neck=dict(
-        type='FPN',
-        in_channels=[192, 384, 768],
-        out_channels=256,
-        start_level=1,
-        add_extra_convs='on_output',
-        num_outs=5),
+    pretrained=pretrained_ckpt,
+    backbone=dict(type='pvt_v2_b2'),
+    # neck=dict(
+    #     type='FPN',
+    #     in_channels=[64, 128, 320, 512],
+    #     out_channels=256,
+    #     start_level=1,
+    #     add_extra_convs='on_output',
+    #     num_outs=5),
+    neck=[
+        dict(
+            type='FPN',
+            in_channels=[64, 128, 320, 512],
+            out_channels=256,
+            start_level=1,
+            add_extra_convs='on_output',
+            num_outs=5),
+        dict(
+            type='SEPC',
+            out_channels=256,
+            stacked_convs=4,
+            pconv_deform=True,
+            lcconv_deform=True,
+            ibn=True,  # please set imgs/gpu >= 4
+            pnorm_eval=False,
+            lcnorm_eval=False,
+            lcconv_padding=1)
+    ],
+
     bbox_head=dict(
         type='GFLHead',
         num_classes=80,
@@ -44,16 +49,10 @@ model = dict(
         loss_cls=dict(
             type='QualityFocalLoss',
             use_sigmoid=True,
-            activated=True,  # use probability instead of logit as input
             beta=2.0,
             loss_weight=1.0),
         loss_dfl=dict(type='DistributionFocalLoss', loss_weight=0.25),
         reg_max=16,
-        use_dgqp=True,
-        reg_topk=4,
-        reg_channels=64,
-        add_mean=True,
-        one_more_cls_out_channels=False,  # True to load official weights
         loss_bbox=dict(type='GIoULoss', loss_weight=2.0)),
     # training and testing settings
     train_cfg=dict(
@@ -67,5 +66,6 @@ model = dict(
         score_thr=0.05,
         nms=dict(type='nms', iou_threshold=0.6),
         max_per_img=100))
+        
 # optimizer
 optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
