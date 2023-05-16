@@ -8,7 +8,7 @@ _base_ = [
 dataset_type = 'CocoDataset'
 data_root = '/opt/ml/dataset/'
 img_norm_cfg = dict(
-    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
+    mean=[123.6444204, 117.40186995, 110.072382], std=[54.03421695, 53.36949315, 54.784965], to_rgb=True)
 albu_train_transforms = [
     #dict(type='RandomResizedCrop',height=1024,width=1024,scale=[0.2,1.0], ratio=[0.7,1.5],interpolation=1,p=0.5),
     #dict(type='Cutout',num_holes=8, max_h_size=48, max_w_size=48, p=0.5),
@@ -16,9 +16,9 @@ albu_train_transforms = [
     #dict(type='VerticalFlip',p=0.5),
     #dict(type='RandomRotate90',p=0.5),
     #dict(type='HueSaturationValue',p=0.5),
-    dict(type='CLAHE',p=0.5),
+    #dict(type='CLAHE',p=0.5),
     #dict(type='RandomBrightnessContrast',brightness_limit=[-0.2, 0.4],contrast_limit=[-0.5, 0.5],p=0.5),
-    #dict(type='CenterCrop',height=864,width=864,p=0.5),
+    dict(type='CenterCrop',height=1020,width=1020,p=0.5),
     #dict(type='RGBShift',r_shift_limit=10,g_shift_limit=10,b_shift_limit=10,p=0.5),
     #dict(type='JpegCompression', quality_lower=85, quality_upper=95, p=0.5),
     #dict(type='ChannelShuffle', p=0.5),

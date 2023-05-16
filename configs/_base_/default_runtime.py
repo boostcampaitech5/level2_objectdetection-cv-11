@@ -1,15 +1,9 @@
-# import wandb
-import datetime
-now = (datetime.datetime.now().replace(microsecond=0) + datetime.timedelta(hours=9)).strftime("%m-%d %H:%M")
-
 checkpoint_config = dict(max_keep_ckpts=1, interval=1)
-
 # yapf:disable
 log_config = dict(
     interval=50,
     hooks=[
         dict(type='TextLoggerHook'),
-        # dict(type='TensorboardLoggerHook')
         dict(type='WandbLoggerHook',
              init_kwargs={'project':'augmentation',
                           'entity': 'aivengers_v2',
@@ -35,4 +29,4 @@ mp_start_method = 'fork'
 #   - `enable` means enable scaling LR automatically
 #       or not by default.
 #   - `base_batch_size` = (8 GPUs) x (2 samples per GPU).
-auto_scale_lr = dict(enable=False, base_batch_size=16)
+auto_scale_lr = dict(enable=False, base_batch_size=64)
