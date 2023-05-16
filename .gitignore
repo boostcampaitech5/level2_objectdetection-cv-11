@@ -3,6 +3,7 @@
 mmdetection/tools/wandb/
 UniverseNet/tools/wandb/
 work_dirs
+work_dirs_old
 *.out
 
 # train.sh
