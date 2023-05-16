@@ -1,2 +1,18 @@
-python3 main.py --model vfnet_x101_32x4d_fpn_mdconv_c3-c5_mstrain_2x_coco --folder vfnet --resize 512
-python3 main.py --model cascade_rcnn_r50_fpn_1x_coco_swin_L --folder cascade_rcnn --resize 512
+#python3 tools/train.py configs/faster_rcnn/CenterCrop.py 
+#python3 tools/train.py configs/faster_rcnn/no_augment.py 
+python3 tools/train.py configs/faster_rcnn/normalize.py 
+python3 tools/train.py configs/faster_rcnn/ChannelShuffle.py 
+python3 tools/train.py configs/faster_rcnn/CLAHE.py 
+python3 tools/train.py configs/faster_rcnn/Cutout.py 
+python3 tools/train.py configs/faster_rcnn/HorizontalFlip.py 
+python3 tools/train.py configs/faster_rcnn/HueSaturation.py 
+python3 tools/train.py configs/faster_rcnn/MixUp.py 
+python3 tools/train.py configs/faster_rcnn/Mosaic.py 
+python3 tools/train.py configs/faster_rcnn/Mul_Resize.py 
+python3 tools/train.py configs/faster_rcnn/RandomBrightness.py 
+python3 tools/train.py configs/faster_rcnn/RandomResizedCrop.py 
+python3 tools/train.py configs/faster_rcnn/RandomRotate90.py 
+python3 tools/train.py configs/faster_rcnn/JpegCompression.py 
+python3 tools/train.py configs/faster_rcnn/MedianBlur.py 
+python3 tools/train.py configs/faster_rcnn/RGBShift.py 
+python3 tools/train.py configs/faster_rcnn/VerticalFlip.py 
