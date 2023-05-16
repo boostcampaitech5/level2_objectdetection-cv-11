@@ -68,7 +68,7 @@ def data_config(cfg: Config) -> None:
     cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
     # 이거 변경========================================================
-    cfg.data.samples_per_gpu = 16 # 원래 8
+    cfg.data.samples_per_gpu = 2 # 원래 8
     # =================================================================
     cfg.data.workers_per_gpu = multiprocessing.cpu_count() // 2 # num_workers
     
@@ -101,7 +101,7 @@ def train_config(cfg:Config) -> None:
     cfg.work_dir = f'../work_dirs/{model_name}_trash'
     # 아니 이것도 수정하면 안됨?
     cfg.evaluation = dict(save_best='bbox_mAP_50',metric='bbox')
-    cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
+    cfg.checkpoint_config = dict(max_keep_ckpts=1, interval=1)
     # wandb 프로젝트 이름
     cfg.log_config.hooks[1].init_kwargs.name=f"{model_name}+aug={augmentation}"
 
@@ -129,7 +129,7 @@ def inference(cfg):
     dataset = build_dataset(cfg.data.test)
     data_loader = build_dataloader(
             dataset,
-            samples_per_gpu=32,
+            samples_per_gpu=1,
             workers_per_gpu=cfg.data.workers_per_gpu,
             dist=False,
             shuffle=False)
