@@ -1,0 +1,19 @@
+
+2023-05-15 22:02:06,590 - mmdet - INFO - Epoch [1][50/782]	lr: 5.537e-05, eta: 10:02:13, time: 1.286, data_time: 0.072, memory: 29497, loss_cls: 0.8884, loss_bbox: 1.0826, loss: 1.9710
+2023-05-15 22:03:05,894 - mmdet - INFO - Epoch [1][100/782]	lr: 7.166e-05, eta: 9:37:50, time: 1.186, data_time: 0.014, memory: 29497, loss_cls: 0.7398, loss_bbox: 1.0013, loss: 1.7411
+2023-05-15 22:04:05,171 - mmdet - INFO - Epoch [1][150/782]	lr: 9.806e-05, eta: 9:28:58, time: 1.186, data_time: 0.014, memory: 29497, loss_cls: 0.7096, loss_bbox: 0.9576, loss: 1.6671
+2023-05-15 22:05:04,460 - mmdet - INFO - Epoch [1][200/782]	lr: 1.333e-04, eta: 9:24:04, time: 1.186, data_time: 0.013, memory: 29497, loss_cls: 0.6318, loss_bbox: 0.8465, loss: 1.4783
+2023-05-15 22:06:04,362 - mmdet - INFO - Epoch [1][250/782]	lr: 1.755e-04, eta: 9:21:52, time: 1.198, data_time: 0.014, memory: 29497, loss_cls: 0.6204, loss_bbox: 0.7986, loss: 1.4191
+2023-05-15 22:07:03,590 - mmdet - INFO - Epoch [1][300/782]	lr: 2.227e-04, eta: 9:19:01, time: 1.185, data_time: 0.014, memory: 29497, loss_cls: 0.6159, loss_bbox: 0.8096, loss: 1.4255
+Traceback (most recent call last):
+  File "main.py", line 184, in <module>
+    train(cfg)
+  File "main.py", line 119, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.data_batch = data_batch
+KeyboardInterrupt

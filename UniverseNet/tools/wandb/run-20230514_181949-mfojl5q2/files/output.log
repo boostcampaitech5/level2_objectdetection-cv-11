@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "main_3.py", line 183, in <module>
+    train(cfg)
+  File "main_3.py", line 118, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 54, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 317, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 65, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/autograd/__init__.py", line 149, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+KeyboardInterrupt

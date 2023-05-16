@@ -1,0 +1,38 @@
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Current SDK version is 0.15.2
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Configure stats pid to 17405
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Loading settings from /opt/ml/.config/wandb/settings
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Loading settings from /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/settings
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'UniverseNet/tools/main.py', 'program': 'main.py'}
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_init.py:_log_setup():507] Logging user logs to /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230515_223809-kwqhg8l4/logs/debug.log
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_init.py:_log_setup():508] Logging internal logs to /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230515_223809-kwqhg8l4/logs/debug-internal.log
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_init.py:init():547] calling init triggers
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_init.py:init():555] wandb.init called with sweep_config: {}
+config: {}
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_init.py:init():596] starting backend
+2023-05-15 22:38:09,948 INFO    MainThread:17405 [wandb_init.py:init():600] setting up manager
+2023-05-15 22:38:09,953 INFO    MainThread:17405 [backend.py:_multiprocessing_setup():108] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-05-15 22:38:09,958 INFO    MainThread:17405 [wandb_init.py:init():606] backend started and connected
+2023-05-15 22:38:09,963 INFO    MainThread:17405 [wandb_init.py:init():700] updated telemetry
+2023-05-15 22:38:10,058 INFO    MainThread:17405 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-15 22:38:10,523 INFO    MainThread:17405 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-15 22:38:10,567 INFO    MainThread:17405 [wandb_run.py:_on_init():2186] got version response 
+2023-05-15 22:38:10,567 INFO    MainThread:17405 [wandb_init.py:init():787] starting run threads in backend
+2023-05-15 22:38:14,860 WARNING MainThread:17405 [wandb_init.py:init():1172] interrupted
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 1150, in init
+    run = wi.init()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 799, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/opt/conda/envs/project2/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/opt/conda/envs/project2/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

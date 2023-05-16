@@ -1,0 +1,33 @@
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Current SDK version is 0.15.2
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Configure stats pid to 17441
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Loading settings from /opt/ml/.config/wandb/settings
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Loading settings from /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/settings
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-13 11:09:35,184 INFO    MainThread:17441 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'UniverseNet/tools/main.py', 'program': 'main.py'}
+2023-05-13 11:09:35,185 INFO    MainThread:17441 [wandb_init.py:_log_setup():507] Logging user logs to /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230513_110935-bux7zv2y/logs/debug.log
+2023-05-13 11:09:35,185 INFO    MainThread:17441 [wandb_init.py:_log_setup():508] Logging internal logs to /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230513_110935-bux7zv2y/logs/debug-internal.log
+2023-05-13 11:09:35,185 INFO    MainThread:17441 [wandb_init.py:init():547] calling init triggers
+2023-05-13 11:09:35,185 INFO    MainThread:17441 [wandb_init.py:init():555] wandb.init called with sweep_config: {}
+config: {}
+2023-05-13 11:09:35,185 INFO    MainThread:17441 [wandb_init.py:init():596] starting backend
+2023-05-13 11:09:35,185 INFO    MainThread:17441 [wandb_init.py:init():600] setting up manager
+2023-05-13 11:09:35,191 INFO    MainThread:17441 [backend.py:_multiprocessing_setup():108] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-05-13 11:09:35,195 INFO    MainThread:17441 [wandb_init.py:init():606] backend started and connected
+2023-05-13 11:09:35,200 INFO    MainThread:17441 [wandb_init.py:init():700] updated telemetry
+2023-05-13 11:09:35,290 INFO    MainThread:17441 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-13 11:09:35,750 INFO    MainThread:17441 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-13 11:09:35,784 INFO    MainThread:17441 [wandb_run.py:_on_init():2186] got version response 
+2023-05-13 11:09:35,784 INFO    MainThread:17441 [wandb_init.py:init():787] starting run threads in backend
+2023-05-13 11:09:44,474 INFO    MainThread:17441 [wandb_run.py:_console_start():2158] atexit reg
+2023-05-13 11:09:44,474 INFO    MainThread:17441 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-05-13 11:09:44,474 INFO    MainThread:17441 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-05-13 11:09:44,474 INFO    MainThread:17441 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-05-13 11:09:44,475 INFO    MainThread:17441 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-13 19:43:33,150 INFO    MainThread:17441 [wandb_run.py:_finish():1893] finishing run aivengers/trash_detection V1 (model selection)/bux7zv2y
+2023-05-13 19:43:33,150 INFO    MainThread:17441 [wandb_run.py:_atexit_cleanup():2127] got exitcode: 0
+2023-05-13 19:43:33,150 INFO    MainThread:17441 [wandb_run.py:_restore():2110] restore
+2023-05-13 19:43:33,150 INFO    MainThread:17441 [wandb_run.py:_restore():2116] restore done
+2023-05-13 19:44:14,665 INFO    MainThread:17441 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-13 19:44:14,666 INFO    MainThread:17441 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-13 19:44:14,670 INFO    MainThread:17441 [wandb_run.py:_footer_sync_info():3428] logging synced files

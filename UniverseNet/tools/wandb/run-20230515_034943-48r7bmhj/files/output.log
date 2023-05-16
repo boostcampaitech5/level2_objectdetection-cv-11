@@ -1,0 +1,2266 @@
+
+2023-05-15 03:50:55,384 - mmdet - INFO - Epoch [1][50/782]	lr: 9.890e-06, eta: 5:26:21, time: 1.256, data_time: 0.063, memory: 29497, loss_cls: 1.0967, loss_bbox: 1.5579, loss: 2.6546, grad_norm: 12.9922
+2023-05-15 03:51:55,619 - mmdet - INFO - Epoch [1][100/782]	lr: 1.988e-05, eta: 5:18:39, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.9095, loss_bbox: 1.0352, loss: 1.9446, grad_norm: 14.8979
+2023-05-15 03:52:55,695 - mmdet - INFO - Epoch [1][150/782]	lr: 2.987e-05, eta: 5:15:09, time: 1.202, data_time: 0.014, memory: 29497, loss_cls: 0.7531, loss_bbox: 1.0129, loss: 1.7660, grad_norm: 16.7324
+2023-05-15 03:53:55,822 - mmdet - INFO - Epoch [1][200/782]	lr: 3.986e-05, eta: 5:12:57, time: 1.203, data_time: 0.014, memory: 29497, loss_cls: 0.6677, loss_bbox: 0.9118, loss: 1.5795, grad_norm: 15.7366
+2023-05-15 03:54:55,970 - mmdet - INFO - Epoch [1][250/782]	lr: 4.985e-05, eta: 5:11:16, time: 1.203, data_time: 0.013, memory: 29497, loss_cls: 0.6181, loss_bbox: 0.8637, loss: 1.4817, grad_norm: 15.1406
+2023-05-15 03:55:55,876 - mmdet - INFO - Epoch [1][300/782]	lr: 5.984e-05, eta: 5:09:36, time: 1.198, data_time: 0.013, memory: 29497, loss_cls: 0.6006, loss_bbox: 0.8404, loss: 1.4410, grad_norm: 13.8745
+2023-05-15 03:56:56,214 - mmdet - INFO - Epoch [1][350/782]	lr: 6.983e-05, eta: 5:08:26, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.5945, loss_bbox: 0.7800, loss: 1.3745, grad_norm: 12.1613
+2023-05-15 03:57:56,331 - mmdet - INFO - Epoch [1][400/782]	lr: 7.982e-05, eta: 5:07:10, time: 1.202, data_time: 0.013, memory: 29497, loss_cls: 0.6099, loss_bbox: 0.7551, loss: 1.3651, grad_norm: 12.1209
+2023-05-15 03:58:56,322 - mmdet - INFO - Epoch [1][450/782]	lr: 8.981e-05, eta: 5:05:54, time: 1.200, data_time: 0.014, memory: 29497, loss_cls: 0.6101, loss_bbox: 0.7652, loss: 1.3753, grad_norm: 12.6207
+2023-05-15 03:59:56,514 - mmdet - INFO - Epoch [1][500/782]	lr: 9.980e-05, eta: 5:04:46, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.5797, loss_bbox: 0.7103, loss: 1.2900, grad_norm: 11.4100
+2023-05-15 04:00:56,556 - mmdet - INFO - Epoch [1][550/782]	lr: 1.000e-04, eta: 5:03:36, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.5665, loss_bbox: 0.7003, loss: 1.2668, grad_norm: 10.6721
+2023-05-15 04:01:56,632 - mmdet - INFO - Epoch [1][600/782]	lr: 1.000e-04, eta: 5:02:29, time: 1.202, data_time: 0.013, memory: 29497, loss_cls: 0.5454, loss_bbox: 0.6585, loss: 1.2038, grad_norm: 9.5170
+2023-05-15 04:02:56,600 - mmdet - INFO - Epoch [1][650/782]	lr: 1.000e-04, eta: 5:01:20, time: 1.199, data_time: 0.013, memory: 29497, loss_cls: 0.5419, loss_bbox: 0.6911, loss: 1.2330, grad_norm: 11.2981
+2023-05-15 04:03:56,653 - mmdet - INFO - Epoch [1][700/782]	lr: 1.000e-04, eta: 5:00:14, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.5347, loss_bbox: 0.6797, loss: 1.2144, grad_norm: 9.3797
+2023-05-15 04:04:56,713 - mmdet - INFO - Epoch [1][750/782]	lr: 1.000e-04, eta: 4:59:09, time: 1.201, data_time: 0.014, memory: 29497, loss_cls: 0.5134, loss_bbox: 0.5994, loss: 1.1128, grad_norm: 10.2361
+2023-05-15 04:05:35,186 - mmdet - INFO - Saving checkpoint at 1 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0sLoading and preparing results...
+DONE (t=0.32s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 04:07:43,206 - mmdet - INFO - Evaluating bbox...
+DONE (t=7.04s).
+Accumulating evaluation results...
+DONE (t=2.80s).
+2023-05-15 04:07:54,064 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.038
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.083
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.030
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.008
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.047
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.268
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.268
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.268
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.003
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.066
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.320
+2023-05-15 04:07:55,226 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_1.pth.
+2023-05-15 04:07:55,228 - mmdet - INFO - Best bbox_mAP_50 is 0.0830 at 1 epoch.
+2023-05-15 04:07:55,229 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 04:07:55,230 - mmdet - INFO - Epoch(val) [1][977]	bbox_mAP: 0.0380, bbox_mAP_50: 0.0830, bbox_mAP_75: 0.0300, bbox_mAP_s: 0.0010, bbox_mAP_m: 0.0080, bbox_mAP_l: 0.0470, bbox_mAP_copypaste: 0.038 0.083 0.030 0.001 0.008 0.047
+Loading and preparing results...
+DONE (t=0.31s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=7.02s).
+Accumulating evaluation results...
+DONE (t=2.77s).
+2023-05-15 04:09:14,739 - mmdet - INFO - Epoch [2][50/782]	lr: 1.000e-04, eta: 4:46:54, time: 1.262, data_time: 0.065, memory: 29497, loss_cls: 0.5015, loss_bbox: 0.6268, loss: 1.1283, grad_norm: 10.2438
+2023-05-15 04:10:14,966 - mmdet - INFO - Epoch [2][100/782]	lr: 1.000e-04, eta: 4:46:31, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.5115, loss_bbox: 0.5871, loss: 1.0986, grad_norm: 9.2173
+2023-05-15 04:11:15,026 - mmdet - INFO - Epoch [2][150/782]	lr: 1.000e-04, eta: 4:46:02, time: 1.201, data_time: 0.014, memory: 29497, loss_cls: 0.4933, loss_bbox: 0.5988, loss: 1.0921, grad_norm: 9.8223
+2023-05-15 04:12:15,240 - mmdet - INFO - Epoch [2][200/782]	lr: 1.000e-04, eta: 4:45:31, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.4988, loss_bbox: 0.5689, loss: 1.0676, grad_norm: 9.6358
+2023-05-15 04:13:15,367 - mmdet - INFO - Epoch [2][250/782]	lr: 1.000e-04, eta: 4:44:57, time: 1.203, data_time: 0.014, memory: 29497, loss_cls: 0.5024, loss_bbox: 0.5727, loss: 1.0751, grad_norm: 8.3949
+2023-05-15 04:14:15,326 - mmdet - INFO - Epoch [2][300/782]	lr: 1.000e-04, eta: 4:44:18, time: 1.199, data_time: 0.014, memory: 29497, loss_cls: 0.4911, loss_bbox: 0.5738, loss: 1.0649, grad_norm: 9.3509
+2023-05-15 04:15:15,432 - mmdet - INFO - Epoch [2][350/782]	lr: 1.000e-04, eta: 4:43:38, time: 1.202, data_time: 0.013, memory: 29497, loss_cls: 0.4972, loss_bbox: 0.5549, loss: 1.0521, grad_norm: 9.6507
+2023-05-15 04:16:15,491 - mmdet - INFO - Epoch [2][400/782]	lr: 1.000e-04, eta: 4:42:57, time: 1.201, data_time: 0.014, memory: 29497, loss_cls: 0.4930, loss_bbox: 0.5602, loss: 1.0531, grad_norm: 8.8798
+2023-05-15 04:17:15,559 - mmdet - INFO - Epoch [2][450/782]	lr: 1.000e-04, eta: 4:42:14, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4838, loss_bbox: 0.5584, loss: 1.0421, grad_norm: 8.7077
+2023-05-15 04:18:15,577 - mmdet - INFO - Epoch [2][500/782]	lr: 1.000e-04, eta: 4:41:29, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.4831, loss_bbox: 0.5679, loss: 1.0509, grad_norm: 8.0163
+2023-05-15 04:19:15,635 - mmdet - INFO - Epoch [2][550/782]	lr: 1.000e-04, eta: 4:40:44, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4726, loss_bbox: 0.5270, loss: 0.9996, grad_norm: 8.7955
+2023-05-15 04:20:15,661 - mmdet - INFO - Epoch [2][600/782]	lr: 1.000e-04, eta: 4:39:57, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4663, loss_bbox: 0.5545, loss: 1.0208, grad_norm: 11.3468
+2023-05-15 04:21:15,725 - mmdet - INFO - Epoch [2][650/782]	lr: 1.000e-04, eta: 4:39:10, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4575, loss_bbox: 0.5353, loss: 0.9928, grad_norm: 8.7589
+2023-05-15 04:22:15,760 - mmdet - INFO - Epoch [2][700/782]	lr: 1.000e-04, eta: 4:38:21, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4516, loss_bbox: 0.5469, loss: 0.9985, grad_norm: 8.3513
+2023-05-15 04:23:15,770 - mmdet - INFO - Epoch [2][750/782]	lr: 1.000e-04, eta: 4:37:31, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.4664, loss_bbox: 0.5406, loss: 1.0070, grad_norm: 8.0871
+[                                                  ] 0/977, elapsed: 0s, ETA:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.49s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=7.61s).
+Accumulating evaluation results...
+DONE (t=2.61s).
+2023-05-15 04:26:12,125 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.110
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.186
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.112
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.134
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.429
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.429
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.429
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.004
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.097
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.502
+2023-05-15 04:26:12,317 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_1.pth was removed
+2023-05-15 04:26:13,325 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_2.pth.
+2023-05-15 04:26:13,325 - mmdet - INFO - Best bbox_mAP_50 is 0.1860 at 2 epoch.
+2023-05-15 04:26:13,326 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 04:26:13,326 - mmdet - INFO - Epoch(val) [2][977]	bbox_mAP: 0.1100, bbox_mAP_50: 0.1860, bbox_mAP_75: 0.1120, bbox_mAP_s: 0.0010, bbox_mAP_m: 0.0220, bbox_mAP_l: 0.1340, bbox_mAP_copypaste: 0.110 0.186 0.112 0.001 0.022 0.134
+Loading and preparing results...
+DONE (t=0.31s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=7.59s).
+Accumulating evaluation results...
+DONE (t=2.61s).
+2023-05-15 04:27:32,708 - mmdet - INFO - Epoch [3][50/782]	lr: 1.000e-04, eta: 4:31:00, time: 1.257, data_time: 0.065, memory: 29497, loss_cls: 0.4437, loss_bbox: 0.4828, loss: 0.9266, grad_norm: 7.7407
+2023-05-15 04:28:32,718 - mmdet - INFO - Epoch [3][100/782]	lr: 1.000e-04, eta: 4:30:19, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.4368, loss_bbox: 0.5006, loss: 0.9374, grad_norm: 8.0663
+2023-05-15 04:29:32,748 - mmdet - INFO - Epoch [3][150/782]	lr: 1.000e-04, eta: 4:29:37, time: 1.201, data_time: 0.012, memory: 29497, loss_cls: 0.4264, loss_bbox: 0.5083, loss: 0.9348, grad_norm: 7.8465
+2023-05-15 04:30:32,804 - mmdet - INFO - Epoch [3][200/782]	lr: 1.000e-04, eta: 4:28:55, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4182, loss_bbox: 0.4817, loss: 0.8999, grad_norm: 7.3238
+2023-05-15 04:31:32,948 - mmdet - INFO - Epoch [3][250/782]	lr: 1.000e-04, eta: 4:28:12, time: 1.203, data_time: 0.013, memory: 29497, loss_cls: 0.4459, loss_bbox: 0.4767, loss: 0.9226, grad_norm: 8.0357
+2023-05-15 04:32:32,987 - mmdet - INFO - Epoch [3][300/782]	lr: 1.000e-04, eta: 4:27:27, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4461, loss_bbox: 0.4999, loss: 0.9461, grad_norm: 7.0498
+2023-05-15 04:33:33,000 - mmdet - INFO - Epoch [3][350/782]	lr: 1.000e-04, eta: 4:26:42, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.4269, loss_bbox: 0.4958, loss: 0.9227, grad_norm: 7.8555
+2023-05-15 04:34:33,026 - mmdet - INFO - Epoch [3][400/782]	lr: 1.000e-04, eta: 4:25:55, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4231, loss_bbox: 0.4845, loss: 0.9076, grad_norm: 8.1417
+2023-05-15 04:35:33,086 - mmdet - INFO - Epoch [3][450/782]	lr: 1.000e-04, eta: 4:25:09, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4278, loss_bbox: 0.5089, loss: 0.9368, grad_norm: 7.1614
+2023-05-15 04:36:33,161 - mmdet - INFO - Epoch [3][500/782]	lr: 1.000e-04, eta: 4:24:22, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4129, loss_bbox: 0.4665, loss: 0.8793, grad_norm: 7.8430
+2023-05-15 04:37:33,178 - mmdet - INFO - Epoch [3][550/782]	lr: 1.000e-04, eta: 4:23:33, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.4200, loss_bbox: 0.5003, loss: 0.9203, grad_norm: 7.1705
+2023-05-15 04:38:33,373 - mmdet - INFO - Epoch [3][600/782]	lr: 1.000e-04, eta: 4:22:46, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.4092, loss_bbox: 0.4597, loss: 0.8688, grad_norm: 8.3233
+2023-05-15 04:39:33,445 - mmdet - INFO - Epoch [3][650/782]	lr: 1.000e-04, eta: 4:21:57, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.4262, loss_bbox: 0.5043, loss: 0.9305, grad_norm: 7.4109
+2023-05-15 04:40:33,457 - mmdet - INFO - Epoch [3][700/782]	lr: 1.000e-04, eta: 4:21:07, time: 1.200, data_time: 0.014, memory: 29497, loss_cls: 0.4045, loss_bbox: 0.4840, loss: 0.8884, grad_norm: 6.6521
+2023-05-15 04:41:33,463 - mmdet - INFO - Epoch [3][750/782]	lr: 1.000e-04, eta: 4:20:17, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.4149, loss_bbox: 0.5129, loss: 0.9278, grad_norm: 7.2736
+2023-05-15 04:42:12,004 - mmdet - INFO - Saving checkpoint at 3 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.27s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.99s).
+Accumulating evaluation results...
+2023-05-15 04:44:28,514 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.161
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.282
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.160
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.006
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.037
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.193
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.459
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.459
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.459
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.014
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.155
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.526
+2023-05-15 04:44:28,697 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_2.pth was removed
+DONE (t=2.28s).
+2023-05-15 04:44:29,696 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_3.pth.
+2023-05-15 04:44:29,696 - mmdet - INFO - Best bbox_mAP_50 is 0.2820 at 3 epoch.
+2023-05-15 04:44:29,697 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 04:44:29,697 - mmdet - INFO - Epoch(val) [3][977]	bbox_mAP: 0.1610, bbox_mAP_50: 0.2820, bbox_mAP_75: 0.1600, bbox_mAP_s: 0.0060, bbox_mAP_m: 0.0370, bbox_mAP_l: 0.1930, bbox_mAP_copypaste: 0.161 0.282 0.160 0.006 0.037 0.193
+Loading and preparing results...
+DONE (t=0.29s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.99s).
+Accumulating evaluation results...
+DONE (t=2.34s).
+2023-05-15 04:45:48,215 - mmdet - INFO - Epoch [4][50/782]	lr: 1.000e-04, eta: 4:15:37, time: 1.259, data_time: 0.066, memory: 29497, loss_cls: 0.3910, loss_bbox: 0.4155, loss: 0.8066, grad_norm: 6.9754
+2023-05-15 04:46:48,344 - mmdet - INFO - Epoch [4][100/782]	lr: 1.000e-04, eta: 4:14:52, time: 1.203, data_time: 0.013, memory: 29497, loss_cls: 0.3837, loss_bbox: 0.4697, loss: 0.8534, grad_norm: 6.7094
+2023-05-15 04:47:48,371 - mmdet - INFO - Epoch [4][150/782]	lr: 1.000e-04, eta: 4:14:05, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.3809, loss_bbox: 0.4644, loss: 0.8453, grad_norm: 7.5198
+2023-05-15 04:48:48,437 - mmdet - INFO - Epoch [4][200/782]	lr: 1.000e-04, eta: 4:13:17, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.3902, loss_bbox: 0.4609, loss: 0.8511, grad_norm: 7.7254
+2023-05-15 04:49:48,654 - mmdet - INFO - Epoch [4][250/782]	lr: 1.000e-04, eta: 4:12:30, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.3871, loss_bbox: 0.4626, loss: 0.8498, grad_norm: 6.5565
+2023-05-15 04:50:48,709 - mmdet - INFO - Epoch [4][300/782]	lr: 1.000e-04, eta: 4:11:42, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.3893, loss_bbox: 0.4385, loss: 0.8278, grad_norm: 6.3617
+2023-05-15 04:51:48,719 - mmdet - INFO - Epoch [4][350/782]	lr: 1.000e-04, eta: 4:10:53, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.3865, loss_bbox: 0.4296, loss: 0.8162, grad_norm: 6.8558
+2023-05-15 04:52:48,775 - mmdet - INFO - Epoch [4][400/782]	lr: 1.000e-04, eta: 4:10:04, time: 1.201, data_time: 0.013, memory: 29497, loss_cls: 0.3913, loss_bbox: 0.4423, loss: 0.8336, grad_norm: 6.2939
+2023-05-15 04:53:48,777 - mmdet - INFO - Epoch [4][450/782]	lr: 1.000e-04, eta: 4:09:14, time: 1.200, data_time: 0.012, memory: 29497, loss_cls: 0.3773, loss_bbox: 0.4221, loss: 0.7994, grad_norm: 7.1117
+2023-05-15 04:54:49,085 - mmdet - INFO - Epoch [4][500/782]	lr: 1.000e-04, eta: 4:08:25, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3731, loss_bbox: 0.4258, loss: 0.7988, grad_norm: 6.8107
+2023-05-15 04:55:49,364 - mmdet - INFO - Epoch [4][550/782]	lr: 1.000e-04, eta: 4:07:36, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3831, loss_bbox: 0.4631, loss: 0.8462, grad_norm: 6.4435
+2023-05-15 04:56:49,281 - mmdet - INFO - Epoch [4][600/782]	lr: 1.000e-04, eta: 4:06:44, time: 1.198, data_time: 0.013, memory: 29497, loss_cls: 0.4004, loss_bbox: 0.4581, loss: 0.8585, grad_norm: 6.8344
+2023-05-15 04:57:49,067 - mmdet - INFO - Epoch [4][650/782]	lr: 1.000e-04, eta: 4:05:52, time: 1.196, data_time: 0.013, memory: 29497, loss_cls: 0.3759, loss_bbox: 0.4200, loss: 0.7959, grad_norm: 7.5922
+2023-05-15 04:58:49,084 - mmdet - INFO - Epoch [4][700/782]	lr: 1.000e-04, eta: 4:05:01, time: 1.200, data_time: 0.013, memory: 29497, loss_cls: 0.3994, loss_bbox: 0.4419, loss: 0.8413, grad_norm: 6.8558
+2023-05-15 04:59:49,341 - mmdet - INFO - Epoch [4][750/782]	lr: 1.000e-04, eta: 4:04:10, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.3805, loss_bbox: 0.4281, loss: 0.8086, grad_norm: 7.1631
+2023-05-15 05:00:28,083 - mmdet - INFO - Saving checkpoint at 4 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.30s)
+creating index...
+2023-05-15 05:02:35,025 - mmdet - INFO - Evaluating bbox...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=7.30s).
+Accumulating evaluation results...
+DONE (t=2.59s).
+2023-05-15 05:02:45,752 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.216
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.345
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.222
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.029
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.046
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.257
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.047
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.206
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.595
+2023-05-15 05:02:45,950 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_3.pth was removed
+2023-05-15 05:02:46,961 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_4.pth.
+2023-05-15 05:02:46,962 - mmdet - INFO - Best bbox_mAP_50 is 0.3450 at 4 epoch.
+2023-05-15 05:02:46,962 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 05:02:46,963 - mmdet - INFO - Epoch(val) [4][977]	bbox_mAP: 0.2160, bbox_mAP_50: 0.3450, bbox_mAP_75: 0.2220, bbox_mAP_s: 0.0290, bbox_mAP_m: 0.0460, bbox_mAP_l: 0.2570, bbox_mAP_copypaste: 0.216 0.345 0.222 0.029 0.046 0.257
+Loading and preparing results...
+DONE (t=0.30s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=7.23s).
+Accumulating evaluation results...
+DONE (t=2.58s).
+2023-05-15 05:04:06,713 - mmdet - INFO - Epoch [5][50/782]	lr: 1.000e-04, eta: 4:00:27, time: 1.267, data_time: 0.066, memory: 29497, loss_cls: 0.5187, loss_bbox: 0.3300, loss: 0.8487, grad_norm: 8.5599
+2023-05-15 05:05:07,264 - mmdet - INFO - Epoch [5][100/782]	lr: 1.000e-04, eta: 3:59:40, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.4996, loss_bbox: 0.3061, loss: 0.8057, grad_norm: 7.9684
+2023-05-15 05:06:07,674 - mmdet - INFO - Epoch [5][150/782]	lr: 1.000e-04, eta: 3:58:51, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.4618, loss_bbox: 0.3081, loss: 0.7699, grad_norm: 7.7153
+2023-05-15 05:07:08,132 - mmdet - INFO - Epoch [5][200/782]	lr: 1.000e-04, eta: 3:58:02, time: 1.209, data_time: 0.013, memory: 29497, loss_cls: 0.5232, loss_bbox: 0.3325, loss: 0.8557, grad_norm: 7.3309
+2023-05-15 05:08:08,390 - mmdet - INFO - Epoch [5][250/782]	lr: 1.000e-04, eta: 3:57:12, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.4767, loss_bbox: 0.3137, loss: 0.7904, grad_norm: 7.4165
+2023-05-15 05:09:08,747 - mmdet - INFO - Epoch [5][300/782]	lr: 1.000e-04, eta: 3:56:23, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.4929, loss_bbox: 0.3043, loss: 0.7972, grad_norm: 8.6151
+2023-05-15 05:10:09,276 - mmdet - INFO - Epoch [5][350/782]	lr: 1.000e-04, eta: 3:55:33, time: 1.211, data_time: 0.013, memory: 29497, loss_cls: 0.4742, loss_bbox: 0.3299, loss: 0.8041, grad_norm: 6.5656
+2023-05-15 05:11:09,501 - mmdet - INFO - Epoch [5][400/782]	lr: 1.000e-04, eta: 3:54:42, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.4788, loss_bbox: 0.3190, loss: 0.7978, grad_norm: 7.3126
+2023-05-15 05:12:09,828 - mmdet - INFO - Epoch [5][450/782]	lr: 1.000e-04, eta: 3:53:52, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4847, loss_bbox: 0.3142, loss: 0.7989, grad_norm: 7.1958
+2023-05-15 05:13:10,184 - mmdet - INFO - Epoch [5][500/782]	lr: 1.000e-04, eta: 3:53:01, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.4572, loss_bbox: 0.3235, loss: 0.7807, grad_norm: 7.1305
+2023-05-15 05:14:10,486 - mmdet - INFO - Epoch [5][550/782]	lr: 1.000e-04, eta: 3:52:09, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.4697, loss_bbox: 0.3154, loss: 0.7850, grad_norm: 8.0413
+2023-05-15 05:15:10,831 - mmdet - INFO - Epoch [5][600/782]	lr: 1.000e-04, eta: 3:51:18, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4602, loss_bbox: 0.3016, loss: 0.7618, grad_norm: 7.3812
+2023-05-15 05:16:11,133 - mmdet - INFO - Epoch [5][650/782]	lr: 1.000e-04, eta: 3:50:26, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.4757, loss_bbox: 0.3210, loss: 0.7967, grad_norm: 7.2354
+2023-05-15 05:17:11,380 - mmdet - INFO - Epoch [5][700/782]	lr: 1.000e-04, eta: 3:49:34, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.4582, loss_bbox: 0.3096, loss: 0.7678, grad_norm: 7.0262
+2023-05-15 05:18:11,642 - mmdet - INFO - Epoch [5][750/782]	lr: 1.000e-04, eta: 3:48:41, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.4738, loss_bbox: 0.3187, loss: 0.7925, grad_norm: 6.9558
+2023-05-15 05:18:50,371 - mmdet - INFO - Saving checkpoint at 5 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0sLoading and preparing results...
+DONE (t=0.27s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 05:20:57,654 - mmdet - INFO - Evaluating bbox...
+DONE (t=6.73s).
+Accumulating evaluation results...
+2023-05-15 05:21:07,292 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.263
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.376
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.281
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.027
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.047
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.313
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.545
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.039
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.231
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.611
+DONE (t=2.17s).
+2023-05-15 05:21:07,468 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_4.pth was removed
+2023-05-15 05:21:08,475 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_5.pth.
+2023-05-15 05:21:08,475 - mmdet - INFO - Best bbox_mAP_50 is 0.3760 at 5 epoch.
+2023-05-15 05:21:08,476 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 05:21:08,476 - mmdet - INFO - Epoch(val) [5][977]	bbox_mAP: 0.2630, bbox_mAP_50: 0.3760, bbox_mAP_75: 0.2810, bbox_mAP_s: 0.0270, bbox_mAP_m: 0.0470, bbox_mAP_l: 0.3130, bbox_mAP_copypaste: 0.263 0.376 0.281 0.027 0.047 0.313
+Loading and preparing results...
+DONE (t=0.46s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.63s).
+Accumulating evaluation results...
+DONE (t=2.53s).
+2023-05-15 05:22:27,114 - mmdet - INFO - Epoch [6][50/782]	lr: 1.000e-04, eta: 3:45:31, time: 1.268, data_time: 0.066, memory: 29497, loss_cls: 0.3943, loss_bbox: 0.2860, loss: 0.6803, grad_norm: 7.3034
+2023-05-15 05:23:27,526 - mmdet - INFO - Epoch [6][100/782]	lr: 1.000e-04, eta: 3:44:40, time: 1.208, data_time: 0.013, memory: 29497, loss_cls: 0.4032, loss_bbox: 0.3046, loss: 0.7078, grad_norm: 6.7706
+2023-05-15 05:24:27,760 - mmdet - INFO - Epoch [6][150/782]	lr: 1.000e-04, eta: 3:43:49, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.4002, loss_bbox: 0.3050, loss: 0.7052, grad_norm: 6.8123
+2023-05-15 05:25:28,019 - mmdet - INFO - Epoch [6][200/782]	lr: 1.000e-04, eta: 3:42:57, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.4290, loss_bbox: 0.2926, loss: 0.7216, grad_norm: 7.5871
+2023-05-15 05:26:28,438 - mmdet - INFO - Epoch [6][250/782]	lr: 1.000e-04, eta: 3:42:06, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.4203, loss_bbox: 0.3067, loss: 0.7271, grad_norm: 6.6772
+2023-05-15 05:27:28,801 - mmdet - INFO - Epoch [6][300/782]	lr: 1.000e-04, eta: 3:41:14, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4388, loss_bbox: 0.2946, loss: 0.7335, grad_norm: 7.1514
+2023-05-15 05:28:29,060 - mmdet - INFO - Epoch [6][350/782]	lr: 1.000e-04, eta: 3:40:22, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.4112, loss_bbox: 0.2839, loss: 0.6951, grad_norm: 7.1768
+2023-05-15 05:29:29,400 - mmdet - INFO - Epoch [6][400/782]	lr: 1.000e-04, eta: 3:39:29, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4346, loss_bbox: 0.3116, loss: 0.7462, grad_norm: 6.7909
+2023-05-15 05:30:29,917 - mmdet - INFO - Epoch [6][450/782]	lr: 1.000e-04, eta: 3:38:38, time: 1.210, data_time: 0.013, memory: 29497, loss_cls: 0.3971, loss_bbox: 0.2946, loss: 0.6917, grad_norm: 6.7146
+2023-05-15 05:31:30,161 - mmdet - INFO - Epoch [6][500/782]	lr: 1.000e-04, eta: 3:37:45, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.3994, loss_bbox: 0.2996, loss: 0.6990, grad_norm: 7.4527
+2023-05-15 05:32:30,529 - mmdet - INFO - Epoch [6][550/782]	lr: 1.000e-04, eta: 3:36:52, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4463, loss_bbox: 0.2873, loss: 0.7336, grad_norm: 8.2910
+2023-05-15 05:33:30,992 - mmdet - INFO - Epoch [6][600/782]	lr: 1.000e-04, eta: 3:35:59, time: 1.209, data_time: 0.013, memory: 29497, loss_cls: 0.4060, loss_bbox: 0.2993, loss: 0.7053, grad_norm: 6.4361
+2023-05-15 05:34:31,627 - mmdet - INFO - Epoch [6][650/782]	lr: 1.000e-04, eta: 3:35:07, time: 1.213, data_time: 0.014, memory: 29497, loss_cls: 0.4453, loss_bbox: 0.3026, loss: 0.7478, grad_norm: 6.8458
+2023-05-15 05:35:32,205 - mmdet - INFO - Epoch [6][700/782]	lr: 1.000e-04, eta: 3:34:14, time: 1.212, data_time: 0.016, memory: 29497, loss_cls: 0.3878, loss_bbox: 0.2884, loss: 0.6763, grad_norm: 6.7997
+2023-05-15 05:36:32,614 - mmdet - INFO - Epoch [6][750/782]	lr: 1.000e-04, eta: 3:33:21, time: 1.208, data_time: 0.013, memory: 29497, loss_cls: 0.4187, loss_bbox: 0.3017, loss: 0.7204, grad_norm: 6.4378
+2023-05-15 05:37:11,234 - mmdet - INFO - Saving checkpoint at 6 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.27s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.61s).
+Accumulating evaluation results...
+DONE (t=2.06s).
+2023-05-15 05:39:27,404 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.283
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.417
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.305
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.010
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.055
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.337
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.556
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.021
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.234
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.622
+2023-05-15 05:39:27,583 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_5.pth was removed
+2023-05-15 05:39:28,599 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_6.pth.
+2023-05-15 05:39:28,599 - mmdet - INFO - Best bbox_mAP_50 is 0.4170 at 6 epoch.
+2023-05-15 05:39:28,600 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 05:39:28,600 - mmdet - INFO - Epoch(val) [6][977]	bbox_mAP: 0.2830, bbox_mAP_50: 0.4170, bbox_mAP_75: 0.3050, bbox_mAP_s: 0.0100, bbox_mAP_m: 0.0550, bbox_mAP_l: 0.3370, bbox_mAP_copypaste: 0.283 0.417 0.305 0.010 0.055 0.337
+Loading and preparing results...
+DONE (t=0.26s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.52s).
+Accumulating evaluation results...
+DONE (t=2.07s).
+2023-05-15 05:40:46,602 - mmdet - INFO - Epoch [7][50/782]	lr: 1.000e-04, eta: 3:30:32, time: 1.272, data_time: 0.065, memory: 29497, loss_cls: 0.3825, loss_bbox: 0.2785, loss: 0.6610, grad_norm: 7.2385
+2023-05-15 05:41:46,977 - mmdet - INFO - Epoch [7][100/782]	lr: 1.000e-04, eta: 3:29:40, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.3512, loss_bbox: 0.2769, loss: 0.6281, grad_norm: 6.2020
+2023-05-15 05:42:47,280 - mmdet - INFO - Epoch [7][150/782]	lr: 1.000e-04, eta: 3:28:47, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.4043, loss_bbox: 0.2813, loss: 0.6857, grad_norm: 7.2159
+2023-05-15 05:43:47,602 - mmdet - INFO - Epoch [7][200/782]	lr: 1.000e-04, eta: 3:27:54, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3958, loss_bbox: 0.3015, loss: 0.6974, grad_norm: 6.5620
+2023-05-15 05:44:48,029 - mmdet - INFO - Epoch [7][250/782]	lr: 1.000e-04, eta: 3:27:01, time: 1.209, data_time: 0.013, memory: 29497, loss_cls: 0.3854, loss_bbox: 0.2762, loss: 0.6616, grad_norm: 7.1323
+2023-05-15 05:45:48,397 - mmdet - INFO - Epoch [7][300/782]	lr: 1.000e-04, eta: 3:26:08, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.3628, loss_bbox: 0.2875, loss: 0.6503, grad_norm: 6.8938
+2023-05-15 05:46:48,930 - mmdet - INFO - Epoch [7][350/782]	lr: 1.000e-04, eta: 3:25:15, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.3776, loss_bbox: 0.2822, loss: 0.6599, grad_norm: 6.9777
+2023-05-15 05:47:49,272 - mmdet - INFO - Epoch [7][400/782]	lr: 1.000e-04, eta: 3:24:21, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4135, loss_bbox: 0.2663, loss: 0.6798, grad_norm: 7.1529
+2023-05-15 05:48:49,559 - mmdet - INFO - Epoch [7][450/782]	lr: 1.000e-04, eta: 3:23:28, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3829, loss_bbox: 0.2750, loss: 0.6579, grad_norm: 6.7693
+2023-05-15 05:49:49,774 - mmdet - INFO - Epoch [7][500/782]	lr: 1.000e-04, eta: 3:22:34, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.3975, loss_bbox: 0.2728, loss: 0.6703, grad_norm: 7.0483
+2023-05-15 05:50:50,106 - mmdet - INFO - Epoch [7][550/782]	lr: 1.000e-04, eta: 3:21:40, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.3958, loss_bbox: 0.2982, loss: 0.6940, grad_norm: 6.3418
+2023-05-15 05:51:50,410 - mmdet - INFO - Epoch [7][600/782]	lr: 1.000e-04, eta: 3:20:46, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3770, loss_bbox: 0.2777, loss: 0.6547, grad_norm: 6.6010
+2023-05-15 05:52:50,752 - mmdet - INFO - Epoch [7][650/782]	lr: 1.000e-04, eta: 3:19:52, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.3758, loss_bbox: 0.2731, loss: 0.6489, grad_norm: 6.7759
+2023-05-15 05:53:51,095 - mmdet - INFO - Epoch [7][700/782]	lr: 1.000e-04, eta: 3:18:58, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.4103, loss_bbox: 0.2862, loss: 0.6965, grad_norm: 6.6006
+2023-05-15 05:54:51,529 - mmdet - INFO - Epoch [7][750/782]	lr: 1.000e-04, eta: 3:18:03, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.3788, loss_bbox: 0.2798, loss: 0.6586, grad_norm: 7.1018
+2023-05-15 05:55:30,242 - mmdet - INFO - Saving checkpoint at 7 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.26s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 05:57:36,455 - mmdet - INFO - Evaluating bbox...
+DONE (t=6.60s).
+Accumulating evaluation results...
+2023-05-15 05:57:45,769 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.315
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.454
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.341
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.045
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.062
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.374
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.570
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.126
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.242
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.638
+2023-05-15 05:57:45,958 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_6.pth was removed
+DONE (t=2.02s).
+2023-05-15 05:57:46,991 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_7.pth.
+2023-05-15 05:57:46,992 - mmdet - INFO - Best bbox_mAP_50 is 0.4540 at 7 epoch.
+2023-05-15 05:57:46,992 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 05:57:46,993 - mmdet - INFO - Epoch(val) [7][977]	bbox_mAP: 0.3150, bbox_mAP_50: 0.4540, bbox_mAP_75: 0.3410, bbox_mAP_s: 0.0450, bbox_mAP_m: 0.0620, bbox_mAP_l: 0.3740, bbox_mAP_copypaste: 0.315 0.454 0.341 0.045 0.062 0.374
+Loading and preparing results...
+DONE (t=0.28s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.59s).
+Accumulating evaluation results...
+DONE (t=2.02s).
+2023-05-15 05:59:04,877 - mmdet - INFO - Epoch [8][50/782]	lr: 1.000e-04, eta: 3:15:29, time: 1.266, data_time: 0.065, memory: 29497, loss_cls: 0.3011, loss_bbox: 0.2671, loss: 0.5682, grad_norm: 6.4730
+2023-05-15 06:00:05,188 - mmdet - INFO - Epoch [8][100/782]	lr: 1.000e-04, eta: 3:14:35, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3357, loss_bbox: 0.2610, loss: 0.5967, grad_norm: 6.6852
+2023-05-15 06:01:05,508 - mmdet - INFO - Epoch [8][150/782]	lr: 1.000e-04, eta: 3:13:41, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3377, loss_bbox: 0.2615, loss: 0.5992, grad_norm: 6.8718
+2023-05-15 06:02:05,734 - mmdet - INFO - Epoch [8][200/782]	lr: 1.000e-04, eta: 3:12:47, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.3436, loss_bbox: 0.2522, loss: 0.5957, grad_norm: 6.6267
+2023-05-15 06:03:06,351 - mmdet - INFO - Epoch [8][250/782]	lr: 1.000e-04, eta: 3:11:54, time: 1.212, data_time: 0.014, memory: 29497, loss_cls: 0.3301, loss_bbox: 0.2651, loss: 0.5953, grad_norm: 6.4036
+2023-05-15 06:04:06,627 - mmdet - INFO - Epoch [8][300/782]	lr: 1.000e-04, eta: 3:10:59, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.3567, loss_bbox: 0.2769, loss: 0.6336, grad_norm: 7.2785
+2023-05-15 06:05:06,793 - mmdet - INFO - Epoch [8][350/782]	lr: 1.000e-04, eta: 3:10:05, time: 1.203, data_time: 0.014, memory: 29497, loss_cls: 0.3600, loss_bbox: 0.2661, loss: 0.6261, grad_norm: 6.5543
+2023-05-15 06:06:07,175 - mmdet - INFO - Epoch [8][400/782]	lr: 1.000e-04, eta: 3:09:10, time: 1.208, data_time: 0.015, memory: 29497, loss_cls: 0.3555, loss_bbox: 0.2658, loss: 0.6214, grad_norm: 6.2294
+2023-05-15 06:07:07,373 - mmdet - INFO - Epoch [8][450/782]	lr: 1.000e-04, eta: 3:08:16, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.3209, loss_bbox: 0.2523, loss: 0.5732, grad_norm: 6.4875
+2023-05-15 06:08:07,573 - mmdet - INFO - Epoch [8][500/782]	lr: 1.000e-04, eta: 3:07:21, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.3490, loss_bbox: 0.2788, loss: 0.6278, grad_norm: 6.3675
+2023-05-15 06:09:07,902 - mmdet - INFO - Epoch [8][550/782]	lr: 1.000e-04, eta: 3:06:26, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.3436, loss_bbox: 0.2704, loss: 0.6139, grad_norm: 6.3812
+2023-05-15 06:10:08,419 - mmdet - INFO - Epoch [8][600/782]	lr: 1.000e-04, eta: 3:05:32, time: 1.210, data_time: 0.013, memory: 29497, loss_cls: 0.3298, loss_bbox: 0.2533, loss: 0.5831, grad_norm: 6.6638
+2023-05-15 06:11:08,744 - mmdet - INFO - Epoch [8][650/782]	lr: 1.000e-04, eta: 3:04:37, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.3675, loss_bbox: 0.2728, loss: 0.6403, grad_norm: 6.1562
+2023-05-15 06:12:09,090 - mmdet - INFO - Epoch [8][700/782]	lr: 1.000e-04, eta: 3:03:42, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.3416, loss_bbox: 0.2855, loss: 0.6271, grad_norm: 6.2077
+2023-05-15 06:13:09,583 - mmdet - INFO - Epoch [8][750/782]	lr: 1.000e-04, eta: 3:02:47, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.3405, loss_bbox: 0.2711, loss: 0.6115, grad_norm: 6.0645
+2023-05-15 06:13:48,126 - mmdet - INFO - Saving checkpoint at 8 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.25s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.62s).
+Accumulating evaluation results...
+DONE (t=1.72s).
+2023-05-15 06:16:03,937 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.315
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.450
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.341
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.014
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.068
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.374
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.560
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.044
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.240
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.629
+2023-05-15 06:16:04,043 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 06:16:04,044 - mmdet - INFO - Epoch(val) [8][977]	bbox_mAP: 0.3150, bbox_mAP_50: 0.4500, bbox_mAP_75: 0.3410, bbox_mAP_s: 0.0140, bbox_mAP_m: 0.0680, bbox_mAP_l: 0.3740, bbox_mAP_copypaste: 0.315 0.450 0.341 0.014 0.068 0.374
+Loading and preparing results...
+DONE (t=0.24s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.55s).
+Accumulating evaluation results...
+DONE (t=1.71s).
+2023-05-15 06:17:20,728 - mmdet - INFO - Epoch [9][50/782]	lr: 1.000e-05, eta: 3:00:24, time: 1.263, data_time: 0.066, memory: 29497, loss_cls: 0.2776, loss_bbox: 0.2392, loss: 0.5168, grad_norm: 5.6631
+2023-05-15 06:18:20,992 - mmdet - INFO - Epoch [9][100/782]	lr: 1.000e-05, eta: 2:59:29, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.2853, loss_bbox: 0.2375, loss: 0.5228, grad_norm: 5.2956
+2023-05-15 06:19:21,454 - mmdet - INFO - Epoch [9][150/782]	lr: 1.000e-05, eta: 2:58:35, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.2647, loss_bbox: 0.2465, loss: 0.5112, grad_norm: 5.4111
+2023-05-15 06:20:21,781 - mmdet - INFO - Epoch [9][200/782]	lr: 1.000e-05, eta: 2:57:40, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.2564, loss_bbox: 0.2331, loss: 0.4895, grad_norm: 5.3249
+2023-05-15 06:21:22,144 - mmdet - INFO - Epoch [9][250/782]	lr: 1.000e-05, eta: 2:56:45, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.2496, loss_bbox: 0.2300, loss: 0.4796, grad_norm: 5.5774
+2023-05-15 06:22:22,594 - mmdet - INFO - Epoch [9][300/782]	lr: 1.000e-05, eta: 2:55:50, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.2615, loss_bbox: 0.2323, loss: 0.4938, grad_norm: 5.3177
+2023-05-15 06:23:22,916 - mmdet - INFO - Epoch [9][350/782]	lr: 1.000e-05, eta: 2:54:55, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.2521, loss_bbox: 0.2296, loss: 0.4817, grad_norm: 5.6286
+2023-05-15 06:24:23,231 - mmdet - INFO - Epoch [9][400/782]	lr: 1.000e-05, eta: 2:54:00, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.2408, loss_bbox: 0.2241, loss: 0.4649, grad_norm: 5.6234
+2023-05-15 06:25:23,612 - mmdet - INFO - Epoch [9][450/782]	lr: 1.000e-05, eta: 2:53:05, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.2390, loss_bbox: 0.2360, loss: 0.4750, grad_norm: 5.2074
+2023-05-15 06:26:23,856 - mmdet - INFO - Epoch [9][500/782]	lr: 1.000e-05, eta: 2:52:10, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.2387, loss_bbox: 0.2369, loss: 0.4756, grad_norm: 4.9394
+2023-05-15 06:27:24,129 - mmdet - INFO - Epoch [9][550/782]	lr: 1.000e-05, eta: 2:51:15, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.2480, loss_bbox: 0.2499, loss: 0.4978, grad_norm: 5.0748
+2023-05-15 06:28:24,384 - mmdet - INFO - Epoch [9][600/782]	lr: 1.000e-05, eta: 2:50:19, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.2385, loss_bbox: 0.2350, loss: 0.4735, grad_norm: 5.3309
+2023-05-15 06:29:24,736 - mmdet - INFO - Epoch [9][650/782]	lr: 1.000e-05, eta: 2:49:24, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.2372, loss_bbox: 0.2251, loss: 0.4624, grad_norm: 5.2492
+2023-05-15 06:30:25,101 - mmdet - INFO - Epoch [9][700/782]	lr: 1.000e-05, eta: 2:48:28, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.2516, loss_bbox: 0.2453, loss: 0.4969, grad_norm: 5.7010
+2023-05-15 06:31:25,439 - mmdet - INFO - Epoch [9][750/782]	lr: 1.000e-05, eta: 2:47:33, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.2330, loss_bbox: 0.2259, loss: 0.4588, grad_norm: 5.0837
+2023-05-15 06:32:04,149 - mmdet - INFO - Saving checkpoint at 9 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.23s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.16s).
+Accumulating evaluation results...
+2023-05-15 06:34:18,390 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.381
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.516
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.404
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.024
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.090
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.447
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.615
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.615
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.615
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.127
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.682
+2023-05-15 06:34:18,544 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_7.pth was removed
+DONE (t=1.55s).
+2023-05-15 06:34:19,556 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_9.pth.
+2023-05-15 06:34:19,557 - mmdet - INFO - Best bbox_mAP_50 is 0.5160 at 9 epoch.
+2023-05-15 06:34:19,558 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 06:34:19,558 - mmdet - INFO - Epoch(val) [9][977]	bbox_mAP: 0.3810, bbox_mAP_50: 0.5160, bbox_mAP_75: 0.4040, bbox_mAP_s: 0.0240, bbox_mAP_m: 0.0900, bbox_mAP_l: 0.4470, bbox_mAP_copypaste: 0.381 0.516 0.404 0.024 0.090 0.447
+Loading and preparing results...
+DONE (t=0.23s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.11s).
+Accumulating evaluation results...
+DONE (t=1.54s).
+2023-05-15 06:35:35,793 - mmdet - INFO - Epoch [10][50/782]	lr: 1.000e-05, eta: 2:45:19, time: 1.269, data_time: 0.065, memory: 29497, loss_cls: 0.2408, loss_bbox: 0.2357, loss: 0.4765, grad_norm: 5.1854
+2023-05-15 06:36:36,337 - mmdet - INFO - Epoch [10][100/782]	lr: 1.000e-05, eta: 2:44:24, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.2447, loss_bbox: 0.2305, loss: 0.4751, grad_norm: 5.2014
+2023-05-15 06:37:36,835 - mmdet - INFO - Epoch [10][150/782]	lr: 1.000e-05, eta: 2:43:28, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.2330, loss_bbox: 0.2207, loss: 0.4537, grad_norm: 5.4887
+2023-05-15 06:38:37,298 - mmdet - INFO - Epoch [10][200/782]	lr: 1.000e-05, eta: 2:42:33, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.2285, loss_bbox: 0.2240, loss: 0.4526, grad_norm: 5.1529
+2023-05-15 06:39:37,431 - mmdet - INFO - Epoch [10][250/782]	lr: 1.000e-05, eta: 2:41:38, time: 1.203, data_time: 0.014, memory: 29497, loss_cls: 0.2231, loss_bbox: 0.2229, loss: 0.4461, grad_norm: 5.6533
+2023-05-15 06:40:37,640 - mmdet - INFO - Epoch [10][300/782]	lr: 1.000e-05, eta: 2:40:42, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.2123, loss_bbox: 0.2246, loss: 0.4369, grad_norm: 5.4719
+2023-05-15 06:41:38,031 - mmdet - INFO - Epoch [10][350/782]	lr: 1.000e-05, eta: 2:39:47, time: 1.208, data_time: 0.013, memory: 29497, loss_cls: 0.2283, loss_bbox: 0.2185, loss: 0.4469, grad_norm: 5.4871
+2023-05-15 06:42:38,372 - mmdet - INFO - Epoch [10][400/782]	lr: 1.000e-05, eta: 2:38:51, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.2306, loss_bbox: 0.2315, loss: 0.4621, grad_norm: 5.4350
+2023-05-15 06:43:38,672 - mmdet - INFO - Epoch [10][450/782]	lr: 1.000e-05, eta: 2:37:55, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.2180, loss_bbox: 0.2129, loss: 0.4309, grad_norm: 5.4476
+2023-05-15 06:44:38,939 - mmdet - INFO - Epoch [10][500/782]	lr: 1.000e-05, eta: 2:36:59, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.2071, loss_bbox: 0.2045, loss: 0.4117, grad_norm: 5.4163
+2023-05-15 06:45:39,360 - mmdet - INFO - Epoch [10][550/782]	lr: 1.000e-05, eta: 2:36:04, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.2132, loss_bbox: 0.2221, loss: 0.4353, grad_norm: 5.5624
+2023-05-15 06:46:39,896 - mmdet - INFO - Epoch [10][600/782]	lr: 1.000e-05, eta: 2:35:08, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.1904, loss_bbox: 0.2111, loss: 0.4015, grad_norm: 5.4730
+2023-05-15 06:47:40,218 - mmdet - INFO - Epoch [10][650/782]	lr: 1.000e-05, eta: 2:34:12, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.2186, loss_bbox: 0.2261, loss: 0.4447, grad_norm: 5.3899
+2023-05-15 06:48:40,398 - mmdet - INFO - Epoch [10][700/782]	lr: 1.000e-05, eta: 2:33:16, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.1921, loss_bbox: 0.2053, loss: 0.3974, grad_norm: 5.5425
+2023-05-15 06:49:40,808 - mmdet - INFO - Epoch [10][750/782]	lr: 1.000e-05, eta: 2:32:20, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1953, loss_bbox: 0.2264, loss: 0.4217, grad_norm: 5.3660
+2023-05-15 06:50:19,466 - mmdet - INFO - Saving checkpoint at 10 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 123s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 123s, ETA:     0sLoading and preparing results...
+DONE (t=0.23s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.95s).
+Accumulating evaluation results...
+2023-05-15 06:52:33,011 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.394
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.537
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.024
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.098
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.461
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.137
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.277
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.687
+2023-05-15 06:52:33,171 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_9.pth was removed
+DONE (t=1.46s).
+2023-05-15 06:52:34,177 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_10.pth.
+2023-05-15 06:52:34,177 - mmdet - INFO - Best bbox_mAP_50 is 0.5370 at 10 epoch.
+2023-05-15 06:52:34,178 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 06:52:34,178 - mmdet - INFO - Epoch(val) [10][977]	bbox_mAP: 0.3940, bbox_mAP_50: 0.5370, bbox_mAP_75: 0.4160, bbox_mAP_s: 0.0240, bbox_mAP_m: 0.0980, bbox_mAP_l: 0.4610, bbox_mAP_copypaste: 0.394 0.537 0.416 0.024 0.098 0.461
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.98s).
+Accumulating evaluation results...
+DONE (t=1.47s).
+2023-05-15 06:53:49,989 - mmdet - INFO - Epoch [11][50/782]	lr: 1.000e-05, eta: 2:30:13, time: 1.266, data_time: 0.065, memory: 29497, loss_cls: 0.2018, loss_bbox: 0.2248, loss: 0.4266, grad_norm: 5.2038
+2023-05-15 06:54:50,253 - mmdet - INFO - Epoch [11][100/782]	lr: 1.000e-05, eta: 2:29:17, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.2039, loss_bbox: 0.2048, loss: 0.4087, grad_norm: 5.6325
+2023-05-15 06:55:50,595 - mmdet - INFO - Epoch [11][150/782]	lr: 1.000e-05, eta: 2:28:21, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.2142, loss_bbox: 0.2233, loss: 0.4375, grad_norm: 5.4270
+2023-05-15 06:56:50,972 - mmdet - INFO - Epoch [11][200/782]	lr: 1.000e-05, eta: 2:27:25, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.2152, loss_bbox: 0.2320, loss: 0.4472, grad_norm: 5.0933
+2023-05-15 06:57:51,350 - mmdet - INFO - Epoch [11][250/782]	lr: 1.000e-05, eta: 2:26:30, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.2083, loss_bbox: 0.2214, loss: 0.4297, grad_norm: 5.5197
+2023-05-15 06:58:51,819 - mmdet - INFO - Epoch [11][300/782]	lr: 1.000e-05, eta: 2:25:34, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1929, loss_bbox: 0.2068, loss: 0.3998, grad_norm: 5.4146
+2023-05-15 06:59:52,071 - mmdet - INFO - Epoch [11][350/782]	lr: 1.000e-05, eta: 2:24:38, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.2038, loss_bbox: 0.2142, loss: 0.4180, grad_norm: 5.3681
+2023-05-15 07:00:52,365 - mmdet - INFO - Epoch [11][400/782]	lr: 1.000e-05, eta: 2:23:42, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.1880, loss_bbox: 0.2204, loss: 0.4084, grad_norm: 5.7459
+2023-05-15 07:01:52,876 - mmdet - INFO - Epoch [11][450/782]	lr: 1.000e-05, eta: 2:22:46, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1842, loss_bbox: 0.2096, loss: 0.3938, grad_norm: 5.2765
+2023-05-15 07:02:53,301 - mmdet - INFO - Epoch [11][500/782]	lr: 1.000e-05, eta: 2:21:50, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.2037, loss_bbox: 0.2327, loss: 0.4364, grad_norm: 5.2682
+2023-05-15 07:03:53,522 - mmdet - INFO - Epoch [11][550/782]	lr: 1.000e-05, eta: 2:20:53, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.2057, loss_bbox: 0.2274, loss: 0.4332, grad_norm: 5.4327
+2023-05-15 07:04:53,763 - mmdet - INFO - Epoch [11][600/782]	lr: 1.000e-05, eta: 2:19:57, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.2202, loss_bbox: 0.2055, loss: 0.4256, grad_norm: 5.8311
+2023-05-15 07:05:54,091 - mmdet - INFO - Epoch [11][650/782]	lr: 1.000e-05, eta: 2:19:01, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.2307, loss_bbox: 0.2320, loss: 0.4626, grad_norm: 5.4892
+2023-05-15 07:06:54,525 - mmdet - INFO - Epoch [11][700/782]	lr: 1.000e-05, eta: 2:18:04, time: 1.209, data_time: 0.013, memory: 29497, loss_cls: 0.1767, loss_bbox: 0.1988, loss: 0.3755, grad_norm: 5.2307
+2023-05-15 07:07:54,869 - mmdet - INFO - Epoch [11][750/782]	lr: 1.000e-05, eta: 2:17:08, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.1952, loss_bbox: 0.2141, loss: 0.4094, grad_norm: 5.3792
+2023-05-15 07:08:33,636 - mmdet - INFO - Saving checkpoint at 11 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.01s).
+Accumulating evaluation results...
+DONE (t=1.43s).
+2023-05-15 07:10:47,777 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.398
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.537
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.420
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.030
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.095
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.467
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.145
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.277
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.688
+2023-05-15 07:10:47,864 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 07:10:47,864 - mmdet - INFO - Epoch(val) [11][977]	bbox_mAP: 0.3980, bbox_mAP_50: 0.5370, bbox_mAP_75: 0.4200, bbox_mAP_s: 0.0300, bbox_mAP_m: 0.0950, bbox_mAP_l: 0.4670, bbox_mAP_copypaste: 0.398 0.537 0.420 0.030 0.095 0.467
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.00s).
+Accumulating evaluation results...
+DONE (t=1.48s).
+2023-05-15 07:12:03,779 - mmdet - INFO - Epoch [12][50/782]	lr: 1.000e-06, eta: 2:15:07, time: 1.270, data_time: 0.066, memory: 29497, loss_cls: 0.2042, loss_bbox: 0.2193, loss: 0.4235, grad_norm: 4.8894
+2023-05-15 07:13:04,075 - mmdet - INFO - Epoch [12][100/782]	lr: 1.000e-06, eta: 2:14:10, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1757, loss_bbox: 0.2020, loss: 0.3777, grad_norm: 5.5131
+2023-05-15 07:14:04,574 - mmdet - INFO - Epoch [12][150/782]	lr: 1.000e-06, eta: 2:13:14, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1842, loss_bbox: 0.2004, loss: 0.3846, grad_norm: 5.5097
+2023-05-15 07:15:04,913 - mmdet - INFO - Epoch [12][200/782]	lr: 1.000e-06, eta: 2:12:18, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.1861, loss_bbox: 0.2085, loss: 0.3946, grad_norm: 5.4767
+2023-05-15 07:16:05,225 - mmdet - INFO - Epoch [12][250/782]	lr: 1.000e-06, eta: 2:11:22, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1836, loss_bbox: 0.2040, loss: 0.3876, grad_norm: 5.3717
+2023-05-15 07:17:05,531 - mmdet - INFO - Epoch [12][300/782]	lr: 1.000e-06, eta: 2:10:26, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.1935, loss_bbox: 0.2275, loss: 0.4210, grad_norm: 4.7804
+2023-05-15 07:18:05,884 - mmdet - INFO - Epoch [12][350/782]	lr: 1.000e-06, eta: 2:09:29, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.1760, loss_bbox: 0.2011, loss: 0.3771, grad_norm: 5.4527
+2023-05-15 07:19:06,066 - mmdet - INFO - Epoch [12][400/782]	lr: 1.000e-06, eta: 2:08:33, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.1749, loss_bbox: 0.1955, loss: 0.3704, grad_norm: 5.6916
+2023-05-15 07:20:06,156 - mmdet - INFO - Epoch [12][450/782]	lr: 1.000e-06, eta: 2:07:36, time: 1.202, data_time: 0.013, memory: 29497, loss_cls: 0.1801, loss_bbox: 0.2132, loss: 0.3933, grad_norm: 5.1917
+2023-05-15 07:21:06,381 - mmdet - INFO - Epoch [12][500/782]	lr: 1.000e-06, eta: 2:06:39, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.2025, loss_bbox: 0.2272, loss: 0.4297, grad_norm: 4.9471
+2023-05-15 07:22:06,506 - mmdet - INFO - Epoch [12][550/782]	lr: 1.000e-06, eta: 2:05:43, time: 1.202, data_time: 0.013, memory: 29497, loss_cls: 0.1966, loss_bbox: 0.2103, loss: 0.4068, grad_norm: 5.1130
+2023-05-15 07:23:06,852 - mmdet - INFO - Epoch [12][600/782]	lr: 1.000e-06, eta: 2:04:46, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1791, loss_bbox: 0.2115, loss: 0.3906, grad_norm: 5.1984
+2023-05-15 07:24:07,273 - mmdet - INFO - Epoch [12][650/782]	lr: 1.000e-06, eta: 2:03:49, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1716, loss_bbox: 0.2058, loss: 0.3774, grad_norm: 5.3627
+2023-05-15 07:25:07,711 - mmdet - INFO - Epoch [12][700/782]	lr: 1.000e-06, eta: 2:02:53, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1900, loss_bbox: 0.2185, loss: 0.4086, grad_norm: 5.4536
+2023-05-15 07:26:08,475 - mmdet - INFO - Epoch [12][750/782]	lr: 1.000e-06, eta: 2:01:56, time: 1.215, data_time: 0.014, memory: 29497, loss_cls: 0.1908, loss_bbox: 0.2210, loss: 0.4118, grad_norm: 4.9905
+2023-05-15 07:26:47,024 - mmdet - INFO - Saving checkpoint at 12 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0sLoading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.93s).
+Accumulating evaluation results...
+2023-05-15 07:29:01,750 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.401
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.540
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.419
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.024
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.470
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.282
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.690
+2023-05-15 07:29:01,892 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_10.pth was removed
+2023-05-15 07:29:02,907 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_12.pth.
+2023-05-15 07:29:02,908 - mmdet - INFO - Best bbox_mAP_50 is 0.5400 at 12 epoch.
+2023-05-15 07:29:02,908 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 07:29:02,909 - mmdet - INFO - Epoch(val) [12][977]	bbox_mAP: 0.4010, bbox_mAP_50: 0.5400, bbox_mAP_75: 0.4190, bbox_mAP_s: 0.0240, bbox_mAP_m: 0.0960, bbox_mAP_l: 0.4700, bbox_mAP_copypaste: 0.401 0.540 0.419 0.024 0.096 0.470
+DONE (t=1.43s).
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.92s).
+Accumulating evaluation results...
+DONE (t=1.43s).
+2023-05-15 07:30:18,633 - mmdet - INFO - Epoch [13][50/782]	lr: 1.000e-06, eta: 2:00:00, time: 1.267, data_time: 0.066, memory: 29497, loss_cls: 0.1866, loss_bbox: 0.2185, loss: 0.4051, grad_norm: 5.3361
+2023-05-15 07:31:19,016 - mmdet - INFO - Epoch [13][100/782]	lr: 1.000e-06, eta: 1:59:03, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1953, loss_bbox: 0.2271, loss: 0.4224, grad_norm: 5.2091
+2023-05-15 07:32:19,461 - mmdet - INFO - Epoch [13][150/782]	lr: 1.000e-06, eta: 1:58:07, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1788, loss_bbox: 0.1986, loss: 0.3774, grad_norm: 5.1493
+2023-05-15 07:33:19,816 - mmdet - INFO - Epoch [13][200/782]	lr: 1.000e-06, eta: 1:57:10, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1854, loss_bbox: 0.2066, loss: 0.3920, grad_norm: 5.4612
+2023-05-15 07:34:20,027 - mmdet - INFO - Epoch [13][250/782]	lr: 1.000e-06, eta: 1:56:14, time: 1.204, data_time: 0.013, memory: 29497, loss_cls: 0.1642, loss_bbox: 0.1947, loss: 0.3589, grad_norm: 5.3253
+2023-05-15 07:35:20,354 - mmdet - INFO - Epoch [13][300/782]	lr: 1.000e-06, eta: 1:55:17, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1821, loss_bbox: 0.2034, loss: 0.3855, grad_norm: 5.2398
+2023-05-15 07:36:20,754 - mmdet - INFO - Epoch [13][350/782]	lr: 1.000e-06, eta: 1:54:20, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1952, loss_bbox: 0.2172, loss: 0.4124, grad_norm: 5.0271
+2023-05-15 07:37:21,113 - mmdet - INFO - Epoch [13][400/782]	lr: 1.000e-06, eta: 1:53:24, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1812, loss_bbox: 0.2070, loss: 0.3882, grad_norm: 5.4963
+2023-05-15 07:38:21,446 - mmdet - INFO - Epoch [13][450/782]	lr: 1.000e-06, eta: 1:52:27, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1933, loss_bbox: 0.2044, loss: 0.3976, grad_norm: 5.5076
+2023-05-15 07:39:21,814 - mmdet - INFO - Epoch [13][500/782]	lr: 1.000e-06, eta: 1:51:30, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1822, loss_bbox: 0.2094, loss: 0.3917, grad_norm: 5.3383
+2023-05-15 07:40:22,366 - mmdet - INFO - Epoch [13][550/782]	lr: 1.000e-06, eta: 1:50:33, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.1861, loss_bbox: 0.2284, loss: 0.4145, grad_norm: 5.0169
+2023-05-15 07:41:22,698 - mmdet - INFO - Epoch [13][600/782]	lr: 1.000e-06, eta: 1:49:37, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1634, loss_bbox: 0.1998, loss: 0.3632, grad_norm: 5.1461
+2023-05-15 07:42:23,081 - mmdet - INFO - Epoch [13][650/782]	lr: 1.000e-06, eta: 1:48:40, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1936, loss_bbox: 0.2083, loss: 0.4019, grad_norm: 5.3447
+2023-05-15 07:43:23,514 - mmdet - INFO - Epoch [13][700/782]	lr: 1.000e-06, eta: 1:47:43, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1929, loss_bbox: 0.2272, loss: 0.4201, grad_norm: 5.4116
+2023-05-15 07:44:23,791 - mmdet - INFO - Epoch [13][750/782]	lr: 1.000e-06, eta: 1:46:46, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1642, loss_bbox: 0.1990, loss: 0.3632, grad_norm: 5.6450
+2023-05-15 07:45:02,491 - mmdet - INFO - Saving checkpoint at 13 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.86s).
+Accumulating evaluation results...
+2023-05-15 07:47:16,540 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.401
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.540
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.417
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.470
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.135
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.283
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.690
+2023-05-15 07:47:16,626 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 07:47:16,627 - mmdet - INFO - Epoch(val) [13][977]	bbox_mAP: 0.4010, bbox_mAP_50: 0.5400, bbox_mAP_75: 0.4170, bbox_mAP_s: 0.0220, bbox_mAP_m: 0.0960, bbox_mAP_l: 0.4700, bbox_mAP_copypaste: 0.401 0.540 0.417 0.022 0.096 0.470
+DONE (t=1.39s).
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.87s).
+Accumulating evaluation results...
+DONE (t=1.40s).
+2023-05-15 07:48:32,494 - mmdet - INFO - Epoch [14][50/782]	lr: 1.000e-06, eta: 1:44:53, time: 1.269, data_time: 0.065, memory: 29497, loss_cls: 0.1709, loss_bbox: 0.2024, loss: 0.3732, grad_norm: 5.0925
+2023-05-15 07:49:33,090 - mmdet - INFO - Epoch [14][100/782]	lr: 1.000e-06, eta: 1:43:57, time: 1.212, data_time: 0.014, memory: 29497, loss_cls: 0.1696, loss_bbox: 0.2134, loss: 0.3830, grad_norm: 5.1728
+2023-05-15 07:50:33,352 - mmdet - INFO - Epoch [14][150/782]	lr: 1.000e-06, eta: 1:43:00, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.1842, loss_bbox: 0.2125, loss: 0.3966, grad_norm: 5.6168
+2023-05-15 07:51:33,732 - mmdet - INFO - Epoch [14][200/782]	lr: 1.000e-06, eta: 1:42:03, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1582, loss_bbox: 0.1871, loss: 0.3453, grad_norm: 5.4282
+2023-05-15 07:52:34,065 - mmdet - INFO - Epoch [14][250/782]	lr: 1.000e-06, eta: 1:41:06, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.1752, loss_bbox: 0.2108, loss: 0.3860, grad_norm: 5.1169
+2023-05-15 07:53:34,365 - mmdet - INFO - Epoch [14][300/782]	lr: 1.000e-06, eta: 1:40:09, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1998, loss_bbox: 0.2191, loss: 0.4188, grad_norm: 5.6120
+2023-05-15 07:54:34,866 - mmdet - INFO - Epoch [14][350/782]	lr: 1.000e-06, eta: 1:39:12, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1875, loss_bbox: 0.2235, loss: 0.4110, grad_norm: 5.5708
+2023-05-15 07:55:35,349 - mmdet - INFO - Epoch [14][400/782]	lr: 1.000e-06, eta: 1:38:15, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1859, loss_bbox: 0.2131, loss: 0.3991, grad_norm: 5.0618
+2023-05-15 07:56:35,701 - mmdet - INFO - Epoch [14][450/782]	lr: 1.000e-06, eta: 1:37:18, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.1761, loss_bbox: 0.2011, loss: 0.3772, grad_norm: 5.3145
+2023-05-15 07:57:36,244 - mmdet - INFO - Epoch [14][500/782]	lr: 1.000e-06, eta: 1:36:21, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.2032, loss_bbox: 0.2338, loss: 0.4370, grad_norm: 4.8907
+2023-05-15 07:58:36,767 - mmdet - INFO - Epoch [14][550/782]	lr: 1.000e-06, eta: 1:35:24, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1941, loss_bbox: 0.2134, loss: 0.4075, grad_norm: 5.4947
+2023-05-15 07:59:37,206 - mmdet - INFO - Epoch [14][600/782]	lr: 1.000e-06, eta: 1:34:27, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1657, loss_bbox: 0.1994, loss: 0.3652, grad_norm: 5.1800
+2023-05-15 08:00:37,571 - mmdet - INFO - Epoch [14][650/782]	lr: 1.000e-06, eta: 1:33:30, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1748, loss_bbox: 0.2044, loss: 0.3792, grad_norm: 5.5162
+2023-05-15 08:01:37,875 - mmdet - INFO - Epoch [14][700/782]	lr: 1.000e-06, eta: 1:32:33, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1947, loss_bbox: 0.2118, loss: 0.4064, grad_norm: 5.0882
+2023-05-15 08:02:38,231 - mmdet - INFO - Epoch [14][750/782]	lr: 1.000e-06, eta: 1:31:36, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1807, loss_bbox: 0.2085, loss: 0.3892, grad_norm: 5.2761
+2023-05-15 08:03:16,974 - mmdet - INFO - Saving checkpoint at 14 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 123s, ETA:     0sLoading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 08:05:22,359 - mmdet - INFO - Evaluating bbox...
+DONE (t=5.87s).
+Accumulating evaluation results...
+DONE (t=1.38s).
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 08:05:30,177 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.401
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.540
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.471
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.282
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.690
+2023-05-15 08:05:30,259 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 08:05:30,260 - mmdet - INFO - Epoch(val) [14][977]	bbox_mAP: 0.4010, bbox_mAP_50: 0.5400, bbox_mAP_75: 0.4160, bbox_mAP_s: 0.0230, bbox_mAP_m: 0.0960, bbox_mAP_l: 0.4710, bbox_mAP_copypaste: 0.401 0.540 0.416 0.023 0.096 0.471
+DONE (t=5.82s).
+Accumulating evaluation results...
+DONE (t=1.38s).
+2023-05-15 08:06:45,649 - mmdet - INFO - Epoch [15][50/782]	lr: 1.000e-06, eta: 1:29:47, time: 1.265, data_time: 0.065, memory: 29497, loss_cls: 0.1795, loss_bbox: 0.2092, loss: 0.3887, grad_norm: 5.4537
+2023-05-15 08:07:45,969 - mmdet - INFO - Epoch [15][100/782]	lr: 1.000e-06, eta: 1:28:50, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1845, loss_bbox: 0.2095, loss: 0.3939, grad_norm: 5.2625
+2023-05-15 08:08:46,273 - mmdet - INFO - Epoch [15][150/782]	lr: 1.000e-06, eta: 1:27:52, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1809, loss_bbox: 0.2026, loss: 0.3836, grad_norm: 5.6355
+2023-05-15 08:09:46,709 - mmdet - INFO - Epoch [15][200/782]	lr: 1.000e-06, eta: 1:26:55, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1848, loss_bbox: 0.2084, loss: 0.3932, grad_norm: 5.2032
+2023-05-15 08:10:46,961 - mmdet - INFO - Epoch [15][250/782]	lr: 1.000e-06, eta: 1:25:58, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.1777, loss_bbox: 0.1963, loss: 0.3740, grad_norm: 5.5688
+2023-05-15 08:11:47,479 - mmdet - INFO - Epoch [15][300/782]	lr: 1.000e-06, eta: 1:25:01, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1793, loss_bbox: 0.2211, loss: 0.4004, grad_norm: 5.1858
+2023-05-15 08:12:47,755 - mmdet - INFO - Epoch [15][350/782]	lr: 1.000e-06, eta: 1:24:04, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.1680, loss_bbox: 0.2018, loss: 0.3698, grad_norm: 5.3940
+2023-05-15 08:13:48,433 - mmdet - INFO - Epoch [15][400/782]	lr: 1.000e-06, eta: 1:23:07, time: 1.214, data_time: 0.014, memory: 29497, loss_cls: 0.1939, loss_bbox: 0.2156, loss: 0.4095, grad_norm: 5.4653
+2023-05-15 08:14:48,747 - mmdet - INFO - Epoch [15][450/782]	lr: 1.000e-06, eta: 1:22:09, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1787, loss_bbox: 0.2060, loss: 0.3847, grad_norm: 5.0991
+2023-05-15 08:15:49,183 - mmdet - INFO - Epoch [15][500/782]	lr: 1.000e-06, eta: 1:21:12, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1825, loss_bbox: 0.2117, loss: 0.3941, grad_norm: 5.1979
+2023-05-15 08:16:49,611 - mmdet - INFO - Epoch [15][550/782]	lr: 1.000e-06, eta: 1:20:15, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1902, loss_bbox: 0.2112, loss: 0.4014, grad_norm: 5.3528
+2023-05-15 08:17:50,085 - mmdet - INFO - Epoch [15][600/782]	lr: 1.000e-06, eta: 1:19:18, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1724, loss_bbox: 0.2218, loss: 0.3942, grad_norm: 4.8887
+2023-05-15 08:18:50,513 - mmdet - INFO - Epoch [15][650/782]	lr: 1.000e-06, eta: 1:18:20, time: 1.209, data_time: 0.013, memory: 29497, loss_cls: 0.1946, loss_bbox: 0.2140, loss: 0.4086, grad_norm: 5.4680
+2023-05-15 08:19:51,039 - mmdet - INFO - Epoch [15][700/782]	lr: 1.000e-06, eta: 1:17:23, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.1611, loss_bbox: 0.2034, loss: 0.3646, grad_norm: 5.1802
+2023-05-15 08:20:51,334 - mmdet - INFO - Epoch [15][750/782]	lr: 1.000e-06, eta: 1:16:25, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1884, loss_bbox: 0.2073, loss: 0.3957, grad_norm: 5.6231
+2023-05-15 08:21:30,181 - mmdet - INFO - Saving checkpoint at 15 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.86s).
+Accumulating evaluation results...
+DONE (t=1.38s).
+2023-05-15 08:23:44,227 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.401
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.539
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.414
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.022
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.470
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.283
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.688
+2023-05-15 08:23:44,318 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 08:23:44,319 - mmdet - INFO - Epoch(val) [15][977]	bbox_mAP: 0.4010, bbox_mAP_50: 0.5390, bbox_mAP_75: 0.4140, bbox_mAP_s: 0.0220, bbox_mAP_m: 0.0960, bbox_mAP_l: 0.4700, bbox_mAP_copypaste: 0.401 0.539 0.414 0.022 0.096 0.470
+Loading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.80s).
+Accumulating evaluation results...
+DONE (t=1.37s).
+2023-05-15 08:24:59,553 - mmdet - INFO - Epoch [16][50/782]	lr: 1.000e-06, eta: 1:14:40, time: 1.265, data_time: 0.064, memory: 29497, loss_cls: 0.1715, loss_bbox: 0.2050, loss: 0.3765, grad_norm: 5.2632
+2023-05-15 08:25:59,768 - mmdet - INFO - Epoch [16][100/782]	lr: 1.000e-06, eta: 1:13:42, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.1746, loss_bbox: 0.2077, loss: 0.3823, grad_norm: 5.6398
+2023-05-15 08:27:00,298 - mmdet - INFO - Epoch [16][150/782]	lr: 1.000e-06, eta: 1:12:45, time: 1.211, data_time: 0.013, memory: 29497, loss_cls: 0.1778, loss_bbox: 0.2087, loss: 0.3865, grad_norm: 5.2741
+2023-05-15 08:28:00,725 - mmdet - INFO - Epoch [16][200/782]	lr: 1.000e-06, eta: 1:11:48, time: 1.209, data_time: 0.013, memory: 29497, loss_cls: 0.1805, loss_bbox: 0.2164, loss: 0.3969, grad_norm: 5.3597
+2023-05-15 08:29:00,979 - mmdet - INFO - Epoch [16][250/782]	lr: 1.000e-06, eta: 1:10:50, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.1567, loss_bbox: 0.1934, loss: 0.3500, grad_norm: 5.1849
+2023-05-15 08:30:01,198 - mmdet - INFO - Epoch [16][300/782]	lr: 1.000e-06, eta: 1:09:53, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.1539, loss_bbox: 0.1953, loss: 0.3492, grad_norm: 5.8953
+2023-05-15 08:31:01,978 - mmdet - INFO - Epoch [16][350/782]	lr: 1.000e-06, eta: 1:08:56, time: 1.216, data_time: 0.014, memory: 29497, loss_cls: 0.1819, loss_bbox: 0.2148, loss: 0.3967, grad_norm: 4.9163
+2023-05-15 08:32:02,359 - mmdet - INFO - Epoch [16][400/782]	lr: 1.000e-06, eta: 1:07:58, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1839, loss_bbox: 0.2096, loss: 0.3936, grad_norm: 5.1172
+2023-05-15 08:33:02,613 - mmdet - INFO - Epoch [16][450/782]	lr: 1.000e-06, eta: 1:07:01, time: 1.205, data_time: 0.013, memory: 29497, loss_cls: 0.1756, loss_bbox: 0.1964, loss: 0.3720, grad_norm: 5.6276
+2023-05-15 08:34:02,901 - mmdet - INFO - Epoch [16][500/782]	lr: 1.000e-06, eta: 1:06:03, time: 1.206, data_time: 0.013, memory: 29497, loss_cls: 0.1654, loss_bbox: 0.1974, loss: 0.3628, grad_norm: 5.4663
+2023-05-15 08:35:03,340 - mmdet - INFO - Epoch [16][550/782]	lr: 1.000e-06, eta: 1:05:06, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1797, loss_bbox: 0.2212, loss: 0.4009, grad_norm: 4.9497
+2023-05-15 08:36:03,666 - mmdet - INFO - Epoch [16][600/782]	lr: 1.000e-06, eta: 1:04:08, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.2071, loss_bbox: 0.2278, loss: 0.4349, grad_norm: 5.5629
+2023-05-15 08:37:03,992 - mmdet - INFO - Epoch [16][650/782]	lr: 1.000e-06, eta: 1:03:11, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1971, loss_bbox: 0.2140, loss: 0.4111, grad_norm: 5.5226
+2023-05-15 08:38:04,475 - mmdet - INFO - Epoch [16][700/782]	lr: 1.000e-06, eta: 1:02:13, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1819, loss_bbox: 0.2155, loss: 0.3973, grad_norm: 4.9867
+2023-05-15 08:39:04,963 - mmdet - INFO - Epoch [16][750/782]	lr: 1.000e-06, eta: 1:01:15, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1824, loss_bbox: 0.2006, loss: 0.3831, grad_norm: 5.4865
+2023-05-15 08:39:43,715 - mmdet - INFO - Saving checkpoint at 16 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0sLoading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 08:41:50,272 - mmdet - INFO - Evaluating bbox...
+DONE (t=5.79s).
+Accumulating evaluation results...
+2023-05-15 08:41:57,807 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.402
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.540
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.417
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.097
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.471
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.283
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.690
+2023-05-15 08:41:57,892 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 08:41:57,893 - mmdet - INFO - Epoch(val) [16][977]	bbox_mAP: 0.4020, bbox_mAP_50: 0.5400, bbox_mAP_75: 0.4170, bbox_mAP_s: 0.0230, bbox_mAP_m: 0.0970, bbox_mAP_l: 0.4710, bbox_mAP_copypaste: 0.402 0.540 0.417 0.023 0.097 0.471
+DONE (t=1.36s).
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.85s).
+Accumulating evaluation results...
+DONE (t=1.36s).
+2023-05-15 08:43:13,394 - mmdet - INFO - Epoch [17][50/782]	lr: 1.000e-06, eta: 0:59:32, time: 1.263, data_time: 0.066, memory: 29497, loss_cls: 0.1713, loss_bbox: 0.2113, loss: 0.3825, grad_norm: 5.2392
+2023-05-15 08:44:13,670 - mmdet - INFO - Epoch [17][100/782]	lr: 1.000e-06, eta: 0:58:35, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1827, loss_bbox: 0.1987, loss: 0.3815, grad_norm: 5.4650
+2023-05-15 08:45:14,074 - mmdet - INFO - Epoch [17][150/782]	lr: 1.000e-06, eta: 0:57:37, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1889, loss_bbox: 0.2294, loss: 0.4183, grad_norm: 5.1282
+2023-05-15 08:46:14,318 - mmdet - INFO - Epoch [17][200/782]	lr: 1.000e-06, eta: 0:56:40, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.1638, loss_bbox: 0.1978, loss: 0.3616, grad_norm: 5.2568
+2023-05-15 08:47:14,862 - mmdet - INFO - Epoch [17][250/782]	lr: 1.000e-06, eta: 0:55:42, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.1750, loss_bbox: 0.2159, loss: 0.3909, grad_norm: 5.5168
+2023-05-15 08:48:15,235 - mmdet - INFO - Epoch [17][300/782]	lr: 1.000e-06, eta: 0:54:45, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1839, loss_bbox: 0.2118, loss: 0.3957, grad_norm: 5.2199
+2023-05-15 08:49:15,559 - mmdet - INFO - Epoch [17][350/782]	lr: 1.000e-06, eta: 0:53:47, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1722, loss_bbox: 0.1981, loss: 0.3704, grad_norm: 5.4170
+2023-05-15 08:50:15,867 - mmdet - INFO - Epoch [17][400/782]	lr: 1.000e-06, eta: 0:52:49, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1703, loss_bbox: 0.2028, loss: 0.3731, grad_norm: 5.3463
+2023-05-15 08:51:16,183 - mmdet - INFO - Epoch [17][450/782]	lr: 1.000e-06, eta: 0:51:52, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1857, loss_bbox: 0.2044, loss: 0.3901, grad_norm: 5.2341
+2023-05-15 08:52:16,658 - mmdet - INFO - Epoch [17][500/782]	lr: 1.000e-06, eta: 0:50:54, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1672, loss_bbox: 0.2032, loss: 0.3704, grad_norm: 5.3651
+2023-05-15 08:53:17,241 - mmdet - INFO - Epoch [17][550/782]	lr: 1.000e-06, eta: 0:49:56, time: 1.212, data_time: 0.014, memory: 29497, loss_cls: 0.1812, loss_bbox: 0.2329, loss: 0.4141, grad_norm: 5.1869
+2023-05-15 08:54:17,683 - mmdet - INFO - Epoch [17][600/782]	lr: 1.000e-06, eta: 0:48:59, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1797, loss_bbox: 0.2183, loss: 0.3981, grad_norm: 4.9588
+2023-05-15 08:55:18,050 - mmdet - INFO - Epoch [17][650/782]	lr: 1.000e-06, eta: 0:48:01, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1790, loss_bbox: 0.2188, loss: 0.3977, grad_norm: 5.2104
+2023-05-15 08:56:18,853 - mmdet - INFO - Epoch [17][700/782]	lr: 1.000e-06, eta: 0:47:03, time: 1.216, data_time: 0.014, memory: 29497, loss_cls: 0.1848, loss_bbox: 0.2182, loss: 0.4030, grad_norm: 5.2145
+2023-05-15 08:57:19,371 - mmdet - INFO - Epoch [17][750/782]	lr: 1.000e-06, eta: 0:46:06, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1605, loss_bbox: 0.1954, loss: 0.3560, grad_norm: 5.0946
+2023-05-15 08:57:57,963 - mmdet - INFO - Saving checkpoint at 17 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 09:00:03,809 - mmdet - INFO - Evaluating bbox...
+DONE (t=5.88s).
+Accumulating evaluation results...
+DONE (t=1.37s).
+2023-05-15 09:00:11,469 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.540
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.020
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.097
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.472
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.620
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.284
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.689
+2023-05-15 09:00:11,554 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 09:00:11,554 - mmdet - INFO - Epoch(val) [17][977]	bbox_mAP: 0.4030, bbox_mAP_50: 0.5400, bbox_mAP_75: 0.4160, bbox_mAP_s: 0.0200, bbox_mAP_m: 0.0970, bbox_mAP_l: 0.4720, bbox_mAP_copypaste: 0.403 0.540 0.416 0.020 0.097 0.472
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.85s).
+Accumulating evaluation results...
+DONE (t=1.37s).
+2023-05-15 09:01:27,212 - mmdet - INFO - Epoch [18][50/782]	lr: 1.000e-06, eta: 0:44:25, time: 1.266, data_time: 0.067, memory: 29497, loss_cls: 0.1838, loss_bbox: 0.2188, loss: 0.4026, grad_norm: 5.0946
+2023-05-15 09:02:27,668 - mmdet - INFO - Epoch [18][100/782]	lr: 1.000e-06, eta: 0:43:27, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1747, loss_bbox: 0.2106, loss: 0.3853, grad_norm: 5.3183
+2023-05-15 09:03:28,118 - mmdet - INFO - Epoch [18][150/782]	lr: 1.000e-06, eta: 0:42:29, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1674, loss_bbox: 0.2017, loss: 0.3690, grad_norm: 5.0603
+2023-05-15 09:04:28,475 - mmdet - INFO - Epoch [18][200/782]	lr: 1.000e-06, eta: 0:41:32, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1904, loss_bbox: 0.2271, loss: 0.4175, grad_norm: 5.2305
+2023-05-15 09:05:28,758 - mmdet - INFO - Epoch [18][250/782]	lr: 1.000e-06, eta: 0:40:34, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1615, loss_bbox: 0.2068, loss: 0.3683, grad_norm: 5.5957
+2023-05-15 09:06:29,381 - mmdet - INFO - Epoch [18][300/782]	lr: 1.000e-06, eta: 0:39:36, time: 1.212, data_time: 0.014, memory: 29497, loss_cls: 0.1668, loss_bbox: 0.1996, loss: 0.3664, grad_norm: 5.3372
+2023-05-15 09:07:30,121 - mmdet - INFO - Epoch [18][350/782]	lr: 1.000e-06, eta: 0:38:39, time: 1.215, data_time: 0.014, memory: 29497, loss_cls: 0.1605, loss_bbox: 0.2046, loss: 0.3650, grad_norm: 5.2121
+2023-05-15 09:08:30,471 - mmdet - INFO - Epoch [18][400/782]	lr: 1.000e-06, eta: 0:37:41, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1719, loss_bbox: 0.2070, loss: 0.3789, grad_norm: 5.5415
+2023-05-15 09:09:30,896 - mmdet - INFO - Epoch [18][450/782]	lr: 1.000e-06, eta: 0:36:43, time: 1.208, data_time: 0.013, memory: 29497, loss_cls: 0.1888, loss_bbox: 0.2251, loss: 0.4139, grad_norm: 5.1820
+2023-05-15 09:10:31,231 - mmdet - INFO - Epoch [18][500/782]	lr: 1.000e-06, eta: 0:35:45, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1736, loss_bbox: 0.2072, loss: 0.3808, grad_norm: 5.5921
+2023-05-15 09:11:31,727 - mmdet - INFO - Epoch [18][550/782]	lr: 1.000e-06, eta: 0:34:47, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1682, loss_bbox: 0.2010, loss: 0.3692, grad_norm: 5.3494
+2023-05-15 09:12:32,095 - mmdet - INFO - Epoch [18][600/782]	lr: 1.000e-06, eta: 0:33:50, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1794, loss_bbox: 0.2108, loss: 0.3902, grad_norm: 5.3489
+2023-05-15 09:13:32,469 - mmdet - INFO - Epoch [18][650/782]	lr: 1.000e-06, eta: 0:32:52, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1827, loss_bbox: 0.2096, loss: 0.3922, grad_norm: 5.7009
+2023-05-15 09:14:32,769 - mmdet - INFO - Epoch [18][700/782]	lr: 1.000e-06, eta: 0:31:54, time: 1.206, data_time: 0.015, memory: 29497, loss_cls: 0.1547, loss_bbox: 0.1907, loss: 0.3455, grad_norm: 5.3653
+2023-05-15 09:15:33,133 - mmdet - INFO - Epoch [18][750/782]	lr: 1.000e-06, eta: 0:30:56, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1716, loss_bbox: 0.2034, loss: 0.3750, grad_norm: 5.7203
+2023-05-15 09:16:11,758 - mmdet - INFO - Saving checkpoint at 18 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.05s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2023-05-15 09:18:17,717 - mmdet - INFO - Evaluating bbox...
+DONE (t=5.84s).
+Accumulating evaluation results...
+DONE (t=1.36s).
+2023-05-15 09:18:25,325 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.402
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.539
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.416
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.021
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.094
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.471
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.619
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.619
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.619
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.141
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.284
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.688
+2023-05-15 09:18:25,406 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 09:18:25,407 - mmdet - INFO - Epoch(val) [18][977]	bbox_mAP: 0.4020, bbox_mAP_50: 0.5390, bbox_mAP_75: 0.4160, bbox_mAP_s: 0.0210, bbox_mAP_m: 0.0940, bbox_mAP_l: 0.4710, bbox_mAP_copypaste: 0.402 0.539 0.416 0.021 0.094 0.471
+Loading and preparing results...
+DONE (t=0.22s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.80s).
+Accumulating evaluation results...
+DONE (t=1.37s).
+2023-05-15 09:19:41,278 - mmdet - INFO - Epoch [19][50/782]	lr: 1.000e-06, eta: 0:29:17, time: 1.272, data_time: 0.066, memory: 29497, loss_cls: 0.1795, loss_bbox: 0.2290, loss: 0.4085, grad_norm: 5.1740
+2023-05-15 09:20:41,675 - mmdet - INFO - Epoch [19][100/782]	lr: 1.000e-06, eta: 0:28:19, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1675, loss_bbox: 0.2027, loss: 0.3702, grad_norm: 5.2241
+2023-05-15 09:21:42,292 - mmdet - INFO - Epoch [19][150/782]	lr: 1.000e-06, eta: 0:27:22, time: 1.212, data_time: 0.014, memory: 29497, loss_cls: 0.1689, loss_bbox: 0.2064, loss: 0.3753, grad_norm: 4.9229
+2023-05-15 09:22:42,619 - mmdet - INFO - Epoch [19][200/782]	lr: 1.000e-06, eta: 0:26:24, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1686, loss_bbox: 0.2035, loss: 0.3721, grad_norm: 5.3638
+2023-05-15 09:23:43,061 - mmdet - INFO - Epoch [19][250/782]	lr: 1.000e-06, eta: 0:25:26, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1695, loss_bbox: 0.2083, loss: 0.3778, grad_norm: 5.3726
+2023-05-15 09:24:43,845 - mmdet - INFO - Epoch [19][300/782]	lr: 1.000e-06, eta: 0:24:28, time: 1.216, data_time: 0.014, memory: 29497, loss_cls: 0.1646, loss_bbox: 0.1964, loss: 0.3609, grad_norm: 5.3051
+2023-05-15 09:25:44,350 - mmdet - INFO - Epoch [19][350/782]	lr: 1.000e-06, eta: 0:23:30, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1647, loss_bbox: 0.1957, loss: 0.3604, grad_norm: 5.2628
+2023-05-15 09:26:44,916 - mmdet - INFO - Epoch [19][400/782]	lr: 1.000e-06, eta: 0:22:32, time: 1.211, data_time: 0.014, memory: 29497, loss_cls: 0.1854, loss_bbox: 0.2009, loss: 0.3864, grad_norm: 5.4968
+2023-05-15 09:27:45,377 - mmdet - INFO - Epoch [19][450/782]	lr: 1.000e-06, eta: 0:21:34, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1727, loss_bbox: 0.2104, loss: 0.3831, grad_norm: 5.2918
+2023-05-15 09:28:45,738 - mmdet - INFO - Epoch [19][500/782]	lr: 1.000e-06, eta: 0:20:36, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1796, loss_bbox: 0.2067, loss: 0.3864, grad_norm: 5.1875
+2023-05-15 09:29:46,002 - mmdet - INFO - Epoch [19][550/782]	lr: 1.000e-06, eta: 0:19:38, time: 1.205, data_time: 0.014, memory: 29497, loss_cls: 0.1602, loss_bbox: 0.1980, loss: 0.3582, grad_norm: 5.3583
+2023-05-15 09:30:46,350 - mmdet - INFO - Epoch [19][600/782]	lr: 1.000e-06, eta: 0:18:40, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1929, loss_bbox: 0.2182, loss: 0.4111, grad_norm: 5.3419
+2023-05-15 09:31:46,861 - mmdet - INFO - Epoch [19][650/782]	lr: 1.000e-06, eta: 0:17:42, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1731, loss_bbox: 0.2101, loss: 0.3832, grad_norm: 5.6612
+2023-05-15 09:32:48,146 - mmdet - INFO - Epoch [19][700/782]	lr: 1.000e-06, eta: 0:16:44, time: 1.226, data_time: 0.014, memory: 29497, loss_cls: 0.1972, loss_bbox: 0.2282, loss: 0.4255, grad_norm: 5.4543
+2023-05-15 09:33:48,450 - mmdet - INFO - Epoch [19][750/782]	lr: 1.000e-06, eta: 0:15:46, time: 1.206, data_time: 0.014, memory: 29497, loss_cls: 0.1776, loss_bbox: 0.2152, loss: 0.3927, grad_norm: 5.6065
+2023-05-15 09:34:27,130 - mmdet - INFO - Saving checkpoint at 19 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.8 task/s, elapsed: 125s, ETA:     0sLoading and preparing results...
+DONE (t=0.23s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.81s).
+Accumulating evaluation results...
+DONE (t=1.36s).
+2023-05-15 09:36:41,141 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.541
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.417
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.020
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.096
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.473
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.619
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.619
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.619
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.140
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.688
+2023-05-15 09:36:41,291 - mmdet - INFO - The previous best checkpoint /opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/tood_swinv2-t-p4-w16_fpn_resize_coco_adamw_trash/best_bbox_mAP_50_epoch_12.pth was removed
+2023-05-15 09:36:42,302 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_19.pth.
+2023-05-15 09:36:42,302 - mmdet - INFO - Best bbox_mAP_50 is 0.5410 at 19 epoch.
+2023-05-15 09:36:42,303 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 09:36:42,304 - mmdet - INFO - Epoch(val) [19][977]	bbox_mAP: 0.4030, bbox_mAP_50: 0.5410, bbox_mAP_75: 0.4170, bbox_mAP_s: 0.0200, bbox_mAP_m: 0.0960, bbox_mAP_l: 0.4730, bbox_mAP_copypaste: 0.403 0.541 0.417 0.020 0.096 0.473
+Loading and preparing results...
+DONE (t=0.21s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.76s).
+Accumulating evaluation results...
+DONE (t=1.34s).
+2023-05-15 09:37:58,331 - mmdet - INFO - Epoch [20][50/782]	lr: 1.000e-06, eta: 0:14:09, time: 1.267, data_time: 0.065, memory: 29497, loss_cls: 0.1713, loss_bbox: 0.2089, loss: 0.3802, grad_norm: 5.1928
+2023-05-15 09:38:58,662 - mmdet - INFO - Epoch [20][100/782]	lr: 1.000e-06, eta: 0:13:11, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1713, loss_bbox: 0.2046, loss: 0.3759, grad_norm: 5.2571
+2023-05-15 09:39:59,112 - mmdet - INFO - Epoch [20][150/782]	lr: 1.000e-06, eta: 0:12:14, time: 1.209, data_time: 0.014, memory: 29497, loss_cls: 0.1643, loss_bbox: 0.2043, loss: 0.3686, grad_norm: 5.0210
+2023-05-15 09:40:59,519 - mmdet - INFO - Epoch [20][200/782]	lr: 1.000e-06, eta: 0:11:16, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1744, loss_bbox: 0.2105, loss: 0.3849, grad_norm: 5.2700
+2023-05-15 09:42:00,012 - mmdet - INFO - Epoch [20][250/782]	lr: 1.000e-06, eta: 0:10:18, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1638, loss_bbox: 0.1939, loss: 0.3577, grad_norm: 5.3390
+2023-05-15 09:43:00,399 - mmdet - INFO - Epoch [20][300/782]	lr: 1.000e-06, eta: 0:09:20, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1961, loss_bbox: 0.2238, loss: 0.4199, grad_norm: 5.4663
+2023-05-15 09:44:00,808 - mmdet - INFO - Epoch [20][350/782]	lr: 1.000e-06, eta: 0:08:22, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1655, loss_bbox: 0.1996, loss: 0.3651, grad_norm: 5.0952
+2023-05-15 09:45:01,218 - mmdet - INFO - Epoch [20][400/782]	lr: 1.000e-06, eta: 0:07:23, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1683, loss_bbox: 0.2030, loss: 0.3713, grad_norm: 5.6659
+2023-05-15 09:46:01,580 - mmdet - INFO - Epoch [20][450/782]	lr: 1.000e-06, eta: 0:06:25, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.1654, loss_bbox: 0.1981, loss: 0.3635, grad_norm: 5.4095
+2023-05-15 09:47:02,303 - mmdet - INFO - Epoch [20][500/782]	lr: 1.000e-06, eta: 0:05:27, time: 1.214, data_time: 0.014, memory: 29497, loss_cls: 0.1786, loss_bbox: 0.2094, loss: 0.3880, grad_norm: 5.2172
+2023-05-15 09:48:02,694 - mmdet - INFO - Epoch [20][550/782]	lr: 1.000e-06, eta: 0:04:29, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1921, loss_bbox: 0.2152, loss: 0.4073, grad_norm: 5.3014
+2023-05-15 09:49:03,055 - mmdet - INFO - Epoch [20][600/782]	lr: 1.000e-06, eta: 0:03:31, time: 1.207, data_time: 0.013, memory: 29497, loss_cls: 0.1613, loss_bbox: 0.2004, loss: 0.3617, grad_norm: 5.1909
+2023-05-15 09:50:03,844 - mmdet - INFO - Epoch [20][650/782]	lr: 1.000e-06, eta: 0:02:33, time: 1.216, data_time: 0.014, memory: 29497, loss_cls: 0.1604, loss_bbox: 0.1949, loss: 0.3553, grad_norm: 5.4292
+2023-05-15 09:51:04,255 - mmdet - INFO - Epoch [20][700/782]	lr: 1.000e-06, eta: 0:01:35, time: 1.208, data_time: 0.014, memory: 29497, loss_cls: 0.1765, loss_bbox: 0.2133, loss: 0.3897, grad_norm: 5.3010
+2023-05-15 09:52:04,755 - mmdet - INFO - Epoch [20][750/782]	lr: 1.000e-06, eta: 0:00:37, time: 1.210, data_time: 0.014, memory: 29497, loss_cls: 0.1798, loss_bbox: 0.2079, loss: 0.3877, grad_norm: 5.4125
+2023-05-15 09:52:43,526 - mmdet - INFO - Saving checkpoint at 20 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0s
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 124s, ETA:     0sLoading and preparing results...
+DONE (t=0.20s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.73s).
+Accumulating evaluation results...
+2023-05-15 09:54:56,596 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.403
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.541
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.417
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.021
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.094
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.473
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.618
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.136
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.285
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.687
+2023-05-15 09:54:56,674 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_adamw.py
+2023-05-15 09:54:56,674 - mmdet - INFO - Epoch(val) [20][977]	bbox_mAP: 0.4030, bbox_mAP_50: 0.5410, bbox_mAP_75: 0.4170, bbox_mAP_s: 0.0210, bbox_mAP_m: 0.0940, bbox_mAP_l: 0.4730, bbox_mAP_copypaste: 0.403 0.541 0.417 0.021 0.094 0.473
+DONE (t=1.37s).
+Loading and preparing results...
+DONE (t=0.21s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.73s).
+Accumulating evaluation results...
+DONE (t=1.34s).

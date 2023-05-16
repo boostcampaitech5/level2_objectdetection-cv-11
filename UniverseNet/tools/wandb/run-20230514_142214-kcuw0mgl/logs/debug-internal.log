@@ -1,0 +1,180 @@
+2023-05-14 14:22:14,561 INFO    StreamThr :15467 [internal.py:wandb_internal():89] W&B internal server running at pid: 15467, started at: 2023-05-14 14:22:14.560828
+2023-05-14 14:22:14,564 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: status
+2023-05-14 14:22:14,567 INFO    WriterThread:15467 [datastore.py:open_for_write():85] open: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/run-kcuw0mgl.wandb
+2023-05-14 14:22:14,568 DEBUG   SenderThread:15467 [sender.py:send():375] send: header
+2023-05-14 14:22:14,659 DEBUG   SenderThread:15467 [sender.py:send():375] send: run
+2023-05-14 14:22:15,123 INFO    SenderThread:15467 [dir_watcher.py:__init__():219] watching files in: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files
+2023-05-14 14:22:15,123 INFO    SenderThread:15467 [sender.py:_start_run_threads():1127] run started: kcuw0mgl with start time 1684074134.562031
+2023-05-14 14:22:15,123 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: summary_record
+2023-05-14 14:22:15,124 INFO    SenderThread:15467 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-14 14:22:15,129 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: check_version
+2023-05-14 14:22:15,129 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: check_version
+2023-05-14 14:22:15,206 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: run_start
+2023-05-14 14:22:15,209 DEBUG   HandlerThread:15467 [system_info.py:__init__():31] System info init
+2023-05-14 14:22:15,209 DEBUG   HandlerThread:15467 [system_info.py:__init__():46] System info init done
+2023-05-14 14:22:15,209 INFO    HandlerThread:15467 [system_monitor.py:start():181] Starting system monitor
+2023-05-14 14:22:15,209 INFO    SystemMonitor:15467 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-14 14:22:15,209 INFO    HandlerThread:15467 [system_monitor.py:probe():201] Collecting system info
+2023-05-14 14:22:15,210 INFO    SystemMonitor:15467 [interfaces.py:start():190] Started cpu monitoring
+2023-05-14 14:22:15,213 INFO    SystemMonitor:15467 [interfaces.py:start():190] Started disk monitoring
+2023-05-14 14:22:15,213 INFO    SystemMonitor:15467 [interfaces.py:start():190] Started gpu monitoring
+2023-05-14 14:22:15,214 INFO    SystemMonitor:15467 [interfaces.py:start():190] Started memory monitoring
+2023-05-14 14:22:15,215 INFO    SystemMonitor:15467 [interfaces.py:start():190] Started network monitoring
+2023-05-14 14:22:15,222 DEBUG   HandlerThread:15467 [system_info.py:probe():195] Probing system
+2023-05-14 14:22:15,229 DEBUG   HandlerThread:15467 [system_info.py:_probe_git():180] Probing git
+2023-05-14 14:22:15,246 DEBUG   HandlerThread:15467 [system_info.py:_probe_git():188] Probing git done
+2023-05-14 14:22:15,246 DEBUG   HandlerThread:15467 [system_info.py:probe():240] Probing system done
+2023-05-14 14:22:15,246 DEBUG   HandlerThread:15467 [system_monitor.py:probe():210] {'os': 'Linux-4.4.0-59-generic-x86_64-with-debian-buster-sid', 'python': '3.7.0', 'heartbeatAt': '2023-05-14T14:22:15.222980', 'startedAt': '2023-05-14T14:22:14.550727', 'docker': None, 'cuda': None, 'args': ('--model', 'tood_swinv2-s-p4-w16_fpn_resize_coco', '--folder', 'tood'), 'state': 'running', 'program': 'main.py', 'codePath': 'UniverseNet/tools/main.py', 'git': {'remote': 'https://github.com/boostcampaitech5/level2_objectdetection-cv-11.git', 'commit': '71a591a8c62b0f7ab9076a5e523548b55cc4278e'}, 'email': 'hjhhijk@gmail.com', 'root': '/opt/ml/level2_objectdetection-cv-11', 'host': '31250d40d265', 'username': 'root', 'executable': '/opt/conda/envs/project2/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2200.02, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 98.30496215820312, 'used': 73.28372573852539}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}], 'memory': {'total': 88.50595092773438}}
+2023-05-14 14:22:15,246 INFO    HandlerThread:15467 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-14 14:22:15,246 INFO    HandlerThread:15467 [system_monitor.py:probe():214] Publishing system info
+2023-05-14 14:22:15,246 DEBUG   HandlerThread:15467 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-05-14 14:22:15,247 DEBUG   HandlerThread:15467 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-14 14:22:15,247 DEBUG   HandlerThread:15467 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-05-14 14:22:16,125 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/requirements.txt
+2023-05-14 14:22:16,126 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/wandb-summary.json
+2023-05-14 14:22:16,126 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/conda-environment.yaml
+2023-05-14 14:22:23,840 DEBUG   HandlerThread:15467 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-14 14:22:23,841 INFO    HandlerThread:15467 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-14 14:22:23,847 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: status_report
+2023-05-14 14:22:23,847 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-14 14:22:23,848 DEBUG   SenderThread:15467 [sender.py:send():375] send: files
+2023-05-14 14:22:23,848 INFO    SenderThread:15467 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-14 14:22:23,855 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-14 14:22:23,855 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: stop_status
+2023-05-14 14:22:24,082 DEBUG   SenderThread:15467 [sender.py:send():375] send: telemetry
+2023-05-14 14:22:24,129 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/conda-environment.yaml
+2023-05-14 14:22:24,129 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/wandb-metadata.json
+2023-05-14 14:22:24,713 INFO    wandb-upload_0:15467 [upload_job.py:push():137] Uploaded file /tmp/tmpee3jx41gwandb/mvmg8oq6-wandb-metadata.json
+2023-05-14 14:22:26,083 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: status_report
+2023-05-14 14:22:26,776 DEBUG   SenderThread:15467 [sender.py:send():375] send: exit
+2023-05-14 14:22:26,776 INFO    SenderThread:15467 [sender.py:send_exit():598] handling exit code: 1
+2023-05-14 14:22:26,777 INFO    SenderThread:15467 [sender.py:send_exit():600] handling runtime: 11
+2023-05-14 14:22:26,779 INFO    SenderThread:15467 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-14 14:22:26,779 INFO    SenderThread:15467 [sender.py:send_exit():606] send defer
+2023-05-14 14:22:26,779 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,779 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-14 14:22:26,780 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,780 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-14 14:22:26,780 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 1
+2023-05-14 14:22:26,780 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,780 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-14 14:22:26,780 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,780 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-14 14:22:26,780 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 2
+2023-05-14 14:22:26,780 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,780 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-14 14:22:26,781 INFO    HandlerThread:15467 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-14 14:22:26,781 DEBUG   SystemMonitor:15467 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-14 14:22:26,781 DEBUG   SystemMonitor:15467 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-14 14:22:26,781 DEBUG   SystemMonitor:15467 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-14 14:22:26,782 INFO    HandlerThread:15467 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-14 14:22:26,782 INFO    HandlerThread:15467 [interfaces.py:finish():202] Joined disk monitor
+2023-05-14 14:22:26,795 INFO    HandlerThread:15467 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-14 14:22:26,795 INFO    HandlerThread:15467 [interfaces.py:finish():202] Joined memory monitor
+2023-05-14 14:22:26,795 INFO    HandlerThread:15467 [interfaces.py:finish():202] Joined network monitor
+2023-05-14 14:22:26,796 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,796 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-14 14:22:26,796 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 3
+2023-05-14 14:22:26,796 DEBUG   SenderThread:15467 [sender.py:send():375] send: stats
+2023-05-14 14:22:26,796 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,796 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-14 14:22:26,797 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,797 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-14 14:22:26,797 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 4
+2023-05-14 14:22:26,797 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,797 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-14 14:22:26,797 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,797 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-14 14:22:26,797 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 5
+2023-05-14 14:22:26,797 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,798 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-14 14:22:26,798 DEBUG   SenderThread:15467 [sender.py:send():375] send: summary
+2023-05-14 14:22:26,798 INFO    SenderThread:15467 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-14 14:22:26,798 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,798 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-14 14:22:26,798 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 6
+2023-05-14 14:22:26,799 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:26,799 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-14 14:22:26,799 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:26,799 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-14 14:22:26,804 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: status_report
+2023-05-14 14:22:27,045 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 7
+2023-05-14 14:22:27,045 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:27,046 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-14 14:22:27,046 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:27,046 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-14 14:22:27,130 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/config.yaml
+2023-05-14 14:22:27,130 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/wandb-summary.json
+2023-05-14 14:22:27,130 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/output.log
+2023-05-14 14:22:27,777 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 14:22:28,781 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 8
+2023-05-14 14:22:28,781 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 14:22:28,781 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:28,781 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-14 14:22:28,782 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:28,782 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-14 14:22:28,790 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 9
+2023-05-14 14:22:28,790 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:28,790 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-14 14:22:28,791 DEBUG   SenderThread:15467 [sender.py:send():375] send: artifact
+2023-05-14 14:22:29,131 INFO    Thread-12 :15467 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/output.log
+2023-05-14 14:22:29,950 INFO    SenderThread:15467 [sender.py:send_artifact():1474] sent artifact job-https___github.com_boostcampaitech5_level2_objectdetection-cv-11.git_UniverseNet_tools_main.py - {'id': 'QXJ0aWZhY3Q6NDU0MzI0MjY1', 'digest': '1be1afc4a56e97c1c812724da87fbe7c', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_boostcampaitech5_level2_objectdetection-cv-11.git_UniverseNet_tools_main.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_boostcampaitech5_level2_objectdetection-cv-11.git_UniverseNet_tools_main.py', 'alias': 'v2'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY5MTQ2Mzkw', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDU0NjM4MDUy', 'versionIndex': 6}}, 'version': 'v2'}
+2023-05-14 14:22:29,950 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:29,950 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-14 14:22:29,950 INFO    SenderThread:15467 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-14 14:22:30,131 INFO    SenderThread:15467 [dir_watcher.py:finish():395] scan: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files
+2023-05-14 14:22:30,132 INFO    SenderThread:15467 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/wandb-summary.json wandb-summary.json
+2023-05-14 14:22:30,132 INFO    SenderThread:15467 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/requirements.txt requirements.txt
+2023-05-14 14:22:30,135 INFO    SenderThread:15467 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/conda-environment.yaml conda-environment.yaml
+2023-05-14 14:22:30,138 INFO    SenderThread:15467 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/config.yaml config.yaml
+2023-05-14 14:22:30,141 INFO    SenderThread:15467 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/output.log output.log
+2023-05-14 14:22:30,144 INFO    SenderThread:15467 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/wandb-metadata.json wandb-metadata.json
+2023-05-14 14:22:30,145 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 10
+2023-05-14 14:22:30,145 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:30,145 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-14 14:22:30,149 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:30,149 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-14 14:22:30,149 INFO    SenderThread:15467 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-14 14:22:30,779 INFO    wandb-upload_1:15467 [upload_job.py:push():137] Uploaded file /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/wandb-summary.json
+2023-05-14 14:22:30,846 INFO    wandb-upload_4:15467 [upload_job.py:push():137] Uploaded file /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/config.yaml
+2023-05-14 14:22:30,848 INFO    wandb-upload_2:15467 [upload_job.py:push():137] Uploaded file /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/requirements.txt
+2023-05-14 14:22:31,005 INFO    wandb-upload_0:15467 [upload_job.py:push():137] Uploaded file /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/output.log
+2023-05-14 14:22:31,007 INFO    wandb-upload_3:15467 [upload_job.py:push():137] Uploaded file /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/files/conda-environment.yaml
+2023-05-14 14:22:31,208 INFO    Thread-11 :15467 [sender.py:transition_state():626] send defer: 11
+2023-05-14 14:22:31,208 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:31,208 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-14 14:22:31,209 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:31,209 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-14 14:22:31,209 INFO    SenderThread:15467 [file_pusher.py:join():172] waiting for file pusher
+2023-05-14 14:22:31,209 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 12
+2023-05-14 14:22:31,209 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:31,209 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-14 14:22:31,210 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:31,210 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-14 14:22:31,423 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 13
+2023-05-14 14:22:31,423 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:31,423 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-14 14:22:31,424 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:31,424 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-14 14:22:31,424 INFO    SenderThread:15467 [sender.py:transition_state():626] send defer: 14
+2023-05-14 14:22:31,424 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 14:22:31,424 INFO    HandlerThread:15467 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-14 14:22:31,425 DEBUG   SenderThread:15467 [sender.py:send():375] send: final
+2023-05-14 14:22:31,425 DEBUG   SenderThread:15467 [sender.py:send():375] send: footer
+2023-05-14 14:22:31,425 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: defer
+2023-05-14 14:22:31,425 INFO    SenderThread:15467 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-14 14:22:31,425 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 14:22:31,426 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: server_info
+2023-05-14 14:22:31,426 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 14:22:31,426 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-14 14:22:31,427 DEBUG   SenderThread:15467 [sender.py:send_request():402] send_request: server_info
+2023-05-14 14:22:31,427 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-14 14:22:31,625 INFO    MainThread:15467 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-14 14:22:31,625 INFO    MainThread:15467 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-14 14:22:31,625 INFO    MainThread:15467 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-05-14 14:22:31,625 DEBUG   HandlerThread:15467 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-14 14:22:31,626 INFO    HandlerThread:15467 [handler.py:finish():845] shutting down handler
+2023-05-14 14:22:32,426 INFO    WriterThread:15467 [datastore.py:close():298] close: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_142214-kcuw0mgl/run-kcuw0mgl.wandb
+2023-05-14 14:22:32,625 INFO    SenderThread:15467 [sender.py:finish():1550] shutting down sender
+2023-05-14 14:22:32,625 INFO    SenderThread:15467 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-14 14:22:32,625 INFO    SenderThread:15467 [file_pusher.py:join():172] waiting for file pusher

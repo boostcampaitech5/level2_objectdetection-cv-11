@@ -1,0 +1,22 @@
+
+2023-05-14 18:33:31,938 - mmdet - INFO - Epoch [1][50/1302]	lr: 9.890e-04, eta: 8:15:17, time: 1.143, data_time: 0.055, memory: 27453, loss_cls: 0.9886, loss_bbox: 1.4454, loss: 2.4341, grad_norm: 20.9526
+Traceback (most recent call last):
+  File "main_3.py", line 183, in <module>
+    train(cfg)
+  File "main_3.py", line 118, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 54, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 317, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 68, in after_train_iter
+    grad_norm = self.clip_grads(runner.model.parameters())
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 59, in clip_grads
+    return clip_grad.clip_grad_norm_(params, **self.grad_clip)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/utils/clip_grad.py", line 43, in clip_grad_norm_
+    if total_norm.isnan() or total_norm.isinf():
+KeyboardInterrupt

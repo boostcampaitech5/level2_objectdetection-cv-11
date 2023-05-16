@@ -1,0 +1,51 @@
+
+2023-05-15 22:41:27,169 - mmdet - INFO - Epoch [1][50/782]	lr: 3.322e-05, eta: 9:51:28, time: 1.263, data_time: 0.063, memory: 29497, loss_cls: 0.9348, loss_bbox: 1.1046, loss: 2.0394, grad_norm: 14.7308
+2023-05-15 22:42:27,363 - mmdet - INFO - Epoch [1][100/782]	lr: 4.300e-05, eta: 9:36:38, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.7422, loss_bbox: 1.0016, loss: 1.7438, grad_norm: 14.5677
+2023-05-15 22:43:27,557 - mmdet - INFO - Epoch [1][150/782]	lr: 5.884e-05, eta: 9:31:01, time: 1.204, data_time: 0.014, memory: 29497, loss_cls: 0.6700, loss_bbox: 0.9598, loss: 1.6298, grad_norm: 16.0544
+2023-05-15 22:44:27,654 - mmdet - INFO - Epoch [1][200/782]	lr: 7.996e-05, eta: 9:27:29, time: 1.202, data_time: 0.014, memory: 29497, loss_cls: 0.6299, loss_bbox: 0.8255, loss: 1.4555, grad_norm: 14.9095
+Traceback (most recent call last):
+  File "main.py", line 184, in <module>
+    train(cfg)
+  File "main.py", line 119, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 53, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 32, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 77, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 248, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 119, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/single_stage.py", line 82, in forward_train
+    x = self.extract_feat(img)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/single_stage.py", line 45, in extract_feat
+    x = self.neck(x)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 119, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/necks/fpn.py", line 159, in forward
+    for i, lateral_conv in enumerate(self.lateral_convs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/necks/fpn.py", line 159, in <listcomp>
+    for i, lateral_conv in enumerate(self.lateral_convs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/cnn/bricks/conv_module.py", line 207, in forward
+    x = self.conv(x)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 443, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 440, in _conv_forward
+    self.padding, self.dilation, self.groups)
+KeyboardInterrupt

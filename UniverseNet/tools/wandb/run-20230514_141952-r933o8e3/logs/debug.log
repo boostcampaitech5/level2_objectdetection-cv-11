@@ -1,0 +1,27 @@
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Current SDK version is 0.15.2
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Configure stats pid to 14902
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Loading settings from /opt/ml/.config/wandb/settings
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Loading settings from /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/settings
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'UniverseNet/tools/main.py', 'program': 'main.py'}
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_init.py:_log_setup():507] Logging user logs to /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_141952-r933o8e3/logs/debug.log
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_init.py:_log_setup():508] Logging internal logs to /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_141952-r933o8e3/logs/debug-internal.log
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_init.py:init():547] calling init triggers
+2023-05-14 14:19:52,680 INFO    MainThread:14902 [wandb_init.py:init():555] wandb.init called with sweep_config: {}
+config: {}
+2023-05-14 14:19:52,681 INFO    MainThread:14902 [wandb_init.py:init():596] starting backend
+2023-05-14 14:19:52,681 INFO    MainThread:14902 [wandb_init.py:init():600] setting up manager
+2023-05-14 14:19:52,685 INFO    MainThread:14902 [backend.py:_multiprocessing_setup():108] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-05-14 14:19:52,690 INFO    MainThread:14902 [wandb_init.py:init():606] backend started and connected
+2023-05-14 14:19:52,697 INFO    MainThread:14902 [wandb_init.py:init():700] updated telemetry
+2023-05-14 14:19:52,783 INFO    MainThread:14902 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-14 14:19:53,360 INFO    MainThread:14902 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-14 14:19:53,390 INFO    MainThread:14902 [wandb_run.py:_on_init():2186] got version response 
+2023-05-14 14:19:53,390 INFO    MainThread:14902 [wandb_init.py:init():787] starting run threads in backend
+2023-05-14 14:20:02,038 INFO    MainThread:14902 [wandb_run.py:_console_start():2158] atexit reg
+2023-05-14 14:20:02,038 INFO    MainThread:14902 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-05-14 14:20:02,038 INFO    MainThread:14902 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-05-14 14:20:02,038 INFO    MainThread:14902 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-05-14 14:20:02,039 INFO    MainThread:14902 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-14 14:20:11,518 WARNING MsgRouterThr:14902 [router.py:message_loop():77] message_loop has been closed

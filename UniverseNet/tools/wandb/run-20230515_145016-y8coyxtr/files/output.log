@@ -1,0 +1,206 @@
+
+2023-05-15 14:51:28,570 - mmdet - INFO - Epoch [1][50/782]	lr: 3.073e-04, eta: 9:41:30, time: 1.242, data_time: 0.063, memory: 29497, loss_cls: 0.8598, loss_bbox: 1.1039, loss: 1.9637
+2023-05-15 14:52:27,693 - mmdet - INFO - Epoch [1][100/782]	lr: 6.113e-04, eta: 9:26:39, time: 1.182, data_time: 0.012, memory: 29497, loss_cls: 0.8085, loss_bbox: 1.0272, loss: 1.8358
+2023-05-15 14:53:26,879 - mmdet - INFO - Epoch [1][150/782]	lr: 1.037e-03, eta: 9:21:14, time: 1.184, data_time: 0.013, memory: 29497, loss_cls: 0.8191, loss_bbox: 1.0181, loss: 1.8372
+2023-05-15 14:54:26,074 - mmdet - INFO - Epoch [1][200/782]	lr: 1.478e-03, eta: 9:18:03, time: 1.184, data_time: 0.013, memory: 29497, loss_cls: 0.7955, loss_bbox: 1.0089, loss: 1.8044
+2023-05-15 14:55:25,072 - mmdet - INFO - Epoch [1][250/782]	lr: 1.825e-03, eta: 9:15:23, time: 1.180, data_time: 0.012, memory: 29497, loss_cls: 0.7938, loss_bbox: 1.0129, loss: 1.8067
+2023-05-15 14:56:24,210 - mmdet - INFO - Epoch [1][300/782]	lr: 1.992e-03, eta: 9:13:30, time: 1.183, data_time: 0.013, memory: 29497, loss_cls: 0.7951, loss_bbox: 1.0545, loss: 1.8496
+2023-05-15 14:57:23,418 - mmdet - INFO - Epoch [1][350/782]	lr: 1.970e-03, eta: 9:11:57, time: 1.184, data_time: 0.013, memory: 29497, loss_cls: 0.7808, loss_bbox: 1.0689, loss: 1.8498
+2023-05-15 14:58:22,556 - mmdet - INFO - Epoch [1][400/782]	lr: 1.836e-03, eta: 9:10:29, time: 1.183, data_time: 0.013, memory: 29497, loss_cls: 0.7948, loss_bbox: 0.9713, loss: 1.7661
+2023-05-15 14:59:21,655 - mmdet - INFO - Epoch [1][450/782]	lr: 1.609e-03, eta: 9:09:04, time: 1.182, data_time: 0.013, memory: 29497, loss_cls: 0.7766, loss_bbox: 1.0469, loss: 1.8235
+2023-05-15 15:00:20,733 - mmdet - INFO - Epoch [1][500/782]	lr: 1.315e-03, eta: 9:07:43, time: 1.182, data_time: 0.013, memory: 29497, loss_cls: 0.7746, loss_bbox: 0.9857, loss: 1.7603
+2023-05-15 15:01:20,477 - mmdet - INFO - Epoch [1][550/782]	lr: 9.866e-04, eta: 9:07:00, time: 1.195, data_time: 0.014, memory: 29497, loss_cls: 0.7583, loss_bbox: 0.9660, loss: 1.7243
+2023-05-15 15:02:19,642 - mmdet - INFO - Epoch [1][600/782]	lr: 6.594e-04, eta: 9:05:47, time: 1.183, data_time: 0.013, memory: 29497, loss_cls: 0.7349, loss_bbox: 0.9753, loss: 1.7102
+2023-05-15 15:03:18,794 - mmdet - INFO - Epoch [1][650/782]	lr: 3.698e-04, eta: 9:04:36, time: 1.183, data_time: 0.012, memory: 29497, loss_cls: 0.7250, loss_bbox: 0.9862, loss: 1.7112
+2023-05-15 15:04:17,951 - mmdet - INFO - Epoch [1][700/782]	lr: 1.500e-04, eta: 9:03:27, time: 1.183, data_time: 0.013, memory: 29497, loss_cls: 0.6989, loss_bbox: 0.9552, loss: 1.6541
+2023-05-15 15:05:17,623 - mmdet - INFO - Epoch [1][750/782]	lr: 2.425e-05, eta: 9:02:38, time: 1.193, data_time: 0.014, memory: 29497, loss_cls: 0.6989, loss_bbox: 0.9004, loss: 1.5993
+2023-05-15 15:05:55,608 - mmdet - INFO - Saving checkpoint at 1 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 977/977, 7.9 task/s, elapsed: 123s, ETA:     0sLoading and preparing results...
+2023-05-15 15:08:03,851 - mmdet - INFO - Evaluating bbox...
+DONE (t=0.31s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=6.03s).
+Accumulating evaluation results...
+2023-05-15 15:08:13,652 - mmdet - INFO -
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.004
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.013
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.001
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.004
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.079
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.079
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.079
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.104
+DONE (t=2.76s).
+2023-05-15 15:08:14,781 - mmdet - INFO - Now best checkpoint is saved as best_bbox_mAP_50_epoch_1.pth.
+2023-05-15 15:08:14,782 - mmdet - INFO - Best bbox_mAP_50 is 0.0130 at 1 epoch.
+2023-05-15 15:08:14,782 - mmdet - INFO - Exp name: tood_swinv2-t-p4-w16_fpn_resize_coco_cosinelr.py
+2023-05-15 15:08:14,783 - mmdet - INFO - Epoch(val) [1][977]	bbox_mAP: 0.0040, bbox_mAP_50: 0.0130, bbox_mAP_75: 0.0010, bbox_mAP_s: 0.0000, bbox_mAP_m: 0.0000, bbox_mAP_l: 0.0040, bbox_mAP_copypaste: 0.004 0.013 0.001 0.000 0.000 0.004
+Loading and preparing results...
+DONE (t=0.32s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=5.92s).
+Accumulating evaluation results...
+DONE (t=2.80s).
+2023-05-15 15:09:32,330 - mmdet - INFO - Epoch [2][50/782]	lr: 3.073e-04, eta: 8:41:42, time: 1.243, data_time: 0.069, memory: 29497, loss_cls: 0.7027, loss_bbox: 0.9418, loss: 1.6446
+2023-05-15 15:10:31,534 - mmdet - INFO - Epoch [2][100/782]	lr: 6.113e-04, eta: 8:41:44, time: 1.184, data_time: 0.013, memory: 29497, loss_cls: 0.7157, loss_bbox: 0.9241, loss: 1.6398
+2023-05-15 15:11:30,833 - mmdet - INFO - Epoch [2][150/782]	lr: 1.037e-03, eta: 8:41:42, time: 1.186, data_time: 0.013, memory: 29497, loss_cls: 0.7272, loss_bbox: 0.9636, loss: 1.6909
+2023-05-15 15:12:29,953 - mmdet - INFO - Epoch [2][200/782]	lr: 1.478e-03, eta: 8:41:30, time: 1.182, data_time: 0.012, memory: 29497, loss_cls: 0.7308, loss_bbox: 0.9147, loss: 1.6454
+Traceback (most recent call last):
+  File "main.py", line 184, in <module>
+    train(cfg)
+  File "main.py", line 119, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 53, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 32, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 77, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 248, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 119, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/single_stage.py", line 84, in forward_train
+    gt_labels, gt_bboxes_ignore)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/dense_heads/base_dense_head.py", line 330, in forward_train
+    outs = self(x)
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/redirect.py", line 643, in write
+    cb(data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 2088, in <lambda>
+    lambda data: self._console_raw_callback("stderr", data),
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 345, in wrapper_fn
+    return func(self, *args, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1428, in _console_raw_callback
+    self._backend.interface.publish_output_raw(name, data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 657, in publish_output_raw
+    self._publish_output_raw(o)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/interface/interface_shared.py", line 79, in _publish_output_raw
+    self._publish(rec)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/interface/interface_sock.py", line 51, in _publish
+    self._sock_client.send_record_publish(record)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/sock_client.py", line 221, in send_record_publish
+    self.send_server_request(server_req)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/sock_client.py", line 155, in send_server_request
+    self._send_message(msg)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/sock_client.py", line 152, in _send_message
+    self._sendall_with_error_handle(header + data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/sock_client.py", line 130, in _sendall_with_error_handle
+    sent = self._sock.send(data)
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "main.py", line 184, in <module>
+    train(cfg)
+  File "main.py", line 119, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 53, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 32, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 77, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 248, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 119, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/single_stage.py", line 84, in forward_train
+    gt_labels, gt_bboxes_ignore)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/dense_heads/base_dense_head.py", line 330, in forward_train
+    outs = self(x)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/dense_heads/tood_head.py", line 232, in forward
+    (h, w), idx, device=x.device)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/core/anchor/anchor_generator.py", line 263, in single_level_grid_priors
+    base_anchors = self.base_anchors[level_idx].to(device).to(dtype)
+KeyboardInterrupt

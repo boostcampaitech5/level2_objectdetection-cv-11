@@ -1,0 +1,51 @@
+
+2023-05-14 18:46:40,963 - mmdet - INFO - Epoch [1][50/1302]	lr: 9.890e-04, eta: 8:15:25, time: 1.144, data_time: 0.055, memory: 27453, loss_cls: 0.9786, loss_bbox: 1.4405, loss: 2.4191, grad_norm: 19.8076
+Traceback (most recent call last):
+  File "main_3.py", line 183, in <module>
+    train(cfg)
+  File "main_3.py", line 118, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 54, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 317, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 65, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/autograd/__init__.py", line 149, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+Error in sys.excepthook:
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/lib/exit_hooks.py", line 52, in exc_handler
+    traceback.print_exception(exc_type, exc, tb)
+  File "/opt/conda/envs/project2/lib/python3.7/traceback.py", line 100, in print_exception
+    type(value), value, tb, limit=limit).format(chain=chain):
+  File "/opt/conda/envs/project2/lib/python3.7/traceback.py", line 599, in format
+    yield from self.format_exception_only()
+KeyboardInterrupt
+Original exception was:
+Traceback (most recent call last):
+  File "main_3.py", line 183, in <module>
+    train(cfg)
+  File "main_3.py", line 118, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 54, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 317, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 65, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/autograd/__init__.py", line 149, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+KeyboardInterrupt

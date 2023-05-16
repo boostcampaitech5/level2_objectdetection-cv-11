@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "main.py", line 183, in <module>
+    train(cfg)
+  File "main.py", line 118, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 53, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 32, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 77, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 248, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 119, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/base.py", line 172, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/single_stage.py", line 82, in forward_train
+    x = self.extract_feat(img)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/detectors/single_stage.py", line 45, in extract_feat
+    x = self.neck(x)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/necks/nas_fpn.py", line 132, in forward
+    for i, lateral_conv in enumerate(self.lateral_convs)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/models/necks/nas_fpn.py", line 132, in <listcomp>
+    for i, lateral_conv in enumerate(self.lateral_convs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/cnn/bricks/conv_module.py", line 207, in forward
+    x = self.conv(x)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1051, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 443, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/nn/modules/conv.py", line 440, in _conv_forward
+    self.padding, self.dilation, self.groups)
+RuntimeError: Given groups=1, weight of size [256, 192, 1, 1], expected input[4, 96, 256, 256] to have 192 channels, but got 96 channels instead

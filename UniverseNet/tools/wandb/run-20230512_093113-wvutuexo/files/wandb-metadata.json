@@ -1,0 +1,92 @@
+{
+    "os": "Linux-4.4.0-59-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.0",
+    "heartbeatAt": "2023-05-12T09:31:13.935664",
+    "startedAt": "2023-05-12T09:31:13.224566",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model",
+        "sparse_rcnn_pvt_v2_b2_fpn_300_proposals_detraug_3x_coco",
+        "--folder",
+        "pvtv2_original",
+        "--resize",
+        "768"
+    ],
+    "state": "running",
+    "program": "main.py",
+    "codePath": "UniverseNet/tools/main.py",
+    "git": {
+        "remote": "https://github.com/boostcampaitech5/level2_objectdetection-cv-11.git",
+        "commit": "71a591a8c62b0f7ab9076a5e523548b55cc4278e"
+    },
+    "email": "hjhhijk@gmail.com",
+    "root": "/opt/ml/level2_objectdetection-cv-11",
+    "host": "31250d40d265",
+    "username": "root",
+    "executable": "/opt/conda/envs/project2/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2200.02,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.02,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "total": 98.30496215820312,
+        "used": 64.64692306518555
+    },
+    "gpu": "Tesla V100-PCIE-32GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-PCIE-32GB",
+            "memory_total": 34089730048
+        }
+    ],
+    "memory": {
+        "total": 88.50595092773438
+    }
+}

@@ -1,0 +1,24 @@
+
+2023-05-14 18:42:24,701 - mmdet - INFO - Epoch [1][50/1302]	lr: 9.890e-04, eta: 8:16:05, time: 1.145, data_time: 0.054, memory: 27454, loss_cls: 0.9852, loss_bbox: 1.4226, loss: 2.4078, grad_norm: 20.2181
+2023-05-14 18:43:18,734 - mmdet - INFO - Epoch [1][100/1302]	lr: 1.988e-03, eta: 8:01:10, time: 1.081, data_time: 0.008, memory: 27454, loss_cls: 0.8338, loss_bbox: 1.1861, loss: 2.0200, grad_norm: 15.0009
+2023-05-14 18:44:12,844 - mmdet - INFO - Epoch [1][150/1302]	lr: 2.987e-03, eta: 7:55:49, time: 1.082, data_time: 0.008, memory: 27454, loss_cls: 0.7203, loss_bbox: 1.0926, loss: 1.8128, grad_norm: 7.8116
+Traceback (most recent call last):
+  File "main_3.py", line 183, in <module>
+    train(cfg)
+  File "main_3.py", line 118, in train
+    train_detector(model, datasets, cfg, distributed=False, validate=True,meta=meta)
+  File "/opt/ml/level2_objectdetection-cv-11/UniverseNet/mmdet/apis/train.py", line 306, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 136, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 54, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 317, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 65, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/torch/autograd/__init__.py", line 149, in backward
+    allow_unreachable=True, accumulate_grad=True)  # allow_unreachable flag
+KeyboardInterrupt

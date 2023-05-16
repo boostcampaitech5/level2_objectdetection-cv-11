@@ -1,0 +1,280 @@
+2023-05-14 18:34:20,984 INFO    StreamThr :22897 [internal.py:wandb_internal():89] W&B internal server running at pid: 22897, started at: 2023-05-14 18:34:20.984111
+2023-05-14 18:34:20,987 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: status
+2023-05-14 18:34:20,993 INFO    WriterThread:22897 [datastore.py:open_for_write():85] open: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/run-7giwp5u2.wandb
+2023-05-14 18:34:20,993 DEBUG   SenderThread:22897 [sender.py:send():375] send: header
+2023-05-14 18:34:21,062 DEBUG   SenderThread:22897 [sender.py:send():375] send: run
+2023-05-14 18:34:21,544 INFO    SenderThread:22897 [dir_watcher.py:__init__():219] watching files in: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files
+2023-05-14 18:34:21,545 INFO    SenderThread:22897 [sender.py:_start_run_threads():1127] run started: 7giwp5u2 with start time 1684089260.985758
+2023-05-14 18:34:21,545 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: summary_record
+2023-05-14 18:34:21,545 INFO    SenderThread:22897 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-14 18:34:21,549 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: check_version
+2023-05-14 18:34:21,549 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: check_version
+2023-05-14 18:34:21,622 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: run_start
+2023-05-14 18:34:21,625 DEBUG   HandlerThread:22897 [system_info.py:__init__():31] System info init
+2023-05-14 18:34:21,625 DEBUG   HandlerThread:22897 [system_info.py:__init__():46] System info init done
+2023-05-14 18:34:21,625 INFO    HandlerThread:22897 [system_monitor.py:start():181] Starting system monitor
+2023-05-14 18:34:21,626 INFO    SystemMonitor:22897 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-14 18:34:21,626 INFO    HandlerThread:22897 [system_monitor.py:probe():201] Collecting system info
+2023-05-14 18:34:21,626 INFO    SystemMonitor:22897 [interfaces.py:start():190] Started cpu monitoring
+2023-05-14 18:34:21,628 INFO    SystemMonitor:22897 [interfaces.py:start():190] Started disk monitoring
+2023-05-14 18:34:21,629 INFO    SystemMonitor:22897 [interfaces.py:start():190] Started gpu monitoring
+2023-05-14 18:34:21,630 INFO    SystemMonitor:22897 [interfaces.py:start():190] Started memory monitoring
+2023-05-14 18:34:21,630 INFO    SystemMonitor:22897 [interfaces.py:start():190] Started network monitoring
+2023-05-14 18:34:21,638 DEBUG   HandlerThread:22897 [system_info.py:probe():195] Probing system
+2023-05-14 18:34:21,644 DEBUG   HandlerThread:22897 [system_info.py:_probe_git():180] Probing git
+2023-05-14 18:34:21,658 DEBUG   HandlerThread:22897 [system_info.py:_probe_git():188] Probing git done
+2023-05-14 18:34:21,658 DEBUG   HandlerThread:22897 [system_info.py:probe():240] Probing system done
+2023-05-14 18:34:21,659 DEBUG   HandlerThread:22897 [system_monitor.py:probe():210] {'os': 'Linux-4.4.0-59-generic-x86_64-with-debian-buster-sid', 'python': '3.7.0', 'heartbeatAt': '2023-05-14T18:34:21.638890', 'startedAt': '2023-05-14T18:34:20.972937', 'docker': None, 'cuda': None, 'args': ('--model', 'tood_swinv2-t-p4-w16_nasfpn_resize_coco', '--folder', 'tood'), 'state': 'running', 'program': 'main.py', 'codePath': 'UniverseNet/tools/main.py', 'git': {'remote': 'https://github.com/boostcampaitech5/level2_objectdetection-cv-11.git', 'commit': '71a591a8c62b0f7ab9076a5e523548b55cc4278e'}, 'email': 'hjhhijk@gmail.com', 'root': '/opt/ml/level2_objectdetection-cv-11', 'host': '31250d40d265', 'username': 'root', 'executable': '/opt/conda/envs/project2/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2200.02, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 98.30496215820312, 'used': 73.2760124206543}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}], 'memory': {'total': 88.50595092773438}}
+2023-05-14 18:34:21,659 INFO    HandlerThread:22897 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-14 18:34:21,659 INFO    HandlerThread:22897 [system_monitor.py:probe():214] Publishing system info
+2023-05-14 18:34:21,659 DEBUG   HandlerThread:22897 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-05-14 18:34:21,659 DEBUG   HandlerThread:22897 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-14 18:34:21,659 DEBUG   HandlerThread:22897 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-05-14 18:34:22,547 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/wandb-summary.json
+2023-05-14 18:34:22,547 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/conda-environment.yaml
+2023-05-14 18:34:22,547 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/requirements.txt
+2023-05-14 18:34:30,247 DEBUG   HandlerThread:22897 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-14 18:34:30,247 INFO    HandlerThread:22897 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-14 18:34:30,254 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: status_report
+2023-05-14 18:34:30,254 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-14 18:34:30,254 DEBUG   SenderThread:22897 [sender.py:send():375] send: files
+2023-05-14 18:34:30,254 INFO    SenderThread:22897 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-14 18:34:30,261 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-14 18:34:30,261 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: stop_status
+2023-05-14 18:34:30,477 DEBUG   SenderThread:22897 [sender.py:send():375] send: telemetry
+2023-05-14 18:34:30,550 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/conda-environment.yaml
+2023-05-14 18:34:30,550 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/wandb-metadata.json
+2023-05-14 18:34:30,971 INFO    wandb-upload_0:22897 [upload_job.py:push():137] Uploaded file /tmp/tmpvyd_k7v0wandb/kbclnddm-wandb-metadata.json
+2023-05-14 18:34:32,478 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: status_report
+2023-05-14 18:34:33,136 DEBUG   SenderThread:22897 [sender.py:send():375] send: exit
+2023-05-14 18:34:33,136 INFO    SenderThread:22897 [sender.py:send_exit():598] handling exit code: 1
+2023-05-14 18:34:33,136 INFO    SenderThread:22897 [sender.py:send_exit():600] handling runtime: 11
+2023-05-14 18:34:33,138 INFO    SenderThread:22897 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-14 18:34:33,138 INFO    SenderThread:22897 [sender.py:send_exit():606] send defer
+2023-05-14 18:34:33,139 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,139 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-14 18:34:33,139 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,139 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-14 18:34:33,139 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 1
+2023-05-14 18:34:33,139 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,139 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-14 18:34:33,139 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,139 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-14 18:34:33,140 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 2
+2023-05-14 18:34:33,140 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,140 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-14 18:34:33,140 INFO    HandlerThread:22897 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-14 18:34:33,140 INFO    HandlerThread:22897 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-14 18:34:33,140 DEBUG   SystemMonitor:22897 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-14 18:34:33,141 INFO    HandlerThread:22897 [interfaces.py:finish():202] Joined disk monitor
+2023-05-14 18:34:33,141 DEBUG   SystemMonitor:22897 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-14 18:34:33,141 DEBUG   SystemMonitor:22897 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-14 18:34:33,154 INFO    HandlerThread:22897 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-14 18:34:33,155 INFO    HandlerThread:22897 [interfaces.py:finish():202] Joined memory monitor
+2023-05-14 18:34:33,155 INFO    HandlerThread:22897 [interfaces.py:finish():202] Joined network monitor
+2023-05-14 18:34:33,155 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,155 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-14 18:34:33,155 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 3
+2023-05-14 18:34:33,155 DEBUG   SenderThread:22897 [sender.py:send():375] send: stats
+2023-05-14 18:34:33,156 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,156 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-14 18:34:33,156 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,156 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-14 18:34:33,156 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 4
+2023-05-14 18:34:33,156 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,156 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-14 18:34:33,156 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,156 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-14 18:34:33,156 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 5
+2023-05-14 18:34:33,156 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,156 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-14 18:34:33,157 DEBUG   SenderThread:22897 [sender.py:send():375] send: summary
+2023-05-14 18:34:33,157 INFO    SenderThread:22897 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-14 18:34:33,157 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,157 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-14 18:34:33,157 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 6
+2023-05-14 18:34:33,157 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,157 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-14 18:34:33,158 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,158 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-14 18:34:33,163 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: status_report
+2023-05-14 18:34:33,484 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 7
+2023-05-14 18:34:33,484 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:33,484 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-14 18:34:33,484 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:33,484 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-14 18:34:33,551 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/config.yaml
+2023-05-14 18:34:33,551 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/wandb-summary.json
+2023-05-14 18:34:33,551 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/output.log
+2023-05-14 18:34:34,136 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 18:34:35,132 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 8
+2023-05-14 18:34:35,132 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 18:34:35,132 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:35,132 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-14 18:34:35,133 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:35,133 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-14 18:34:35,137 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 18:34:35,139 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 9
+2023-05-14 18:34:35,139 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 18:34:35,139 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:35,139 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-14 18:34:35,140 DEBUG   SenderThread:22897 [sender.py:send():375] send: artifact
+2023-05-14 18:34:35,551 INFO    Thread-12 :22897 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/output.log
+2023-05-14 18:34:36,138 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 18:34:36,178 ERROR   SenderThread:22897 [internal_api.py:execute():288] 404 response executing GraphQL.
+2023-05-14 18:34:36,178 ERROR   SenderThread:22897 [internal_api.py:execute():289] {"errors":[{"message":"failed to find run trash_detection V1 (model selection)/7giwp5u2","path":["useArtifact"]}],"data":{"useArtifact":null}}
+2023-05-14 18:34:36,179 ERROR   SenderThread:22897 [sender.py:send_artifact():1478] send_artifact: failed for artifact "job/job-https___github.com_boostcampaitech5_level2_objectdetection-cv-11.git_UniverseNet_tools_main.py": It appears that you do not have permission to access the requested resource. Please reach out to the project owner to grant you access. If you have the correct permissions, verify that there are no issues with your networking setup.(Error 404: Not Found)
+2023-05-14 18:34:36,179 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:36,179 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-14 18:34:36,179 INFO    SenderThread:22897 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-14 18:34:36,552 INFO    SenderThread:22897 [dir_watcher.py:finish():395] scan: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files
+2023-05-14 18:34:36,552 INFO    SenderThread:22897 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/wandb-summary.json wandb-summary.json
+2023-05-14 18:34:36,552 INFO    SenderThread:22897 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/requirements.txt requirements.txt
+2023-05-14 18:34:36,555 INFO    SenderThread:22897 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/conda-environment.yaml conda-environment.yaml
+2023-05-14 18:34:36,558 INFO    SenderThread:22897 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/config.yaml config.yaml
+2023-05-14 18:34:36,561 INFO    SenderThread:22897 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/output.log output.log
+2023-05-14 18:34:36,564 INFO    SenderThread:22897 [dir_watcher.py:finish():409] scan save: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/wandb-metadata.json wandb-metadata.json
+2023-05-14 18:34:36,570 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 10
+2023-05-14 18:34:36,570 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 18:34:36,571 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:36,571 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-14 18:34:36,571 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:36,571 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-14 18:34:36,571 INFO    SenderThread:22897 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-14 18:34:36,744 ERROR   Thread-11 :22897 [step_upload.py:_handle_event():197] Failed to upload file: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/wandb-summary.json
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 284, in run_and_notify
+    self._do_upload_sync(event)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 61, in run
+    self.push()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1866, in upload_urls
+    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
+wandb.errors.CommError: Run does not exist aivengers_v2/trash_detection V1 (model selection)/7giwp5u2.
+2023-05-14 18:34:36,747 ERROR   Thread-11 :22897 [step_upload.py:_handle_event():197] Failed to upload file: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/requirements.txt
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 284, in run_and_notify
+    self._do_upload_sync(event)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 61, in run
+    self.push()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1866, in upload_urls
+    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
+wandb.errors.CommError: Run does not exist aivengers_v2/trash_detection V1 (model selection)/7giwp5u2.
+2023-05-14 18:34:36,774 ERROR   Thread-11 :22897 [step_upload.py:_handle_event():197] Failed to upload file: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/output.log
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 284, in run_and_notify
+    self._do_upload_sync(event)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 61, in run
+    self.push()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1866, in upload_urls
+    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
+wandb.errors.CommError: Run does not exist aivengers_v2/trash_detection V1 (model selection)/7giwp5u2.
+2023-05-14 18:34:36,776 ERROR   Thread-11 :22897 [step_upload.py:_handle_event():197] Failed to upload file: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/conda-environment.yaml
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 284, in run_and_notify
+    self._do_upload_sync(event)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 61, in run
+    self.push()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1866, in upload_urls
+    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
+wandb.errors.CommError: Run does not exist aivengers_v2/trash_detection V1 (model selection)/7giwp5u2.
+2023-05-14 18:34:36,783 ERROR   Thread-11 :22897 [step_upload.py:_handle_event():197] Failed to upload file: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/files/config.yaml
+Traceback (most recent call last):
+  File "/opt/conda/envs/project2/lib/python3.7/concurrent/futures/thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 284, in run_and_notify
+    self._do_upload_sync(event)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/step_upload.py", line 330, in _do_upload_sync
+    job.run()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 61, in run
+    self.push()
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/filesync/upload_job.py", line 112, in push
+    _, upload_headers, result = self._api.upload_urls(project, [self.save_name])
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 73, in wrapper
+    raise err
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/project2/lib/python3.7/site-packages/wandb/sdk/internal/internal_api.py", line 1866, in upload_urls
+    raise CommError(f"Run does not exist {entity}/{project}/{run_id}.")
+wandb.errors.CommError: Run does not exist aivengers_v2/trash_detection V1 (model selection)/7giwp5u2.
+2023-05-14 18:34:36,984 INFO    Thread-11 :22897 [sender.py:transition_state():626] send defer: 11
+2023-05-14 18:34:36,984 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:36,984 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-14 18:34:36,985 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:36,985 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-14 18:34:36,985 INFO    SenderThread:22897 [file_pusher.py:join():172] waiting for file pusher
+2023-05-14 18:34:36,985 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 12
+2023-05-14 18:34:36,985 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:36,985 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-14 18:34:36,985 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:36,985 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-14 18:34:37,139 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 18:34:37,376 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 13
+2023-05-14 18:34:37,376 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 18:34:37,376 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:37,377 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-14 18:34:37,377 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:37,377 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-14 18:34:37,377 INFO    SenderThread:22897 [sender.py:transition_state():626] send defer: 14
+2023-05-14 18:34:37,377 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: defer
+2023-05-14 18:34:37,377 INFO    HandlerThread:22897 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-14 18:34:37,378 DEBUG   SenderThread:22897 [sender.py:send():375] send: final
+2023-05-14 18:34:37,378 DEBUG   SenderThread:22897 [sender.py:send():375] send: footer
+2023-05-14 18:34:37,378 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: defer
+2023-05-14 18:34:37,378 INFO    SenderThread:22897 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-14 18:34:37,378 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 18:34:37,379 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 18:34:37,379 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-14 18:34:37,379 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: poll_exit
+2023-05-14 18:34:37,380 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: server_info
+2023-05-14 18:34:37,380 DEBUG   SenderThread:22897 [sender.py:send_request():402] send_request: server_info
+2023-05-14 18:34:37,382 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-14 18:34:37,383 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-14 18:34:37,578 INFO    MainThread:22897 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-14 18:34:37,579 INFO    MainThread:22897 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-14 18:34:37,579 INFO    MainThread:22897 [wandb_run.py:_footer_sync_info():3428] logging synced files
+2023-05-14 18:34:37,579 DEBUG   HandlerThread:22897 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-14 18:34:37,579 INFO    HandlerThread:22897 [handler.py:finish():845] shutting down handler
+2023-05-14 18:34:38,380 INFO    WriterThread:22897 [datastore.py:close():298] close: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230514_183420-7giwp5u2/run-7giwp5u2.wandb
+2023-05-14 18:34:38,578 INFO    SenderThread:22897 [sender.py:finish():1550] shutting down sender
+2023-05-14 18:34:38,579 INFO    SenderThread:22897 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-14 18:34:38,579 INFO    SenderThread:22897 [file_pusher.py:join():172] waiting for file pusher

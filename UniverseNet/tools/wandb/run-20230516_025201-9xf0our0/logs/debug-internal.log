@@ -1,0 +1,613 @@
+2023-05-16 02:52:01,685 INFO    StreamThr :10855 [internal.py:wandb_internal():89] W&B internal server running at pid: 10855, started at: 2023-05-16 02:52:01.684496
+2023-05-16 02:52:01,688 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status
+2023-05-16 02:52:01,694 INFO    WriterThread:10855 [datastore.py:open_for_write():85] open: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/run-9xf0our0.wandb
+2023-05-16 02:52:01,695 DEBUG   SenderThread:10855 [sender.py:send():375] send: header
+2023-05-16 02:52:01,787 DEBUG   SenderThread:10855 [sender.py:send():375] send: run
+2023-05-16 02:52:02,242 INFO    SenderThread:10855 [dir_watcher.py:__init__():219] watching files in: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files
+2023-05-16 02:52:02,243 INFO    SenderThread:10855 [sender.py:_start_run_threads():1127] run started: 9xf0our0 with start time 1684205521.688908
+2023-05-16 02:52:02,243 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:52:02,243 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:52:02,245 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: check_version
+2023-05-16 02:52:02,245 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: check_version
+2023-05-16 02:52:02,298 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: run_start
+2023-05-16 02:52:02,301 DEBUG   HandlerThread:10855 [system_info.py:__init__():31] System info init
+2023-05-16 02:52:02,302 DEBUG   HandlerThread:10855 [system_info.py:__init__():46] System info init done
+2023-05-16 02:52:02,302 INFO    HandlerThread:10855 [system_monitor.py:start():181] Starting system monitor
+2023-05-16 02:52:02,302 INFO    SystemMonitor:10855 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-16 02:52:02,302 INFO    HandlerThread:10855 [system_monitor.py:probe():201] Collecting system info
+2023-05-16 02:52:02,303 INFO    SystemMonitor:10855 [interfaces.py:start():190] Started cpu monitoring
+2023-05-16 02:52:02,304 INFO    SystemMonitor:10855 [interfaces.py:start():190] Started disk monitoring
+2023-05-16 02:52:02,305 INFO    SystemMonitor:10855 [interfaces.py:start():190] Started gpu monitoring
+2023-05-16 02:52:02,306 INFO    SystemMonitor:10855 [interfaces.py:start():190] Started memory monitoring
+2023-05-16 02:52:02,306 INFO    SystemMonitor:10855 [interfaces.py:start():190] Started network monitoring
+2023-05-16 02:52:02,315 DEBUG   HandlerThread:10855 [system_info.py:probe():195] Probing system
+2023-05-16 02:52:02,322 DEBUG   HandlerThread:10855 [system_info.py:_probe_git():180] Probing git
+2023-05-16 02:52:02,338 DEBUG   HandlerThread:10855 [system_info.py:_probe_git():188] Probing git done
+2023-05-16 02:52:02,339 DEBUG   HandlerThread:10855 [system_info.py:probe():240] Probing system done
+2023-05-16 02:52:02,339 DEBUG   HandlerThread:10855 [system_monitor.py:probe():210] {'os': 'Linux-4.4.0-59-generic-x86_64-with-debian-buster-sid', 'python': '3.7.0', 'heartbeatAt': '2023-05-16T02:52:02.315150', 'startedAt': '2023-05-16T02:52:01.673380', 'docker': None, 'cuda': None, 'args': ('--model', 'tood_swinv2-t-p4-w16_fpn_resize_coco_cosinelr', '--folder', 'tood', '--max_epoch', '36'), 'state': 'running', 'program': 'main.py', 'codePath': 'UniverseNet/tools/main.py', 'git': {'remote': 'https://github.com/boostcampaitech5/level2_objectdetection-cv-11.git', 'commit': '71a591a8c62b0f7ab9076a5e523548b55cc4278e'}, 'email': 'hjhhijk@gmail.com', 'root': '/opt/ml/level2_objectdetection-cv-11', 'host': '31250d40d265', 'username': 'root', 'executable': '/opt/conda/envs/project2/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2200.02, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}, {'current': 2200.02, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 98.30496215820312, 'used': 78.17267990112305}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34089730048}], 'memory': {'total': 88.50595092773438}}
+2023-05-16 02:52:02,339 INFO    HandlerThread:10855 [system_monitor.py:probe():211] Finished collecting system info
+2023-05-16 02:52:02,339 INFO    HandlerThread:10855 [system_monitor.py:probe():214] Publishing system info
+2023-05-16 02:52:02,339 DEBUG   HandlerThread:10855 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-05-16 02:52:02,339 DEBUG   HandlerThread:10855 [system_info.py:_save_pip():67] Saving pip packages done
+2023-05-16 02:52:02,339 DEBUG   HandlerThread:10855 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-05-16 02:52:03,245 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/requirements.txt
+2023-05-16 02:52:03,245 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/conda-environment.yaml
+2023-05-16 02:52:03,245 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:52:10,984 DEBUG   HandlerThread:10855 [system_info.py:_save_conda():86] Saving conda packages done
+2023-05-16 02:52:10,984 INFO    HandlerThread:10855 [system_monitor.py:probe():216] Finished publishing system info
+2023-05-16 02:52:10,991 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:10,991 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-16 02:52:10,991 DEBUG   SenderThread:10855 [sender.py:send():375] send: files
+2023-05-16 02:52:10,991 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-05-16 02:52:11,001 DEBUG   SenderThread:10855 [sender.py:send():375] send: telemetry
+2023-05-16 02:52:11,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:52:11,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:52:11,248 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/conda-environment.yaml
+2023-05-16 02:52:11,249 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-metadata.json
+2023-05-16 02:52:11,728 INFO    wandb-upload_0:10855 [upload_job.py:push():137] Uploaded file /tmp/tmpq0kstkz4wandb/za7287un-wandb-metadata.json
+2023-05-16 02:52:13,219 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:18,220 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:23,221 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:26,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:52:26,001 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:52:28,231 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:33,237 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:34,257 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/config.yaml
+2023-05-16 02:52:38,486 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:41,000 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:52:41,000 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:52:44,194 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:49,195 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:54,196 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:52:56,000 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:52:56,001 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:53:00,192 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:02,307 DEBUG   SystemMonitor:10855 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-16 02:53:02,308 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:53:05,309 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:10,309 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:11,000 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:53:11,001 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:53:13,795 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:53:13,797 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:53:13,797 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:53:13,799 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:53:14,270 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:53:14,270 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_created():278] file/dir created: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:53:15,800 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:16,271 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:53:20,801 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:25,802 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:26,000 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:53:26,001 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:53:31,198 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:32,309 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:53:36,310 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:41,000 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:53:41,001 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:53:42,204 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:47,205 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:52,206 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:53:56,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:53:56,001 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:53:58,204 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:02,309 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:54:03,310 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:08,311 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:11,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:54:11,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:54:13,861 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:13,862 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:54:13,863 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:54:13,863 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:54:13,865 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:54:14,292 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:54:16,292 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:54:18,866 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:23,866 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:26,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:54:26,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:54:29,213 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:32,310 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:54:34,311 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:39,311 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:41,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:54:41,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:54:45,217 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:50,218 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:55,219 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:54:56,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:54:56,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:55:01,206 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:02,310 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:55:06,311 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:11,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:55:11,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:55:12,222 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:14,177 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:55:14,178 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:55:14,179 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:55:14,181 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:55:14,313 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:55:16,313 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:55:18,182 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:23,182 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:26,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:55:26,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:55:28,205 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:32,311 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:55:33,312 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:38,313 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:41,001 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:55:41,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:55:44,202 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:49,203 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:54,204 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:55:56,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:55:56,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:55:59,213 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:02,312 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:56:04,313 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:09,313 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:11,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:56:11,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:56:14,349 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:14,350 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:56:14,350 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:56:14,351 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:56:14,353 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:56:15,334 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:56:16,335 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:56:19,354 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:24,355 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:26,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:56:26,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:56:30,201 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:32,312 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:56:35,313 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:40,314 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:41,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:56:41,002 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:56:46,143 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:51,144 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:56:56,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:56:56,003 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:56:56,205 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:01,206 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:02,313 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:57:06,314 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:11,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:57:11,003 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:57:12,200 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:14,456 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:57:14,458 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:57:14,458 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:57:14,460 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:57:15,355 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:57:16,355 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:57:17,461 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:22,463 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:26,002 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:57:26,003 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:57:28,218 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:32,314 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:57:33,315 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:38,316 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:41,003 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:57:41,003 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:57:44,209 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:49,209 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:54,210 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:57:56,003 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:57:56,003 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:58:00,194 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:02,317 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:58:05,318 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:10,319 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:11,003 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:58:11,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:58:15,243 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:58:15,243 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:58:15,244 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:58:15,244 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:58:15,378 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:58:16,244 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:16,378 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:58:21,245 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:26,003 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:58:26,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:58:27,205 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:32,206 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:32,316 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:58:37,317 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:41,003 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:58:41,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:58:43,202 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:48,203 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:53,204 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:58:56,003 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:58:56,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:58:59,196 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:02,317 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:59:04,317 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:09,318 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:11,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:59:11,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:59:15,196 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:15,424 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 02:59:15,425 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 02:59:15,425 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 02:59:15,426 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 02:59:16,399 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 02:59:16,399 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 02:59:20,426 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:25,427 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:26,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:59:26,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:59:31,206 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:32,317 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 02:59:36,318 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:41,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:59:41,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:59:42,196 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:47,197 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:52,198 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 02:59:56,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 02:59:56,004 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 02:59:57,210 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:02,211 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:02,318 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:00:07,319 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:11,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:00:11,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:00:13,213 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:15,660 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:00:15,661 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:00:15,661 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:00:15,662 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:00:16,421 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:00:16,421 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:00:18,662 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:23,663 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:26,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:00:26,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:00:29,210 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:32,319 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:00:34,320 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:39,321 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:41,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:00:41,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:00:45,212 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:50,213 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:55,213 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:00:56,004 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:00:56,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:01:00,219 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:02,320 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:01:05,321 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:10,322 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:11,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:01:11,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:01:15,794 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:15,794 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:01:15,795 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:01:15,795 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:01:15,795 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:01:16,441 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:01:16,442 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:01:20,797 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:25,798 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:26,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:01:26,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:01:31,197 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:32,320 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:01:36,321 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:41,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:01:41,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:01:42,230 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:47,231 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:52,232 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:01:56,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:01:56,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:01:58,214 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:02,321 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:02:03,322 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:08,323 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:11,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:02:11,005 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:02:14,083 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:15,972 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:02:15,973 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:02:15,974 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:02:15,974 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:02:16,463 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:02:18,464 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:02:19,975 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:24,976 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:26,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:02:26,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:02:30,215 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:32,322 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:02:35,322 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:40,323 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:41,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:02:41,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:02:46,136 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:51,137 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:02:56,005 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:02:56,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:02:56,212 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:01,213 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:02,322 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:03:06,323 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:11,006 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:03:11,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:03:12,228 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:15,967 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:03:15,968 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:03:15,968 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:03:15,968 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:03:16,484 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:03:17,485 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:03:17,969 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:22,970 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:26,006 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:03:26,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:03:28,259 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:32,323 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:03:33,324 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:38,324 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:41,006 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:03:41,007 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:03:44,208 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:49,209 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:54,209 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:03:56,006 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:03:56,006 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:03:59,248 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:02,324 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:04:04,325 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:09,326 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:11,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:04:11,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:04:15,202 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:16,204 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:04:16,205 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:04:16,205 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:04:16,206 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:04:16,505 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:04:19,506 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:04:20,206 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:25,207 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:26,007 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:04:26,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:04:30,218 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:32,324 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:04:35,325 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:40,326 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:41,007 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:04:41,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:04:46,216 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:51,216 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:04:56,007 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:04:56,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:04:57,201 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:02,202 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:02,325 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:05:07,326 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:11,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:05:11,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:05:13,217 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:16,485 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:05:16,486 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:05:16,486 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:05:16,487 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:05:16,527 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:05:17,527 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:05:18,487 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:23,488 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:26,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:05:26,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:05:29,216 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:32,326 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:05:34,327 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:39,328 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:41,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:05:41,008 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:05:45,201 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:50,202 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:55,203 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:05:56,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:05:56,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:06:00,216 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:02,327 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:06:05,328 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:10,329 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:11,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:06:11,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:06:16,214 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:16,770 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:06:16,771 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:06:16,771 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:06:16,772 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:06:17,548 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:06:19,549 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:06:21,772 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:26,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:06:26,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:06:27,221 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:32,222 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:32,328 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:06:37,330 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:41,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:06:41,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:06:43,217 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:48,218 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:53,219 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:06:56,008 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:06:56,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:06:59,207 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:02,328 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:07:04,329 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:09,330 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:11,009 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:07:11,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:07:15,209 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:16,989 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:07:16,990 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:07:16,991 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:07:16,991 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:07:17,574 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:07:19,575 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:07:20,992 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:25,993 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:26,009 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:07:26,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:07:31,204 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:32,329 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:07:36,330 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:41,009 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:07:41,009 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:07:42,217 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:47,218 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:52,219 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:56,011 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:07:56,011 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:07:57,319 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:07:57,588 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:07:59,589 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:01,590 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:02,329 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:08:02,330 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:03,590 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:05,591 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:07,363 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:07,592 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:09,593 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:11,010 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:08:11,010 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:08:11,593 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:12,442 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:13,594 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:15,595 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:17,497 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:17,596 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:19,596 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:21,597 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:22,519 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:23,598 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:25,599 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:26,010 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:08:26,011 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:08:27,578 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:27,600 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:29,600 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:31,601 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:32,330 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:08:32,637 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:33,602 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:35,603 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:37,604 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:37,729 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:39,605 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:41,010 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:08:41,011 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:08:41,605 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:42,774 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:43,606 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:45,607 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:47,608 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:47,831 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:49,609 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:51,609 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:52,912 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:53,610 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:55,611 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:56,010 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:08:56,011 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:08:57,612 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:08:57,987 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:08:59,612 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:01,613 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:02,332 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:09:03,043 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:03,614 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:05,615 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:07,616 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:08,098 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:09,616 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:11,022 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:09:11,023 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:09:11,617 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:13,194 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:13,618 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:15,618 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:17,619 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:18,267 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:19,620 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:21,621 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:23,335 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:23,621 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:25,622 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:26,012 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:09:26,013 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:09:27,623 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:28,415 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:29,624 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:31,625 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:32,332 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:09:33,492 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:33,626 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:35,626 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:37,627 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:38,556 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:39,628 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:41,013 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:09:41,013 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:09:41,629 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:43,618 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:43,630 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:45,631 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:47,632 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:48,693 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:49,633 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:51,633 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:53,634 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:53,756 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:55,635 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:56,013 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:09:56,013 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:09:57,636 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:09:58,779 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:09:59,637 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:01,637 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:02,333 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:10:03,638 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:03,913 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:10:05,639 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:09,281 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:10:11,019 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:10:11,020 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:10:11,641 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:14,225 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-16 03:10:14,226 DEBUG   SenderThread:10855 [sender.py:send():375] send: history
+2023-05-16 03:10:14,226 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: summary_record
+2023-05-16 03:10:14,227 INFO    SenderThread:10855 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-16 03:10:14,642 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/wandb-summary.json
+2023-05-16 03:10:15,227 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:10:15,642 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:19,644 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:21,133 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:10:25,647 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:26,021 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:10:26,022 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:10:26,217 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
+2023-05-16 03:10:27,648 INFO    Thread-12 :10855 [dir_watcher.py:_on_file_modified():295] file/dir modified: /opt/ml/level2_objectdetection-cv-11/UniverseNet/tools/wandb/run-20230516_025201-9xf0our0/files/output.log
+2023-05-16 03:10:29,815 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: log_artifact
+2023-05-16 03:10:29,815 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: log_artifact
+2023-05-16 03:10:41,024 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-16 03:10:43,034 INFO    wandb-upload_0:10855 [upload_job.py:push():95] Uploaded file /opt/ml/.local/share/wandb/artifacts/staging/tmpnarofn5s
+2023-05-16 03:10:44,291 INFO    SenderThread:10855 [sender.py:send_request_log_artifact():1438] logged artifact run_9xf0our0_model - {'id': 'QXJ0aWZhY3Q6NDU2NTE1MDI1', 'digest': '9804835e550b2251e40ed863e60ee889', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY5NjQ4MzQ4', 'latestArtifact': None}, 'version': 'latest'}
+2023-05-16 03:10:44,292 DEBUG   SenderThread:10855 [sender.py:send():375] send: stats
+2023-05-16 03:10:44,292 DEBUG   SenderThread:10855 [sender.py:send_request():402] send_request: stop_status
+2023-05-16 03:10:44,294 DEBUG   HandlerThread:10855 [handler.py:handle_request():144] handle_request: status_report
