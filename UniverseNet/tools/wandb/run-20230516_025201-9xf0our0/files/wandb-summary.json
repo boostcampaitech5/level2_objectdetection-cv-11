@@ -1,1 +1,1 @@
-{"val/bbox_mAP": 0.024, "val/bbox_mAP_50": 0.053, "val/bbox_mAP_75": 0.017, "val/bbox_mAP_s": 0.001, "val/bbox_mAP_m": 0.006, "val/bbox_mAP_l": 0.03, "learning_rate": 0.00022537828838576637, "momentum": 0.9, "_timestamp": 1684206614.224599, "_runtime": 1092.5356907844543, "_step": 783}
+{"train/loss_cls": 0.5540497332811356, "train/loss_bbox": 0.6209242707490921, "train/loss": 1.1749740099906922, "train/grad_norm": 9.5590891122818, "learning_rate": 0.0002774677154008024, "momentum": 0.9, "_timestamp": 1684206873.5825915, "_runtime": 1351.8936834335327, "_step": 982}

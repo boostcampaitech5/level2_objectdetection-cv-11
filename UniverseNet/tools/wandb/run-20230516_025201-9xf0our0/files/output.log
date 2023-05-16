@@ -112,3 +112,7 @@ Running per image evaluation...
 Evaluate annotation type *bbox*
 DONE (t=6.01s).
 Accumulating evaluation results...
+DONE (t=2.90s).
+2023-05-16 03:11:33,052 - mmdet - INFO - Epoch [2][50/782]	lr: 2.405e-04, eta: 8:50:25, time: 1.264, data_time: 0.067, memory: 29497, loss_cls: 0.5453, loss_bbox: 0.6555, loss: 1.2008, grad_norm: 9.2584
+2023-05-16 03:12:33,407 - mmdet - INFO - Epoch [2][100/782]	lr: 2.544e-04, eta: 8:50:32, time: 1.207, data_time: 0.014, memory: 29497, loss_cls: 0.5396, loss_bbox: 0.6399, loss: 1.1795, grad_norm: 10.4300
+2023-05-16 03:13:33,507 - mmdet - INFO - Epoch [2][150/782]	lr: 2.668e-04, eta: 8:50:24, time: 1.202, data_time: 0.014, memory: 29497, loss_cls: 0.5590, loss_bbox: 0.6475, loss: 1.2066, grad_norm: 8.8306
