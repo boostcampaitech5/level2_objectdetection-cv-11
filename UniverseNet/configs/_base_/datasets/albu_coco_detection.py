@@ -1,29 +1,17 @@
 # dataset settings
 dataset_type = 'CocoDataset'
-data_root = '../../dataset/'
+data_root = '/opt/ml/dataset/images/'
 img_norm_cfg = dict(
-    mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
-albu_train_transforms = [
+    mean=[123.6444204, 117.40186995, 110.072382], std=[54.03421695, 53.36949315, 54.784965], to_rgb=True)
+albu_train_transforms = [  
     dict(
         type='Cutout',
         num_holes=8, 
         max_h_size=48, 
         max_w_size=48, 
         p=0.5),
-    
     dict(
-        type='OneOf',
-        transforms=[
-            dict(
-                type='HorizontalFlip',
-                p=1.0),
-            dict(
-                type='VerticalFlip',
-                p=1.0),
-            dict(
-                type='RandomRotate90',
-                p=1.0),
-                ],
+        type='HorizontalFlip',
         p=0.5),
     dict(
         type='OneOf',
@@ -34,13 +22,28 @@ albu_train_transforms = [
             dict(
                 type='CLAHE',
                 p=1.0),
-                ],
+            dict(
+                type='MedianBlur', 
+                blur_limit=3,
+                p=1.0),
+        ],
         p=0.5),
-    # dict(
-    #     type='RandomBrightnessContrast',
-    #     brightness_limit=[-0.2, 0.4],
-    #     contrast_limit=[-0.5, 0.5],
-    #     p=0.2),
+    dict(
+        type='OneOf',
+        transforms=[
+            dict(
+                type='RandomBrightnessContrast',
+                brightness_limit=[-0.2, 0.4],
+                contrast_limit=[-0.5, 0.5],
+                p=0.5),
+            dict(
+                type='RGBShift',
+                r_shift_limit=10,
+                g_shift_limit=10,
+                b_shift_limit=10,
+                p=0.5),
+        ],
+    p=0.5)
 ]
 train_pipeline = [
     dict(
@@ -61,10 +64,9 @@ train_pipeline = [
     dict(type='Mosaic', img_scale=(1024, 1024), pad_val=img_norm_cfg["mean"][::-1], prob=0.3), #모자이크
     dict(type='RandomFlip', flip_ratio=0.0),
     
-    # dict(type='MixUp', pad_val=img_norm_cfg["mean"][::-1]),
     dict(
         type="Resize",
-        img_scale=[(512 + 64 * i, 512 + 64 * i) for i in range(9)],
+        img_scale=[(w,w) for w in range(512, 1024+1, 32)],
         multiscale_mode="value",
         keep_ratio=True,
     ),
@@ -84,7 +86,6 @@ test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
         type='MultiScaleFlipAug',
-        # img_scale=[(512 + 64 * i, 512 + 64 * i) for i in range(9)],
         img_scale = (1024,1024),
         flip=False,
         transforms=[
@@ -107,7 +108,7 @@ data = dict(
         type='MultiImageMixDataset',
         dataset=dict(
             type=dataset_type,
-            ann_file=data_root + '2___train_MultiStfKFold.json',
+            ann_file=data_root + '5___train_MultiStfKFold.json',
             img_prefix=data_root,
             classes=classes,
             pipeline=[
@@ -119,14 +120,14 @@ data = dict(
         ),
     val=dict(
         type=dataset_type,
-        ann_file=data_root + '2___val_MultiStfKFold.json',
+        ann_file=data_root + '5___val_MultiStfKFold.json',
         img_prefix=data_root,
         classes=classes,
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file=data_root + 'annotations/instances_val2017.json',
-        img_prefix=data_root + 'val2017/',
+        ann_file=data_root + 'test.json',
+        img_prefix=data_root,
         classes=classes,
         pipeline=test_pipeline))
 evaluation = dict(save_best='bbox_mAP_50', metric='bbox')

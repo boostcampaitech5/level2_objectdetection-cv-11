@@ -43,7 +43,7 @@ augmentation = False
 cfg = Config.fromfile(f'../configs/{folder_name}/{model_name}.py')
 cfg.runner.max_epochs = int(args.max_epoch) # 에포크 횟수 조정
 resize = int(args.resize)
-root='/opt/ml/dataset/'
+root='/opt/ml/dataset/images/'
 classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass", 
            "Plastic", "Styrofoam", "Plastic bag", "Battery", "Clothing")
 
@@ -67,7 +67,7 @@ def data_config(cfg: Config) -> None:
     cfg.data.test.ann_file = root + 'test.json' # test json 정보
     cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
-    cfg.data.samples_per_gpu = 4
+    cfg.data.samples_per_gpu = 4 #4
     cfg.data.workers_per_gpu = multiprocessing.cpu_count() // 2 # num_workers
     
 
@@ -100,6 +100,7 @@ def train_config(cfg:Config) -> None:
     cfg.checkpoint_config = dict(max_keep_ckpts=3, interval=1)
     # wandb 프로젝트 이름
     cfg.log_config.hooks[1].init_kwargs.name=f"{model_name}+aug={augmentation}"
+    cfg.auto_scale_lr.base_batch_size=1
 
 def train(cfg,kfold=False):
     data_config(cfg)

@@ -11,9 +11,11 @@ from tqdm import tqdm
 
 parser = argparse.ArgumentParser(description='parser')
 parser.add_argument('--path', default='/opt/ml/sample_submission/', help='input your csv path')
-parser.add_argument('--iou_thr', default=0.6, help='input your iou_thr')
-parser.add_argument('--weights', default="1,1,1,1", help='input your weights')
+parser.add_argument('--iou_thr', default=0.55, help='input your iou_thr')
+parser.add_argument('--weights', default="0.6671,0.583,0.635,0.6280", help='input your weights')
 parser.add_argument('--skip_box_thr', default=0.01, help='input your skip_box_thr')
+# parser.add_argument('--conf_type',default="absent_model_aware_avg")
+# parser.add_argument('--thresh',default=0.0013)
 args = parser.parse_args()
 
 # ensemble 시 설정할 iou threshold 이 부분을 바꿔가며 대회 metric에 알맞게 적용해봐요!
@@ -25,11 +27,11 @@ print(path)
 
 submission_files = os.listdir(path)
 
-submission_df = [pd.read_csv(path +'/'+ file) for file in submission_files]
+submission_df = [pd.read_csv(path +'/'+ file, encoding='utf-8') for file in submission_files]
 
 image_ids = submission_df[0]['image_id'].tolist()
 
-annotation = '/opt/ml/dataset/test.json'
+annotation = '/opt/ml/dataset/images/test.json'
 coco = COCO(annotation)
 
 prediction_strings = []
@@ -66,9 +68,21 @@ for i, image_id in tqdm(enumerate(image_ids)):
     
 #     예측 box가 있다면 이를 ensemble 수행
     if len(boxes_list):
-        #boxes, scores, labels = weighted_boxes_fusion(boxes_list, scores_list, labels_list, iou_thr=iou_thr)
-        boxes, scores, labels = weighted_boxes_fusion(boxes_list, scores_list, labels_list, weights=weights, iou_thr=iou_thr, skip_box_thr=skip_box_thr)
-        for box, score, label in zip(boxes, scores, labels):
+        # boxes, scores, labels = nms(boxes_list, scores_list, labels_list,iou_thr=iou_thr,weights=weights)
+        # boxes, scores, labels = soft_nms(boxes_list, scores_list, labels_list, method=3, iou_thr=iou_thr, sigma=0.145, thresh=args.thresh, weights=weights)
+        boxes, scores, labels = non_maximum_weighted(boxes_list, scores_list, labels_list, weights=weights, iou_thr=iou_thr, skip_box_thr=skip_box_thr)
+        # boxes, scores, labels = weighted_boxes_fusion(boxes_list, scores_list, labels_list, weights=weights, iou_thr=iou_thr, skip_box_thr=skip_box_thr)
+        sorted_indices = np.argsort(scores)[::-1]
+        sorted_boxes = boxes[sorted_indices]
+        sorted_scores = scores[sorted_indices]
+        sorted_labels = labels[sorted_indices]
+
+        # Keep only the top N boxes
+        top_n = 300
+        filtered_boxes = sorted_boxes[:top_n]
+        filtered_scores = sorted_scores[:top_n]
+        filtered_labels = sorted_labels[:top_n]
+        for box, score, label in zip(filtered_boxes,filtered_scores,filtered_labels):
             prediction_string += str(int(label)) + ' ' + str(score) + ' ' + str(box[0] * image_info['width']) + ' ' + str(box[1] * image_info['height']) + ' ' + str(box[2] * image_info['width']) + ' ' + str(box[3] * image_info['height']) + ' '
     
     prediction_strings.append(prediction_string)
@@ -78,6 +92,6 @@ submission = pd.DataFrame()
 submission['PredictionString'] = prediction_strings
 submission['image_id'] = file_names
 model_name = path.split('/')[-1]
-submission.to_csv(f'{path}/{model_name}+iou_{iou_thr}+skip_box_thr{skip_box_thr}.csv')
+submission.to_csv(f'{path}/{model_name}+iou_{iou_thr}+top300.csv')
 
 submission.head()

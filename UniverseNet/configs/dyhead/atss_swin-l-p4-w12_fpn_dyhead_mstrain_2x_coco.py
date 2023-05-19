@@ -1,4 +1,7 @@
-_base_ = '../_base_/default_runtime.py'
+_base_ = [
+    '../_base_/default_runtime.py',
+    '../_base_/schedules/schedule_20e.py'
+]
 
 pretrained = '/opt/ml/baseline/baseline_cv11/UniverseNet/pth/swin_large_patch4_window12_384_22k.pth'  # noqa
 model = dict(
@@ -85,12 +88,14 @@ data_root = 'data/coco/'
 img_norm_cfg = dict(
     mean=[123.675, 116.28, 103.53], std=[58.395, 57.12, 57.375], to_rgb=True)
 
+multi_scales = [(w,w) for w in range(512, 1024+1, 32)] #추가
+
 train_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(type='LoadAnnotations', with_bbox=True),
     dict(
         type='Resize',
-        img_scale=[(2000, 480), (2000, 1200)],
+        img_scale=multi_scales, #변경
         multiscale_mode='range',
         keep_ratio=True,
         backend='pillow'),
@@ -104,7 +109,7 @@ test_pipeline = [
     dict(type='LoadImageFromFile'),
     dict(
         type='MultiScaleFlipAug',
-        img_scale=(2000, 1200),
+        img_scale=(1024,1024),
         flip=False,
         transforms=[
             dict(type='Resize', keep_ratio=True, backend='pillow'),
@@ -140,7 +145,7 @@ data = dict(
         pipeline=test_pipeline))
 evaluation = dict(interval=1, metric='bbox')
 
-# optimizer
+
 # optimizer_config = dict(grad_clip=None)
 # optimizer = dict(
 #     type='AdamW',
@@ -154,7 +159,6 @@ evaluation = dict(interval=1, metric='bbox')
 #             'norm': dict(decay_mult=0.)
 #         }))
 
-# # learning policy
 # lr_config = dict(
 #     policy='step',
 #     warmup='linear',

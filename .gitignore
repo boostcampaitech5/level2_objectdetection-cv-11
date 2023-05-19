@@ -1,7 +1,9 @@
 .git/
 .ipynb_checkpoints/
-tools/wandb/
-work_dirs
+UniverseNet/tools/wandb/
+mmdetection/tools/wandb/
+UniverseNet/work_dirs
+mmdetection/work_dirs
 *.out
 runs/
 yolov8/*submission.csv

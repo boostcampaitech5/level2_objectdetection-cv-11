@@ -45,7 +45,7 @@ augmentation = False
 cfg = Config.fromfile(f'../configs/{folder_name}/{model_name}.py')
 cfg.runner.max_epochs = int(args.max_epoch) # 에포크 횟수 조정
 resize = int(args.resize)
-root='/opt/ml/dataset/'
+root='/opt/ml/dataset/images/'
 classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass", 
            "Plastic", "Styrofoam", "Plastic bag", "Battery", "Clothing")
 
