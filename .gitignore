@@ -6,4 +6,6 @@ UniverseNet/work_dirs
 mmdetection/work_dirs
 *.out
 runs/
+*.pyc
+__pycache__/
 yolov8/*submission.csv
