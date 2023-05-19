@@ -11,9 +11,9 @@ from tqdm import tqdm
 
 parser = argparse.ArgumentParser(description='parser')
 parser.add_argument('--path', default='/opt/ml/sample_submission/', help='input your csv path')
-parser.add_argument('--iou_thr', default=0.55, help='input your iou_thr')
-parser.add_argument('--weights', default="0.6671,0.583,0.635,0.6280", help='input your weights')
-parser.add_argument('--skip_box_thr', default=0.01, help='input your skip_box_thr')
+parser.add_argument('--iou_thr', default=0.97, help='input your iou_thr')
+parser.add_argument('--weights', default="1,0.9,9.7", help='input your weights')
+parser.add_argument('--skip_box_thr', default=0.4, help='input your skip_box_thr')
 # parser.add_argument('--conf_type',default="absent_model_aware_avg")
 # parser.add_argument('--thresh',default=0.0013)
 args = parser.parse_args()
@@ -72,17 +72,17 @@ for i, image_id in tqdm(enumerate(image_ids)):
         # boxes, scores, labels = soft_nms(boxes_list, scores_list, labels_list, method=3, iou_thr=iou_thr, sigma=0.145, thresh=args.thresh, weights=weights)
         boxes, scores, labels = non_maximum_weighted(boxes_list, scores_list, labels_list, weights=weights, iou_thr=iou_thr, skip_box_thr=skip_box_thr)
         # boxes, scores, labels = weighted_boxes_fusion(boxes_list, scores_list, labels_list, weights=weights, iou_thr=iou_thr, skip_box_thr=skip_box_thr)
-        sorted_indices = np.argsort(scores)[::-1]
-        sorted_boxes = boxes[sorted_indices]
-        sorted_scores = scores[sorted_indices]
-        sorted_labels = labels[sorted_indices]
+#         sorted_indices = np.argsort(scores)[::-1]
+#         sorted_boxes = boxes[sorted_indices]
+#         sorted_scores = scores[sorted_indices]
+#         sorted_labels = labels[sorted_indices]
 
-        # Keep only the top N boxes
-        top_n = 300
-        filtered_boxes = sorted_boxes[:top_n]
-        filtered_scores = sorted_scores[:top_n]
-        filtered_labels = sorted_labels[:top_n]
-        for box, score, label in zip(filtered_boxes,filtered_scores,filtered_labels):
+#         # Keep only the top N boxes
+#         top_n = 300
+#         filtered_boxes = sorted_boxes[:top_n]
+#         filtered_scores = sorted_scores[:top_n]
+#         filtered_labels = sorted_labels[:top_n]
+        for box, score, label in zip(boxes,scores,labels):
             prediction_string += str(int(label)) + ' ' + str(score) + ' ' + str(box[0] * image_info['width']) + ' ' + str(box[1] * image_info['height']) + ' ' + str(box[2] * image_info['width']) + ' ' + str(box[3] * image_info['height']) + ' '
     
     prediction_strings.append(prediction_string)
