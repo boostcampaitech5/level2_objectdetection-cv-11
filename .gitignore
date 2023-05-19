@@ -5,4 +5,4 @@ work_dirs
 *.out
 runs/
 UniverseNet/tools/wandb
-Universe/mmdet/
+UniverseNet/mmdet/
