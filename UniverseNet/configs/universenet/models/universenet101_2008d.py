@@ -31,14 +31,16 @@ model = dict(
             stacked_convs=4,
             pconv_deform=True,
             lcconv_deform=True,
+            # 이거 원래 True
             ibn=True,  # please set imgs/gpu >= 4
+            # 이것도 False
             pnorm_eval=False,
             lcnorm_eval=False,
             lcconv_padding=1)
     ],
     bbox_head=dict(
         type='GFLSEPCHead',
-        num_classes=80,
+        num_classes=10,  # 이거 원래 80인데 10으로 하드 코딩
         in_channels=256,
         stacked_convs=0,
         feat_channels=256,

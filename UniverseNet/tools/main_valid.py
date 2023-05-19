@@ -49,23 +49,23 @@ classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass",
 
 
 def data_config(cfg: Config) -> None:
-    cfg.data.train.classes = classes
-    cfg.data.train.img_prefix = root
-    cfg.data.train.ann_file = root + args.trainset # train json 정보
-    if "dataset" in cfg.data.train.keys():
-        cfg.data.train.dataset.pipeline[2]['img_scale'] = (resize,resize)
-    else:
-        cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
+    # cfg.data.train.classes = classes
+    # cfg.data.train.img_prefix = root
+    # cfg.data.train.ann_file = root + args.trainset # train json 정보
+    # if "dataset" in cfg.data.train.keys():
+    #     cfg.data.train.dataset.pipeline[2]['img_scale'] = (resize,resize)
+    # else:
+    #     cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
 
-    cfg.data.val.classes = classes
-    cfg.data.val.img_prefix = root
-    cfg.data.val.ann_file = root + args.validset # valid json 정보
-    cfg.data.val.pipeline[1]['img_scale'] = (resize,resize) # Resize
+    # cfg.data.val.classes = classes
+    # cfg.data.val.img_prefix = root
+    # cfg.data.val.ann_file = root + args.validset # valid json 정보
+    # cfg.data.val.pipeline[1]['img_scale'] = (resize,resize) # Resize
 
     cfg.data.test.classes = classes
     cfg.data.test.img_prefix = root
-    cfg.data.test.ann_file = root + 'test.json' # test json 정보
-    cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
+    cfg.data.test.ann_file = root + 'train.json' # test json 정보
+    # cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
     cfg.data.samples_per_gpu = 8
     cfg.data.workers_per_gpu = multiprocessing.cpu_count() // 2 # num_workers
@@ -131,7 +131,7 @@ def inference(cfg):
             shuffle=False)
 
     # # checkpoint path
-    checkpoint_path = '/opt/ml/baseline/level2_objectdetection-cv-11/UniverseNet/work_dirs/gflv2_pvt_v2_b2_fpn_768_trash/best_bbox_mAP_50_epoch_20.pth'
+    checkpoint_path = '/opt/ml/baseline/level2_objectdetection-cv-11/UniverseNet/work_dirs/gflv2_pvt_v2_b2_fpn_albu_1024_trash/best_bbox_mAP_50_epoch_29.pth'
     # # 만약 'best' 일 경우 best가 들어간 pth를 찾아서 load
     # if args.inference_epoch == 'best':
     #     checkpoint_name = [i for i in os.listdir(cfg.work_dir) if 'best' in i][0]
@@ -176,7 +176,7 @@ def inference(cfg):
     submission = pd.DataFrame()
     submission['PredictionString'] = prediction_strings
     submission['image_id'] = file_names
-    submission.to_csv(os.path.join(cfg.work_dir, f'submission_{epoch}_valid.csv'), index=None)
+    submission.to_csv(os.path.join(cfg.work_dir, f'submission_valid.csv'), index=None)
     submission.head()
     
 

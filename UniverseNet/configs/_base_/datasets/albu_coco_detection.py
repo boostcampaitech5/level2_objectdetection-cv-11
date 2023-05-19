@@ -109,7 +109,7 @@ data = dict(
         type='MultiImageMixDataset',
         dataset=dict(
             type=dataset_type,
-            ann_file=data_root + 'train.json',
+            ann_file=data_root + '5___train_MultiStfKFold.json',
             img_prefix=data_root,
             classes=classes,
             pipeline=[
@@ -121,7 +121,7 @@ data = dict(
         ),
     val=dict(
         type=dataset_type,
-        ann_file=data_root + 'train.json',
+        ann_file=data_root + '5___val_MultiStfKFold.json',
         img_prefix=data_root,
         classes=classes,
         pipeline=test_pipeline),
