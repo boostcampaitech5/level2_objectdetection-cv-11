@@ -24,12 +24,14 @@ from pandas import DataFrame
 from pycocotools.coco import COCO
 
 parser = argparse.ArgumentParser(description='parser')
-parser.add_argument('--max_epoch', default=20, help='input your max_epoch')
-parser.add_argument('--model', default="cascade_rcnn_x101_64x4d_fpn_1x_coco", help='input your model_name')
-parser.add_argument('--folder', default="cascade_rcnn", help='input your folder_name')
-parser.add_argument('--augmentation', default=False, help='input your augmentation')
-parser.add_argument('--trainset', default='2___train_MultiStfKFold.json', help='input your trainset')
-parser.add_argument('--validset', default='2___val_MultiStfKFold.json', help='input your validset')
+parser.add_argument('--max_epoch', default=30, help='input your max_epoch')
+parser.add_argument('--model', default="universenet101_2008d_fp16_4x4_mstrain_480_960_20e_coco", help='input your model_name')
+parser.add_argument('--folder', default="universenet", help='input your folder_name')
+parser.add_argument('--augmentation', default=True, help='input your augmentation')
+# 이거 하드코딩==========================================================
+# parser.add_argument('--trainset', default='_.json', help='input your trainset')
+# parser.add_argument('--validset', default='_.json', help='input your validset')
+# =======================================================================
 parser.add_argument('--resize', default=1024, help='input your resize')
 parser.add_argument('--inference_epoch', default="best", help='input your inference epoch')
 
@@ -38,7 +40,7 @@ args = parser.parse_args()
 # ------------------ 변경할 부분-------------------
 model_name = args.model
 folder_name= args.folder
-augmentation = False
+augmentation = True
 # ------------------ 변경할 부분-------------------
 cfg = Config.fromfile(f'../configs/{folder_name}/{model_name}.py')
 cfg.runner.max_epochs = int(args.max_epoch) # 에포크 횟수 조정
@@ -49,26 +51,26 @@ classes = ("General trash", "Paper", "Paper pack", "Metal", "Glass",
 
 
 def data_config(cfg: Config) -> None:
-    cfg.data.train.classes = classes
-    cfg.data.train.img_prefix = root
-    cfg.data.train.ann_file = root + args.trainset # train json 정보
-    if "dataset" in cfg.data.train.keys():
-        cfg.data.train.dataset.pipeline[2]['img_scale'] = (resize,resize)
-    else:
-        cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
+    # cfg.data.train.classes = classes
+    # cfg.data.train.img_prefix = root
+    # cfg.data.train.ann_file = root + args.trainset # train json 정보
+    # if "dataset" in cfg.data.train.keys():
+    #     cfg.data.train.dataset.pipeline[2]['img_scale'] = (resize,resize)
+    # else:
+    #     cfg.data.train.pipeline[2]['img_scale'] = (resize,resize) # Resize
 
-    cfg.data.val.classes = classes
-    cfg.data.val.img_prefix = root
-    cfg.data.val.ann_file = root + args.validset # valid json 정보
-    cfg.data.val.pipeline[1]['img_scale'] = (resize,resize) # Resize
+    # cfg.data.val.classes = classes
+    # cfg.data.val.img_prefix = root
+    # cfg.data.val.ann_file = root + args.validset # valid json 정보
+    # cfg.data.val.pipeline[1]['img_scale'] = (resize,resize) # Resize
 
-    cfg.data.test.classes = classes
-    cfg.data.test.img_prefix = root
-    cfg.data.test.ann_file = root + 'test.json' # test json 정보
-    cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
+    # cfg.data.test.classes = classes
+    # cfg.data.test.img_prefix = root
+    # cfg.data.test.ann_file = root + 'test.json' # test json 정보
+    # cfg.data.test.pipeline[1]['img_scale'] = (resize,resize) # Resize
     cfg.data.test.test_mode = True
     # 이거 변경========================================================
-    cfg.data.samples_per_gpu = 2 # 원래 8
+    cfg.data.samples_per_gpu = 16 # 원래 8
     # =================================================================
     cfg.data.workers_per_gpu = multiprocessing.cpu_count() // 2 # num_workers
     

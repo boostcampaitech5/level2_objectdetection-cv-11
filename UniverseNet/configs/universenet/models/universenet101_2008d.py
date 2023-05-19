@@ -1,3 +1,5 @@
+# 이거 새로 넣음
+# checkpoint = '/opt/ml/level2_objectdetection-cv-11/UniverseNet/work_dirs/exp7/best_bbox_mAP_50_epoch_13.pth'
 # model settings
 model = dict(
     type='GFL',
@@ -16,6 +18,7 @@ model = dict(
         stage_with_dcn=(False, True, True, True),
         init_cfg=dict(
             type='Pretrained',
+            # checkpoint='open-mmlab://res2net101_v1d_26w_4s')),
             checkpoint='open-mmlab://res2net101_v1d_26w_4s')),
     neck=[
         dict(
