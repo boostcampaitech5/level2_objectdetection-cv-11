@@ -72,6 +72,7 @@ Given an image containing a garbage object, it is a matter of specifying the loc
 - OS : Linux Ubuntu 18.04.5
 - GPU : Tesla V100 (32GB)
 
+
 # Folder Structure
 ```bash
 ├─eda
@@ -85,7 +86,14 @@ Given an image containing a garbage object, it is a matter of specifying the loc
 ```
 <br></br>
 
-# Multilabel_Kfold.py
+# Usage
+
+## Install Requirements
+
+- `pip install -r requirements.txt`
+
+
+## Multilabel_Kfold.py
 
 You can enter the multilabel_kfold.py folder path and enter the command or enter the multilabel_kfold directly into the command
 ```bash
@@ -93,7 +101,7 @@ python3 level2_objectdetection-cv-11/multilabel_Kfold.py --K {kfold split count}
 ```
 <br></br>
 
-# train.sh
+## train.sh
 1. Move the path to the tools folder where the train.sh file is located
 
 2. Write python3 main.py command in train.sh file
@@ -154,27 +162,3 @@ python3 level2_objectdetection-cv-11/multilabel_Kfold.py --K {kfold split count}
 | mmdetection V3 | 2stage | diffusionDet_pretrained | resnet 50 | FPN |  |  |  |  | fail |
 
 - Final submission : Public : 0.6878(5th) / Private : 0.6720(5th)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
