@@ -30,7 +30,7 @@ pip install -r requirements.txt
 <br></br>
 
 # main.py 
-## Code that executes train and reference continuously
+Code that executes train and reference continuously
 You can enter the main folder path and enter the command or enter the multilabel_kfold directly into the command
 ```bash
 python3 level2_objectdetection-cv-11/mmdetection/tools/main.py
