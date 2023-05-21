@@ -129,7 +129,7 @@ python3 level2_objectdetection-cv-11/multilabel_Kfold.py --K {kfold split count}
 ## Model select experiment result
 **Metric** : mAP score
 
-| 라이브러리 | TYPE | Method | Backbone | Neck | Datasets | Scheduler | Runtime | Optimizer | mAP(public) |
+| Library | TYPE | Method | Backbone | Neck | Datasets | Scheduler | Runtime | Optimizer | mAP(public) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | mmdetection2 | 2stage | Cascade RCNN | CascadeRCNN | Swin transformer Large | FPN | coco_detection | default_runtime | AdamW | 0.5658 |
 | UniverseNet | 1stage | UniverseNet | Res2Net_101 | FPN / SEPC | coco_detection_mstrain_480_960 | schedule_20e | default_runtime | SGD | 0.5459 |
