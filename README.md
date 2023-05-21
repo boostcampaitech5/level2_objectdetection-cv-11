@@ -6,7 +6,7 @@ Given an image containing a garbage object, it is a matter of specifying the loc
 
 ### Team Members
 
-<div align="left">
+<div align="center">
   <table>
     <tr>
       <td align="center">
