@@ -21,13 +21,11 @@ altair<5
 
 ## 디렉토리 구조
 
-![Untitled](streamlit%20a7c73382094d41a1a02b07edd401e773/Untitled.png)
+![Untitled](https://github.com/boostcampaitech5/level2_objectdetection-cv-11/blob/main/streamlit/assets/Untitled.png)
 
 ## 학습한 가중치 공유링크 :
 
-[best_bbox_mAP_50_epoch_20.pth](streamlit%20a7c73382094d41a1a02b07edd401e773/best_bbox_mAP_50_epoch_20.pth)
-
-[](https://yonsei-my.sharepoint.com/:u:/g/personal/junha4304_o365_yonsei_ac_kr/EZF6JWj4kcpJlJqA6lk7eKkBMK87y7iAysS8BZlja1ujcw?e=UgiIdJ)
+[best_bbox_mAP_50_epoch_20.pth](https://yonsei-my.sharepoint.com/:u:/g/personal/junha4304_o365_yonsei_ac_kr/EZF6JWj4kcpJlJqA6lk7eKkBMK87y7iAysS8BZlja1ujcw?e=UgiIdJ)
 
 weights 폴더 생성 > weights 폴더에 가중치 넣기
 
