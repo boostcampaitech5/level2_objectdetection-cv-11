@@ -1,112 +1,66 @@
-# Real-time Object Detection and Tracking with YOLOv8 and Streamlit
+# 환경 구성
 
-This repository is a comprehensive open-source project that demonstrates the integration of object detection and tracking using the YOLOv8 object detection algorithm and Streamlit, a popular Python web application framework for building interactive web applications. This project provides a user-friendly and customizable interface that can detect and track objects in real-time video streams.
+[GitHub - CodingMantras/yolov8-streamlit-detection-tracking: YOLOv8 object detection algorithm and Streamlit framework for Real-Time Object Detection and tracking in video streams.](https://github.com/CodingMantras/yolov8-streamlit-detection-tracking)
 
-## Tracking With Object Detection Demo
+python 3.10.6
 
-<https://user-images.githubusercontent.com/104087274/234874398-75248e8c-6965-4c91-9176-622509f0ad86.mov>
+requirements.txt
 
-## Demo Pics
-
-### Home page
-
-<img src="https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/blob/master/assets/pic1.png" >
-
-### Page after uploading an image and object detection
-
-<img src="https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/blob/master/assets/pic3.png" >
-
-### Segmentation task on image
-
-<img src="https://github.com/CodingMantras/yolov8-streamlit-detection-tracking/blob/master/assets/segmentation.png" >
-
-## Requirements
-
-Python 3.6+
-YOLOv8
-Streamlit
-
-```bash
-pip install ultralytics streamlit pafy
+```
+pickle5==0.0.11
+streamlit==1.22.0
+scikit-learn==1.2.2
+numpy==1.24.3
+pandas==1.5.1
+altair<5
 ```
 
-## Installation
+`pip install ultralytics streamlit pafy`
 
-- Clone the repository: git clone <https://github.com/CodingMantras/yolov8-streamlit-detection-tracking.git>
-- Change to the repository directory: `cd yolov8-streamlit-detection-tracking`
-- Create `weights`, `videos`, and `images` directories inside the project.
-- Download the pre-trained YOLOv8 weights from (<https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt>) and save them to the `weights` directory in the same project.
+- [https://torbjorn.tistory.com/679](https://torbjorn.tistory.com/679)
 
-## Usage
+## 디렉토리 구조
 
-- Run the app with the following command: `streamlit run app.py`
-- The app should open in a new browser window.
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4f042c7b-1386-4a1b-bfc0-6ff21cf2a1a0/Untitled.png)
 
-### ML Model Config
+## 학습한 가중치 공유링크 :
 
-- Select task (Detection, Segmentation)
-- Select model confidence
-- Use the slider to adjust the confidence threshold (25-100) for the model.
+[best_bbox_mAP_50_epoch_20.pth](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fc067244-6bad-4afb-9295-798cc56a2c8a/best_bbox_mAP_50_epoch_20.pth)
 
-One the model config is done, select a source.
+[](https://yonsei-my.sharepoint.com/:u:/g/personal/junha4304_o365_yonsei_ac_kr/EZF6JWj4kcpJlJqA6lk7eKkBMK87y7iAysS8BZlja1ujcw?e=UgiIdJ)
 
-### Detection on images
+weights 폴더 생성 > weights 폴더에 가중치 넣기
 
-- The default image with its objects-detected image is displayed on the main page.
-- Select a source. (radio button selection `Image`).
-- Upload an image by clicking on the "Browse files" button.
-- Click the "Detect Objects" button to run the object detection algorithm on the uploaded image with the selected confidence threshold.
-- The resulting image with objects detected will be displayed on the page. Click the "Download Image" button to download the image.("If save image to download" is selected)
+## 수정할 코드 - [settings.py](http://settings.py) :
 
-## Detection in Videos
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/28febe85-1e4f-44a4-96ea-47c2c20d9212/Untitled.png)
 
-- Create a folder with name `videos` in the same directory
-- Dump your videos in this folder
-- In `settings.py` edit the following lines.
+가상환경 activate → streamlit run [app.py](http://app.py/)
 
-```python
-# video
-VIDEO_DIR = ROOT / 'videos' # After creating the videos folder
+# 결과
 
-# Suppose you have four videos inside videos folder
-# Edit the name of video_1, 2, 3, 4 (with the names of your video files) 
-VIDEO_1_PATH = VIDEO_DIR / 'video_1.mp4' 
-VIDEO_2_PATH = VIDEO_DIR / 'video_2.mp4'
-VIDEO_3_PATH = VIDEO_DIR / 'video_3.mp4'
-VIDEO_4_PATH = VIDEO_DIR / 'video_4.mp4'
+## confidence score 조절에 따른 박스 변화
 
-# Edit the same names here also.
-VIDEOS_DICT = {
-    'video_1': VIDEO_1_PATH,
-    'video_2': VIDEO_2_PATH,
-    'video_3': VIDEO_3_PATH,
-    'video_4': VIDEO_4_PATH,
-}
+### confidence 40 :
 
-# Your videos will start appearing inside streamlit webapp 'Choose a video'.
-```
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/111cedf5-87ae-4846-ac73-a12ec456a603/Untitled.png)
 
-- Click on `Detect Video Objects` button and the selected task (detection/segmentation) will start on the selected video.
+### confidence 95 :
 
-### Detection on RTSP
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f660b748-11e9-4a33-87c2-c71ee2267772/Untitled.png)
 
-- Select the RTSP stream button
-- Enter the rtsp url inside the textbox and hit `Detect Objects` button
+### video에 대한 trash detection :
 
-### Detection on YouTube Video URL
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e2719644-9116-4fb7-aec9-6e33dc2399cb/Untitled.png)
 
-- Select the source as YouTube
-- Copy paste the url inside the text box.
-- The detection/segmentation task will start on the YouTube video url
+### webcam을 사용한 실시간 vidio detection :
 
-<https://user-images.githubusercontent.com/104087274/226178296-684ad72a-fe5f-4589-b668-95c835cd8d8a.mov>
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bd70dd7c-42d5-4dcd-a315-552eec133081/Untitled.png)
 
-## Acknowledgements
+# 정리
 
-This app is based on the YOLOv8(<https://github.com/ultralytics/ultralytics>) object detection algorithm. The app uses the Streamlit(<https://github.com/streamlit/streamlit>) library for the user interface.
+가장 박스가 적은 yolov8l 모델을 사용했음에도 confidence 40에서는 박스를 많이 잡고, 95까지 올려도 잡아내는 모습이다. mAP 50 성능이 높았던 대회에 최종 제출한 모델을 사용했다면, 모든 물체에 박스가 생성 되었을 것이다.
 
-### Disclaimer
+동영상에 대한 trash detection 또한 잘 작동하는 것을 알 수 있었고, 다만, 교육용 데이터셋 처럼 위에서 찍은 사진이 아닌 경우 쓰레기의 옆 모습만 보고 해당 쓰레기를 검출하는 능력은 많이 떨어졌다.
 
-Please note that this project is intended for educational purposes only and should not be used in production environments.
-
-**Hit star ⭐ if you like this repo!!!**
+특히 webcam을 이용한 trash detection에서는 대부분의 물체를 일반 쓰레기로 분류하였으며, 심지어 내 얼굴또한 일반 쓰레기로 분류되었다. 대회에서는 좋은 성적을 거두었지만, 사용화하려면 보다 많은 것들을 고려해야 한다는 것을 느꼈고, 특히 대회를 위해 주어진 대부분의 이미지는 쓰레기만을 특정 각도에서 촬영한 것이 많았는데, 실제 object detection이 필요한 상황은 쓰레기가 아닌 물체들이 많은 상황에서 특정 쓰레기를 감지할 수 있어야 하며, 촬영 각도 또한 다각도를 고려하여야한다.
