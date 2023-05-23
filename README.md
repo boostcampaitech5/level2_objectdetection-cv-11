@@ -139,7 +139,7 @@ python3 level2_objectdetection-cv-11/multilabel_Kfold.py --K {kfold split count}
 
 | Library | TYPE | Method | Backbone | Neck | Datasets | Scheduler | Runtime | Optimizer | mAP(public) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| mmdetection2 | 2stage | Cascade RCNN | CascadeRCNN | Swin transformer base | FPN | albu_coco_detection |  | default_runtime | AdamW | 0.6671 |
+| mmdetection2 | 2stage | Cascade RCNN | Swin transformer base | FPN | albu_coco_detection | schedule | default_runtime | AdamW | 0.6671 |
 | UniverseNet | 1stage | UniverseNet | Res2Net_101 | FPN / SEPC | albu_coco_detection | schedule_20e | default_runtime | AdamW | 0.61 |
 | UniverseNet | 1stage | ATSS | Swin transformer large | FPN / Dyhead | albu_coco_detection | schedule_20e | default_runtime | AdamW | 0.6237 |
 | UniverseNet | 2stage | GFLv2 | PVT_v2 | FPN | albu_coco_detection | schedule_2x | default_runtime | SGD | 0.5693 |
