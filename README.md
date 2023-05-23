@@ -134,7 +134,7 @@ python3 level2_objectdetection-cv-11/multilabel_Kfold.py --K {kfold split count}
 | RandomBrightnessContrast | 0.312545 | 0.144382 | 0.238167 | 0.695094 |
 | Multiresize | 0.29278 | 0.15752 | 0.235295 | 0.685595 |
 
-## Final Model
+## Final Solution
 **Metric** : mAP score
 
 | Library | TYPE | Method | Backbone | Neck | Datasets | Scheduler | Runtime | Optimizer | mAP(public) |
