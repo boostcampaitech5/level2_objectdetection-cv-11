@@ -139,26 +139,12 @@ python3 level2_objectdetection-cv-11/multilabel_Kfold.py --K {kfold split count}
 
 | Library | TYPE | Method | Backbone | Neck | Datasets | Scheduler | Runtime | Optimizer | mAP(public) |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| mmdetection2 | 2stage | Cascade RCNN | CascadeRCNN | Swin transformer Large | FPN | coco_detection | default_runtime | AdamW | 0.5658 |
-| UniverseNet | 1stage | UniverseNet | Res2Net_101 | FPN / SEPC | coco_detection_mstrain_480_960 | schedule_20e | default_runtime | SGD | 0.5459 |
-| mmdetection2 | 2stage | retinanet | PyramidVisionTransformerV2 | FPN | coco_detection_detraug | schedule_1x | default_runtime | AdamW | 0.5138 |
-| UniverseNet | 1stage | ATSS | SwinTransformerV2 | FPN | coco_detection | schedule_1x | default_runtime | AdamW | 0.5019 |
-| UniverseNet | 1stage | ATSS | focalnet(large) | FPN | coco_detection_detraug | schedule_1x | default_runtime | AdamW | 0.4798 |
-| UniverseNet | 2stage | GFLv2 | ResNeXt_101 | FPN | coco_detection_mstrain_480_960 | schedule_2x | default_runtime | SGD | 0.4725 |
-| UniverseNet | 1stage | ATSS | focalnet(small) | FPN | coco_detection_detraug | schedule_1x | default_runtime | AdamW | 0.4722 |
-| mmdetection2 | 1stage | TOOD | ResNet_101 | FPN | coco_detection | schedule_1x | default_runtime | SGD | 0.4567 |
-| mmdetection2 | 2stage | Cascade RCNN | ResNet_101 | FPN | coco_detection | schedule_1x | default_runtime | SGD | 0.44 |
-| UniverseNet | 1stage | retinanet | poolformer_s36_feat | FPN | coco_detection | schedule_1x | default_runtime | AdamW | 0.4283 |
-| mmdetection2 | 2stage | Cascade RCNN | HRNet | HRFPN | coco_detection | schedule_1x | default_runtime | SGD | 0.4115 |
-| mmdetection2 | 2stage | VFNet | ResNet_50 | FPN | coco_detection | schedule_1x | default_runtime | SGD | 0.4001 |
-| YOLOv8 | 1stage | YOLOv8-L | DarkNet |  |  |  |  |  | 0.3822 |
-| mmdetection2 | 2stage | reppoints | ResNet_101 | FPN | coco_detection | schedule_1x | default_runtime | SGD | 0.3794 |
-| mmdetection2 | 1stage | RetinaNet | ResNeXt_101 | FPN | coco_detection | schedule_1x | default_runtime | SGD | 0.2507 |
-| mmdetection2 | 1stage | cornerNet | HourglassNet-104 | None |  |  |  |  | 0.045 |
-| mmdetection2 | 2stage | Sparse RCNN | resnet101 | FPN |  |  |  |  | 0.0347 |
-| mmdetection V3 | 2stage | DINO | Swin Transformer | ChannelMapper | coco_detection | MultiStepLR | default_runtime | AdamW | 0.0065 |
-| mmdetection V3 | 2stage | DINO_pretrained | Swin Transformer | ChannelMapper |  |  |  |  | fail |
-| mmdetection V3 | 2stage | diffusionDet | resnet 50 | FPN | coco_detection | schedule_1x | default_runtime | AdamW | fail |
-| mmdetection V3 | 2stage | diffusionDet_pretrained | resnet 50 | FPN |  |  |  |  | fail |
+| mmdetection2 | 2stage | Cascade RCNN | CascadeRCNN | Swin transformer base | FPN | albu_coco_detection |  | default_runtime | AdamW | 0.6671 |
+| UniverseNet | 1stage | UniverseNet | Res2Net_101 | FPN / SEPC | albu_coco_detection | schedule_20e | default_runtime | AdamW | 0.61 |
+| UniverseNet | 1stage | ATSS | Swin transformer large | FPN / Dyhead | albu_coco_detection | schedule_20e | default_runtime | AdamW | 0.6237 |
+| UniverseNet | 2stage | GFLv2 | PVT_v2 | FPN | albu_coco_detection | schedule_2x | default_runtime | SGD | 0.5693 |
+| UniverseNet | 1stage | TOOD | Swin transformer v2 tiny | FPN | albu_coco_detection | schedule_1x | default_runtime | AdamW | 0.54 |
+| YOLOv8 | 1stage | YOLOv8_l | Darknet | - | recycle.yaml | - | - | - | 0.3822 |
+
 
 - Final submission : Public : 0.6878(5th) / Private : 0.6720(5th)
